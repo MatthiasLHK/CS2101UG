@@ -727,7 +727,7 @@ and the priority to `HIGH`.
 and the `DATE` to `2020-11-04`.
 
 
-#### Locating tasks: `findtask`
+#### Locating tasks: `findtask` (Jonas)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -884,7 +884,7 @@ Format: `cleartask`
   to restore the list.
 
 
-### Contact List Features
+### Contact List Features (Jonas)
 
 The following features allow you to manage a list of contacts and perform various contact related functions. 
 
