@@ -101,7 +101,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule` (Matthias Li Huankang)
+#### Adding a new module: `addmodule` (David, Joshua, Matthias Li Huankang)
 
 Creates and add a new module to be stored in the system.
 
@@ -122,7 +122,7 @@ Expected Outcome:
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
 
-#### Adding a new completed module: `addcmodule`
+#### Adding a new completed module: `addcmodule`(David)
 
 Creates and add a new completed module to be stored in the system.
 
@@ -138,7 +138,8 @@ Creates and add a new completed module to be stored in the system.
    * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
       and 4.5 grade points with the tags `completed` and `year1`.
 
-#### Viewing a module: `viewmodule`
+
+#### Viewing a module: `viewmodule`(David, Joshua)
 
 Displays a snapshot of a module stored in the system.
 
@@ -161,7 +162,7 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-#### Archiving a module: `archivemodule`
+#### Archiving a module: `archivemodule`(David)
 
 Archives a module in the module list and moves it into archived storage.
 
@@ -181,13 +182,13 @@ Format: `archivemodule` `INDEX`
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
+
+Other helpful example(s):
+
+  * `archivemodule 2` Archives the second module in the displayed list.
+
+#### Un-archiving a module: `unarchivemodule`(David)
   
-  Other helpful example(s):
-
-    * `archivemodule 2` Archives the second module in the displayed list.
-
-#### Un-archiving a module: `unarchivemodule`
-
 Un-Archives a module in the module list and moves it back into current module list storage.
 
 Format: `unarchivemodule` `INDEX`
@@ -204,7 +205,8 @@ Format: `unarchivemodule` `INDEX`
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
  * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
 
-#### View-archived modules: `viewarchive`
+
+#### View-archived modules: `viewarchive`(David)
 
 Allows you to view the archived module list on the display.
 
@@ -215,7 +217,7 @@ Format: `viewarchive`
  Examples:
  * `viewarchive` Views the archived module list on the display.
 
-#### View un-archived modules: `listmodule`
+#### View un-archived modules: `listmodule`(David)
 
 Allows you to view the un-archived module list on the display.
 
@@ -226,9 +228,10 @@ Format: `listmodule`
  Examples:
  * `listmodule` Views the un-archived module list on the display.
 
-#### Locating modules: `findmodule`
 
- Finds all modules that fulfil the provided module name search criteria.
+#### Locating modules: `findmodule`(David)
+
+ Finds all modules that fulfil your provided module name search criteria.
 
  Format: `findmodule [MODULE_NAME_KEYWORDS...]`
 
@@ -259,9 +262,11 @@ Format: `listmodule`
    Expected Outcome: 
    
 <p aligin="center"><img src="images/findmodule.png" border="2px solid black"></p>
+
+Only `CS2030` is displayed
        
-   Other helpful example(s):
-   
+  Other helpful example(s):
+
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
@@ -426,8 +431,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
-
-#### Deleting a module: `deletemodule`
+#### Deleting a module: `deletemodule`(David, Joshua)
 
 Deletes a module in the displayed module list.
 
@@ -440,7 +444,7 @@ Deletes a module in the displayed module list.
   Examples:
   * `deletemodule 1` deletes the module at position `1`
 
-#### Editing a module : `editmodule`
+#### Editing a module : `editmodule`(David, Joshua, Michael)
 
 Edits an existing module in the displayed module list with new details.
 
@@ -465,7 +469,7 @@ Edits an existing module in the displayed module list with new details.
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
-#### Clearing the module list: `clearmodule`
+#### Clearing the module list: `clearmodule`(David)
 
 Clears all un-archived modules.
 
@@ -583,7 +587,7 @@ To be implemented:
      
 <p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
-#### Calculating Cumulative Average Point(CAP): `calculatecap`
+#### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
 
 Calculates your CAP based on completed modules
 
@@ -592,7 +596,7 @@ Calculates your CAP based on completed modules
   Examples:
   * `calculatecap` calculate the user's cap
 
-#### Calculating target CAP details: `targetcap`
+#### Calculating target CAP details: `targetcap`(David)
 
 Calculates helpful CAP details based on the target CAP you input
 
@@ -1262,29 +1266,27 @@ Expected outcome:<br>
 
 ### General Features
 
-#### Undo previous user command: `undo`
+#### Undo previous user command: `undo`(David)
 
 Undoes the previous user command
 
+* You can undo any command that has changed any stored details
+
  Format: `undo`
-
- * The `undo` feature currently has not been extended to Scheduler commands
-
+ 
   Example:
   * `undo`
 
-#### Redo previous user command: `redo`
+#### Redo previous user command: `redo`(David)
 
 Redoes the previously undone user command
 
  Format: `redo`
-
-  * The `redo` feature currently has not been extended to Scheduler commands
-
+ 
   Example:
   * `redo`
 
-#### Exiting the application: `exit`
+#### Exiting the application: `exit`(David)
 
 Exits CAP5Buddy
 
@@ -1293,7 +1295,7 @@ Format: `exit`
   Example:
   * `exit`
 
-#### Getting help : `help`
+#### Getting help : `help`(Team)
 
 Opens the help window
 
@@ -1301,12 +1303,13 @@ Format: `help`
 
   Example:
   * `help`
-
-* _**Tips :**_ If you accidentally cleared the whole list, you can always use the `undo` command
-  to restore the list.
   
+<<<<<<< HEAD
 
 ## FAQ (Matthias Li Huankang)
+=======
+## FAQ
+>>>>>>> a197ae1a0b74ba6ba6be9a0f42ae925dbb8c2ea6
 
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
@@ -1322,7 +1325,7 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary for Module Tracker
+## Command Summary for Module Tracker(David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
 --------|------------------
@@ -1386,7 +1389,7 @@ Action | Format, Examples
 **Find Event** | `findevent [n/EVENT_NAME] [d/DATE_TIME]` <br> e.g. `findevent n/CS2103T`
 **List Event** | `listevet` <br> e.g. `listevent`
 
-## Command summary for general features
+## Command summary for general features(David)
 
 Action | Format, Examples
 --------|------------------

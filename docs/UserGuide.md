@@ -103,7 +103,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule`
+#### Adding a new module: `addmodule`(David, Joshua)
 
 Creates and add a new module to be stored in the system.
 
@@ -124,7 +124,7 @@ Expected Outcome:
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
 
-#### Adding a new completed module: `addcmodule`
+#### Adding a new completed module: `addcmodule`(David)
 
 Creates and add a new completed module to be stored in the system.
 
@@ -140,7 +140,7 @@ Creates and add a new completed module to be stored in the system.
    * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
       and 4.5 grade points with the tags `completed` and `year1`.
 
-#### Viewing a module: `viewmodule`
+#### Viewing a module: `viewmodule`(David, Joshua)
 
 Displays a snapshot of a module stored in the system.
 
@@ -163,7 +163,7 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-#### Archiving a module: `archivemodule`
+#### Archiving a module: `archivemodule`(David)
 
 Archives a module in the module list and moves it into archived storage.
 
@@ -183,12 +183,13 @@ Format: `archivemodule` `INDEX`
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
-  
-  Other helpful example(s):
 
-    * `archivemodule 2` Archives the second module in the displayed list.
 
-#### Un-archiving a module: `unarchivemodule`
+Other helpful example(s):
+
+  * `archivemodule 2` Archives the second module in the displayed list.
+
+#### Un-archiving a module: `unarchivemodule`(David)
 
 Un-Archives a module in the module list and moves it back into current module list storage.
 
@@ -206,7 +207,7 @@ Format: `unarchivemodule` `INDEX`
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
  * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
 
-#### View-archived modules: `viewarchive`
+#### View-archived modules: `viewarchive`(David)
 
 Allows you to view the archived module list on the display.
 
@@ -217,7 +218,7 @@ Format: `viewarchive`
  Examples:
  * `viewarchive` Views the archived module list on the display.
 
-#### View un-archived modules: `listmodule`
+#### View un-archived modules: `listmodule`(David)
 
 Allows you to view the un-archived module list on the display.
 
@@ -228,9 +229,9 @@ Format: `listmodule`
  Examples:
  * `listmodule` Views the un-archived module list on the display.
 
-#### Locating modules: `findmodule`
+#### Locating modules: `findmodule`(David)
 
- Finds all modules that fulfil the provided module name search criteria.
+ Finds all modules that fulfil your provided module name search criteria.
 
  Format: `findmodule [MODULE_NAME_KEYWORDS...]`
 
@@ -261,13 +262,15 @@ Format: `listmodule`
    Expected Outcome: 
    
 <p aligin="center"><img src="images/findmodule.png" border="2px solid black"></p>
+
+Only `CS2030` is displayed
        
-   Other helpful example(s):
+  Other helpful example(s):
    
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
-### Zoom link management feature
+### Zoom link management feature (Jonas)
 
 The following features allow you to manage the zoom links for your respective modules and perform various zoom link related functions. 
 
@@ -290,7 +293,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
-#### Zoom link command parameters
+#### Zoom link command parameters (Jonas)
 
 * **`ZOOM_LINK`**:
 
@@ -313,7 +316,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
   * Example: `Lecture-weds`
 
 
-#### Adding a zoom link for a specific lesson to a module: `addzoom`
+#### Adding a zoom link for a specific lesson to a module: `addzoom`      (Jonas)
 
 Adds a zoom link for a specific lesson to an existing module.
 
@@ -352,7 +355,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   ![AddZoom](images/Module/AddZoomUG.PNG)
 
 
-#### Editing a zoom link of a specific lesson in a module: `editzoom`
+#### Editing a zoom link of a specific lesson in a module: `editzoom`         (Jonas)
 
 Edits a zoom link of a specific lesson in a module.
 
@@ -399,7 +402,7 @@ Edits a zoom link of a specific lesson in a module.
    
 
 
-#### Deleting a zoom link for a specific lesson from a module: `deletezoom`
+#### Deleting a zoom link for a specific lesson from a module: `deletezoom`        (Jonas)
 
 Deletes a zoom link for a specific lesson from an existing module.
 
@@ -429,7 +432,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
 
-#### Deleting a module: `deletemodule`
+#### Deleting a module: `deletemodule`(David, Joshua)
 
 Deletes a module in the displayed module list.
 
@@ -442,7 +445,7 @@ Deletes a module in the displayed module list.
   Examples:
   * `deletemodule 1` deletes the module at position `1`
 
-#### Editing a module : `editmodule`
+#### Editing a module : `editmodule`(David, Joshua, Michael)
 
 Edits an existing module in the displayed module list with new details.
 
@@ -467,7 +470,7 @@ Edits an existing module in the displayed module list with new details.
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
-#### Clearing the module list: `clearmodule`
+#### Clearing the module list: `clearmodule`(David)
 
 Clears all un-archived modules.
 
@@ -585,7 +588,7 @@ To be implemented:
      
 <p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
-#### Calculating Cumulative Average Point(CAP): `calculatecap`
+#### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
 
 Calculates your CAP based on completed modules
 
@@ -594,7 +597,7 @@ Calculates your CAP based on completed modules
   Examples:
   * `calculatecap` calculate the user's cap
 
-#### Calculating target CAP details: `targetcap`
+#### Calculating target CAP details: `targetcap`(David)
 
 Calculates helpful CAP details based on the target CAP you input
 
@@ -727,7 +730,7 @@ and the priority to `HIGH`.
 and the `DATE` to `2020-11-04`.
 
 
-#### Locating tasks: `findtask`
+#### Locating tasks: `findtask`          (Jonas)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -884,13 +887,13 @@ Format: `cleartask`
   to restore the list.
 
 
-### Contact List Features
+### Contact List Features (Jonas)
 
 The following features allow you to manage a list of contacts and perform various contact related functions. 
 
 The section below provides some useful details about the contact list features.
 
-#### Contact command parameters
+#### Contact command parameters    (Jonas)
 
 A contact list feature can use one or more of the following parameters:
 
@@ -952,7 +955,7 @@ A contact list feature can use one or more of the following parameters:
 
 
 
-#### Adding a contact: `addcontact`
+#### Adding a contact: `addcontact`             (Jonas)
 
 Adds a new contact into the contact list if it does not already exist.
 
@@ -970,7 +973,7 @@ Expected Outcome:
 ![AddContactOutcome](images/contact/AddContactUG.PNG)
 
 
-#### Locating contacts: `findcontact`
+#### Locating contacts: `findcontact`              (Jonas)
 
  Finds all contacts that fulfil all the provided search criteria.
 
@@ -1023,7 +1026,7 @@ Expected Outcome:
    * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags
 
 
-#### Listing all contacts: `listcontact`
+#### Listing all contacts: `listcontact`          (Jonas)
 
  Shows a list of all contacts in the contact list.
 
@@ -1045,7 +1048,7 @@ Expected Outcome:
  ![ListContact](images/contact/ListContactUG.PNG)
 
 
-#### Editing a contact: `editcontact`
+#### Editing a contact: `editcontact`              (Jonas)
 
  Edits an existing contact in the contact list.
 
@@ -1075,7 +1078,7 @@ Expected Outcome:
 
 
 
-#### Deleting a contact: `deletecontact`
+#### Deleting a contact: `deletecontact`               (Jonas)
 
 Deletes the specified contact from the contact list.
 
@@ -1112,7 +1115,7 @@ Examples:
 
 * `sortcontact r` might produce a list of `{sasha, michael}`.
 
-#### Marking contacts as important: `importantcontact`
+#### Marking contacts as important: `importantcontact`  
 
 Marks a task as `Important`.
 
@@ -1148,7 +1151,7 @@ Examples:
 * `resetcontact 2` mark the second contact in the list as `Not Important`.
 
 
-#### Clearing the contact list: `clearcontact`
+#### Clearing the contact list: `clearcontact`                  (Jonas)
 
 Clears all contacts in the contact list.
 
@@ -1228,29 +1231,27 @@ Format: `listevent`
 
 ### General Features
 
-#### Undo previous user command: `undo`
+#### Undo previous user command: `undo`(David)
 
 Undoes the previous user command
 
+* You can undo any command that has changed any stored details
+
  Format: `undo`
-
- * The `undo` feature currently has not been extended to Scheduler commands
-
+ 
   Example:
   * `undo`
 
-#### Redo previous user command: `redo`
+#### Redo previous user command: `redo`(David)
 
 Redoes the previously undone user command
 
  Format: `redo`
-
-  * The `redo` feature currently has not been extended to Scheduler commands
-
+ 
   Example:
   * `redo`
 
-#### Exiting the application: `exit`
+#### Exiting the application: `exit`(David)
 
 Exits CAP5Buddy
 
@@ -1259,7 +1260,7 @@ Format: `exit`
   Example:
   * `exit`
 
-#### Getting help : `help`
+#### Getting help : `help`(Team)
 
 Opens the help window
 
@@ -1267,11 +1268,7 @@ Format: `help`
 
   Example:
   * `help`
-
-* _**Tips :**_ If you accidentally cleared the whole list, you can always use the `undo` command
-  to restore the list.
   
-
 ## FAQ
 
 **Q**: How do you add a module into the program?<br>
@@ -1288,7 +1285,7 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary for Module Tracker
+## Command Summary for Module Tracker(David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
 --------|------------------
@@ -1352,7 +1349,7 @@ Action | Format, Examples
 **Find Event** | `findevent [n/EVENT_NAME] [d/DATE_TIME]` <br> e.g. `findevent n/CS2103T`
 **List Event** | `listevet` <br> e.g. `listevent`
 
-## Command summary for general features
+## Command summary for general features(David)
 
 Action | Format, Examples
 --------|------------------
