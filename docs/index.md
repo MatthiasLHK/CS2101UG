@@ -3,17 +3,20 @@ layout: page
 title: User Guide
 ---
 
-## Introduction
+## Introduction (All)
 
 Do you even find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
+
 
 CAP5Buddy is a desktop application that helps NUS SoC students to keep track of their module details efficiently.
 It helps you to centralize key module details, contacts and information while following your study progress. It is optimized for use via a Command Line Interface (CLI), while still having the 
 benefits of a Graphical User Interface (GUI). If you can type fast, CAP5Buddy can help you manage your module 
 details and information more efficiently than traditional GUI apps.
 
-
+### About this user guide (David)
+This user guide will teach you how to use CAP5Buddy and its features to their maximum potential. This user guide contains
+ information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below.
 
 * Table of Contents
 {:toc}
