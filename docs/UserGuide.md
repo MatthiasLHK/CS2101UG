@@ -270,7 +270,7 @@ Only `CS2030` is displayed
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
-### Zoom link management feature (Jonas)
+#### Zoom link management feature (Jonas Ng)
 
 The following features allow you to manage the zoom links for your respective modules and perform various zoom link related functions. 
 
@@ -293,7 +293,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
-#### Zoom link command parameters (Jonas)
+#### Zoom link command parameters (Jonas Ng)
 
 * **`ZOOM_LINK`**:
 
@@ -316,7 +316,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
   * Example: `Lecture-weds`
 
 
-#### Adding a zoom link for a specific lesson to a module: `addzoom`      (Jonas)
+#### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
 
 Adds a zoom link for a specific lesson to an existing module.
 
@@ -338,7 +338,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
    
    * `LESSON_NAME` refers to the name of the module lesson which the added zoom link belongs to.
 
-  Example:
+  Example(s):
   
   `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
   in the displayed module list for the lesson `lecture-weds`.
@@ -353,9 +353,14 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   Expected Outcome: 
   
   ![AddZoom](images/Module/AddZoomUG.PNG)
+  
+  Other helpful example(s):
+  
+  `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+   in the displayed module list for the lesson `lecture on weds`.
 
 
-#### Editing a zoom link of a specific lesson in a module: `editzoom`         (Jonas)
+#### Editing a zoom link of a specific lesson in a module: `editzoom` (Jonas Ng)
 
 Edits a zoom link of a specific lesson in a module.
 
@@ -384,7 +389,7 @@ Edits a zoom link of a specific lesson in a module.
 
    </div>
 
-   Example:
+   Example(s):
    
    `editzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `lecture-weds`
     in the first module to be `https://nus-sg.zoom.us/editedZoom`
@@ -400,9 +405,13 @@ Edits a zoom link of a specific lesson in a module.
    
    ![EditZoom](images/Module/EditZoomUG.PNG)
    
+   Other helpful example(s):
+   
+   `editzoom 2 n/tutorial z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `tutorial`
+    in the second module to be `https://nus-sg.zoom.us/editedZoom`
 
 
-#### Deleting a zoom link for a specific lesson from a module: `deletezoom`        (Jonas)
+#### Deleting a zoom link for a specific lesson from a module: `deletezoom` (Jonas Ng)
 
 Deletes a zoom link for a specific lesson from an existing module.
 
@@ -416,7 +425,7 @@ Deletes a zoom link for a specific lesson from an existing module.
 
    * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be deleted.
 
-  Example
+  Example(s):
   
   `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
 
@@ -430,6 +439,10 @@ Deletes a zoom link for a specific lesson from an existing module.
   Expected Outcome: 
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
+  
+  Other helpful example(s):
+  
+  `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
   
 
 #### Deleting a module: `deletemodule`(David, Joshua)
@@ -730,7 +743,7 @@ and the priority to `HIGH`.
 and the `DATE` to `2020-11-04`.
 
 
-#### Locating tasks: `findtask`          (Jonas)
+#### Locating tasks: `findtask` (Jonas Ng)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -793,15 +806,16 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Only tasks matching all search criteria provided will be returned.
 
- Example:
+ Example(s):
  
- `findtask `
+ `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'
  
  Expected Outcome:
  
+ ![FindTask](images/Task/FindTaskUG.PNG)
  
 
- Other helpful examples:
+ Other helpful example(s):
 
   * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority
 
@@ -887,13 +901,13 @@ Format: `cleartask`
   to restore the list.
 
 
-### Contact List Features (Jonas)
+### Contact List Features (Jonas Ng)
 
 The following features allow you to manage a list of contacts and perform various contact related functions. 
 
 The section below provides some useful details about the contact list features.
 
-#### Contact command parameters    (Jonas)
+#### Contact command parameters (Jonas Ng)
 
 A contact list feature can use one or more of the following parameters:
 
@@ -928,7 +942,7 @@ A contact list feature can use one or more of the following parameters:
    * All contacts must have an email address
 
 
-* **`Telegram`**:
+* **`TELEGRAM`**:
 
   * Represents the telegram username of a contact
   
@@ -943,7 +957,7 @@ A contact list feature can use one or more of the following parameters:
   * Telegram is a not a compulsory field of a contact
 
 
-* **`Tag`**:
+* **`TAG`**:
 
   * Represents a tag that can be used to describe a contact
   
@@ -955,7 +969,7 @@ A contact list feature can use one or more of the following parameters:
 
 
 
-#### Adding a contact: `addcontact`             (Jonas)
+#### Adding a contact: `addcontact` (Jonas Ng)
 
 Adds a new contact into the contact list if it does not already exist.
 
@@ -964,7 +978,7 @@ Format: `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...`
  * A contact can have any number of tags (including 0)
 
 
-Example: 
+Example(s): 
 
 `addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`
  
@@ -972,8 +986,12 @@ Expected Outcome:
 
 ![AddContactOutcome](images/contact/AddContactUG.PNG)
 
+Other helpful example(s):
 
-#### Locating contacts: `findcontact`              (Jonas)
+`addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`
+
+
+#### Locating contacts: `findcontact` (Jonas Ng)
 
  Finds all contacts that fulfil all the provided search criteria.
 
@@ -1009,7 +1027,7 @@ Expected Outcome:
 
   * Only contacts matching all search criteria provided will be returned.
 
-  Example: 
+  Example(s): 
   
   `findcontact n/amy` finds all contacts with the word `amy` in their name
   
@@ -1017,7 +1035,7 @@ Expected Outcome:
   
   ![FindContact](images/contact/FindContactUG.PNG)
   
-  Other helpful examples:
+  Other helpful example(s):
 
    * `findcontact n/Bob Abraham` returns all contacts with the word `Bob` **or** `Abraham` in their name, e.g. `Bob Lim`, `Tommy Abraham`
 
@@ -1026,7 +1044,7 @@ Expected Outcome:
    * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags
 
 
-#### Listing all contacts: `listcontact`          (Jonas)
+#### Listing all contacts: `listcontact` (Jonas Ng)
 
  Shows a list of all contacts in the contact list.
 
@@ -1041,14 +1059,16 @@ Expected Outcome:
 
  </div>
  
- Example: `listcontact`
+ Example(s): 
+ 
+ `listcontact`
  
  Expected Outcome: 
  
  ![ListContact](images/contact/ListContactUG.PNG)
 
 
-#### Editing a contact: `editcontact`              (Jonas)
+#### Editing a contact: `editcontact` (Jonas Ng)
 
  Edits an existing contact in the contact list.
 
@@ -1068,7 +1088,7 @@ Expected Outcome:
  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`
 
 
- Example: 
+ Example(s): 
  
  `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`
  
@@ -1077,8 +1097,15 @@ Expected Outcome:
  ![EditContact](images/contact/EditContactUG.PNG)
 
 
+ Other helpful example(s):
+ 
+ `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact
 
-#### Deleting a contact: `deletecontact`               (Jonas)
+
+ `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact
+ 
+
+#### Deleting a contact: `deletecontact` (Jonas Ng)
 
 Deletes the specified contact from the contact list.
 
@@ -1090,13 +1117,18 @@ Format: `deletecontact INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
-Example: 
+Example(s): 
 
 `deletecontact 2` deletes the second contact in the displayed contact list
 
 Expected Outcome: 
 
 ![DeleteContact](images/contact/DeleteContactUG.PNG)
+
+
+Other helpful example(s):
+
+`deletecontact 5` deletes the fifth contact in the displayed contact list
 
 
 #### Sorting contacts: `sortcontact`
@@ -1151,7 +1183,7 @@ Examples:
 * `resetcontact 2` mark the second contact in the list as `Not Important`.
 
 
-#### Clearing the contact list: `clearcontact`                  (Jonas)
+#### Clearing the contact list: `clearcontact` (Jonas Ng)
 
 Clears all contacts in the contact list.
 
@@ -1166,7 +1198,9 @@ Format: `clearcontact`
 
  </div>
 
-Example: `clearcontact`
+Example(s): 
+
+`clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
