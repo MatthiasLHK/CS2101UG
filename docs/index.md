@@ -116,13 +116,15 @@ Creates and add a new module to be stored in the system.
    
 Expected Outcome: 
   
-<p aligin="center"><img src="images/addmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
+  
+  New module `CS2103T` has been added
   
   Other helpful example(s):
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
 
-#### Adding a new completed module: `addcmodule`(David)
+#### Adding a new completed module: `addcmodule` (David)
 
 Creates and add a new completed module to be stored in the system.
 
@@ -132,14 +134,22 @@ Creates and add a new completed module to be stored in the system.
    * Completed modules can be modified using `editmodule`. Do note that editing tags will reset all existing tags, therefore in order to keep the completed tag after editing, you must specify the completed tag parameter in the `editmodule` command by adding `t/completed` to your command line exactly.
    * Completed modules added this way will be used for CAP calculation purposes.
 
-   Examples:
+   Example(s):
    * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
       and 5 grade points with a `completed` tag.
+   Expected Outcome: 
+    
+<p aligin="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
+    
+New module `CS2103T` tagged as completed has been added
+
+   Other helpful example(s):
+
    * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
       and 4.5 grade points with the tags `completed` and `year1`.
 
 
-#### Viewing a module: `viewmodule`(David, Joshua)
+#### Viewing a module: `viewmodule` (David, Joshua)
 
 Displays a snapshot of a module stored in the system.
 
@@ -155,14 +165,16 @@ Displays a snapshot of a module stored in the system.
   
   * Note that the displayed snapshot is not updated when the module being displayed is changed.
 
-  Example:
+  Example(s):
    * `viewmodule 1` views the first module in the displayed list.
    
 Expected Outcome: 
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-#### Archiving a module: `archivemodule`(David)
+Module details for `CS2030` is being displayed
+
+#### Archiving a module: `archivemodule` (David)
 
 Archives a module in the module list and moves it into archived storage.
 
@@ -176,18 +188,16 @@ Format: `archivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Example:
+ Example(s):
  * `archivemodule 1` Archives the first module in the displayed list.
  
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
 
-Other helpful example(s):
+`CS2105` has been shifted into the archived module list
 
-  * `archivemodule 2` Archives the second module in the displayed list.
-
-#### Un-archiving a module: `unarchivemodule`(David)
+#### Un-archiving a module: `unarchivemodule` (David)
   
 Un-Archives a module in the module list and moves it back into current module list storage.
 
@@ -201,12 +211,11 @@ Format: `unarchivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Examples:
+ Example(s):
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
- * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
 
 
-#### View-archived modules: `viewarchive`(David)
+#### View-archived modules: `viewarchive` (David)
 
 Allows you to view the archived module list on the display.
 
@@ -217,7 +226,7 @@ Format: `viewarchive`
  Examples:
  * `viewarchive` Views the archived module list on the display.
 
-#### View un-archived modules: `listmodule`(David)
+#### View un-archived modules: `listmodule` (David)
 
 Allows you to view the un-archived module list on the display.
 
@@ -229,7 +238,7 @@ Format: `listmodule`
  * `listmodule` Views the un-archived module list on the display.
 
 
-#### Locating modules: `findmodule`(David)
+#### Locating modules: `findmodule` (David)
 
  Finds all modules that fulfil your provided module name search criteria.
 
@@ -255,13 +264,13 @@ Format: `listmodule`
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
 
-  Example:
+  Example(s):
 
    * `findmodule cs2030` returns the module(if any) with the module name `CS2030`.
 
    Expected Outcome: 
    
-<p aligin="center"><img src="images/findmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
 
 Only `CS2030` is displayed
        
@@ -431,7 +440,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
-#### Deleting a module: `deletemodule`(David, Joshua)
+#### Deleting a module: `deletemodule` (David, Joshua)
 
 Deletes a module in the displayed module list.
 
@@ -441,10 +450,10 @@ Deletes a module in the displayed module list.
 
    * The index refers to the index number of the module shown on the displayed module list.
 
-  Examples:
+  Example(s):
   * `deletemodule 1` deletes the module at position `1`
 
-#### Editing a module : `editmodule`(David, Joshua, Michael)
+#### Editing a module : `editmodule` (David, Joshua, Michael)
 
 Edits an existing module in the displayed module list with new details.
 
@@ -460,7 +469,7 @@ Edits an existing module in the displayed module list with new details.
    
   * You can remove all the contact’s tags by typing `t/` without specifying any tags after it.
 
- Examples:
+ Example(s):
   * `editmodule 1 n/CS2030` edits the `MODULE_NAME` for a module at index `1` to `CS2030`.
 
   * `editmodule 3 mc/8 gp/4.5` edits the `MODULAR_CREDITS` and `GRADE_POINT` for the module at index `3` to `8.0`
@@ -469,7 +478,7 @@ Edits an existing module in the displayed module list with new details.
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
-#### Clearing the module list: `clearmodule`(David)
+#### Clearing the module list: `clearmodule` (David)
 
 Clears all un-archived modules.
 
@@ -587,25 +596,37 @@ To be implemented:
      
 <p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
-#### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
+#### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
 Calculates your CAP based on completed modules
 
  Format: `calculatecap`
 
-  Examples:
+  Example(s):
   * `calculatecap` calculate the user's cap
 
-#### Calculating target CAP details: `targetcap`(David)
+Expected Outcome: 
+     
+<p aligin="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
+
+CAP has been calculated
+
+#### Calculating target CAP details: `targetcap` (David)
 
 Calculates helpful CAP details based on the target CAP you input
 
- Format: `targetcap [tc/TARGET_CAP]`
+ Format: `targetcap TARGET_CAP`
 
   * The target cap refers to the desired CAP input by you
 
-  Example:
-  * `targetcap tc/4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+  Example(s):
+  * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+
+Expected Outcome: 
+     
+<p aligin="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
+
+Target CAP details has been calculated
 
 ### Todo List Features
 
@@ -1266,7 +1287,7 @@ Expected outcome:<br>
 
 ### General Features
 
-#### Undo previous user command: `undo`(David)
+#### Undo previous user command: `undo` (David)
 
 Undoes the previous user command
 
@@ -1274,42 +1295,37 @@ Undoes the previous user command
 
  Format: `undo`
  
-  Example:
+  Example(s):
   * `undo`
 
-#### Redo previous user command: `redo`(David)
+#### Redo previous user command: `redo` (David)
 
 Redoes the previously undone user command
 
  Format: `redo`
  
-  Example:
+  Example(s):
   * `redo`
 
-#### Exiting the application: `exit`(David)
+#### Exiting the application: `exit` (David)
 
 Exits CAP5Buddy
 
 Format: `exit`
 
-  Example:
+  Example(s):
   * `exit`
 
-#### Getting help : `help`(Team)
+#### Getting help : `help` (David)
 
 Opens the help window
 
 Format: `help`
 
-  Example:
+  Example(s):
   * `help`
   
-<<<<<<< HEAD
-
 ## FAQ (Matthias Li Huankang)
-=======
-## FAQ
->>>>>>> a197ae1a0b74ba6ba6be9a0f42ae925dbb8c2ea6
 
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
@@ -1325,7 +1341,7 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary for Module Tracker(David,Jonas,Joshua,Matthias)
+## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
 --------|------------------
