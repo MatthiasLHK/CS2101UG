@@ -1195,7 +1195,7 @@ Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
 
 
-### Scheduler Features (Matthias Li Huankang)
+### Scheduler Features
 
 #### Scheduler Command Parameters (Matthias Li Huankang)
 
