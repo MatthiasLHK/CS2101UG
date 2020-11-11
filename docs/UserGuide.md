@@ -267,7 +267,7 @@ Format: `listmodule`
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
-### Zoom link management feature
+### Zoom link management feature (Jonas)
 
 The following features allow you to manage the zoom links for your respective modules and perform various zoom link related functions. 
 
