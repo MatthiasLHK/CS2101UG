@@ -20,7 +20,7 @@ details and information more efficiently than traditional GUI apps.
 
 
 --------------------------------------------------------------------------------------------------------------------
-
+(Matthias Li Huankang)
 ## Quick start
 
 1. Ensure you have Java `11` or above installed in your Computer.
@@ -30,10 +30,10 @@ details and information more efficiently than traditional GUI apps.
 1. Copy the file to the folder you want to use as the _home folder_ for the CAP5Buddy application.
 
 1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. <br>
-![GUI](images/ui.png)
+<p aligin="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-
+(Matthias Li Huankang)
 ## Navigating the GUI
 
 ![GUI](images/OverallGUISnapShotWithLabels.png)
@@ -103,7 +103,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule`(David, Joshua)
+#### Adding a new module: `addmodule`(David, Joshua, Matthias Li Huankang)
 
 Creates and add a new module to be stored in the system.
 
@@ -149,6 +149,7 @@ New module `CS2103T` tagged as completed has been added
 
    * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
       and 4.5 grade points with the tags `completed` and `year1`.
+
 
 #### Viewing a module: `viewmodule`(David, Joshua)
 
@@ -199,7 +200,7 @@ Expected Outcome:
 `CS2105` has been shifted into the archived module list
 
 #### Un-archiving a module: `unarchivemodule`(David)
-
+  
 Un-Archives a module in the module list and moves it back into current module list storage.
 
 Format: `unarchivemodule` `INDEX`
@@ -214,6 +215,7 @@ Format: `unarchivemodule` `INDEX`
 
  Example(s):
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
+
 
 #### View-archived modules: `viewarchive`(David)
 
@@ -236,6 +238,7 @@ Format: `listmodule`
 
  Examples:
  * `listmodule` Views the un-archived module list on the display.
+
 
 #### Locating modules: `findmodule`(David)
 
@@ -274,7 +277,7 @@ Format: `listmodule`
 Only `CS2030` is displayed
        
   Other helpful example(s):
-   
+
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
@@ -439,7 +442,6 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
-
 #### Deleting a module: `deletemodule`(David, Joshua)
 
 Deletes a module in the displayed module list.
@@ -1194,6 +1196,7 @@ Expected Outcome: <br>
 
 ### Scheduler Features
 
+(Matthias Li Huankang)
 #### Adding an Event to the Scheduler: `addevent`
 
 Creates and add a new Event with the specified information from the user input
@@ -1291,6 +1294,7 @@ Format: `help`
   
 ## FAQ
 
+(Matthias Li Huankang)
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
 
@@ -1361,6 +1365,7 @@ Action | Format, Examples
 
 ## Command summary for Scheduler
 
+(Matthias Li Huankang)
 Action | Format, Examples
 -------|-------------------------
 **Add Event** | `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]` <br> e.g. `addevent n/CS2103T d/12-2-2020 t/Important`
