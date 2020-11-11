@@ -103,7 +103,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule`(David, Joshua, Matthias Li Huankang)
+#### Adding a new module: `addmodule` (David, Joshua, Matthias Li Huankang)
 
 Creates and add a new module to be stored in the system.
 
@@ -126,7 +126,7 @@ Expected Outcome:
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
 
-#### Adding a new completed module: `addcmodule`(David)
+#### Adding a new completed module: `addcmodule` (David)
 
 Creates and add a new completed module to be stored in the system.
 
@@ -141,7 +141,7 @@ Creates and add a new completed module to be stored in the system.
       and 5 grade points with a `completed` tag.
    Expected Outcome: 
     
-<p aligin="center"><img src="images/ModuleTracker/addcmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
     
 New module `CS2103T` tagged as completed has been added
 
@@ -151,7 +151,7 @@ New module `CS2103T` tagged as completed has been added
       and 4.5 grade points with the tags `completed` and `year1`.
 
 
-#### Viewing a module: `viewmodule`(David, Joshua)
+#### Viewing a module: `viewmodule` (David, Joshua)
 
 Displays a snapshot of a module stored in the system.
 
@@ -176,7 +176,7 @@ Expected Outcome:
 
 Module details for `CS2030` is being displayed
 
-#### Archiving a module: `archivemodule`(David)
+#### Archiving a module: `archivemodule` (David)
 
 Archives a module in the module list and moves it into archived storage.
 
@@ -199,7 +199,7 @@ Expected Outcome:
 
 `CS2105` has been shifted into the archived module list
 
-#### Un-archiving a module: `unarchivemodule`(David)
+#### Un-archiving a module: `unarchivemodule` (David)
   
 Un-Archives a module in the module list and moves it back into current module list storage.
 
@@ -217,7 +217,7 @@ Format: `unarchivemodule` `INDEX`
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
 
 
-#### View-archived modules: `viewarchive`(David)
+#### View-archived modules: `viewarchive` (David)
 
 Allows you to view the archived module list on the display.
 
@@ -228,7 +228,7 @@ Format: `viewarchive`
  Examples:
  * `viewarchive` Views the archived module list on the display.
 
-#### View un-archived modules: `listmodule`(David)
+#### View un-archived modules: `listmodule` (David)
 
 Allows you to view the un-archived module list on the display.
 
@@ -240,7 +240,7 @@ Format: `listmodule`
  * `listmodule` Views the un-archived module list on the display.
 
 
-#### Locating modules: `findmodule`(David)
+#### Locating modules: `findmodule` (David)
 
  Finds all modules that fulfil your provided module name search criteria.
 
@@ -442,7 +442,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
-#### Deleting a module: `deletemodule`(David, Joshua)
+#### Deleting a module: `deletemodule` (David, Joshua)
 
 Deletes a module in the displayed module list.
 
@@ -452,10 +452,10 @@ Deletes a module in the displayed module list.
 
    * The index refers to the index number of the module shown on the displayed module list.
 
-  Examples:
+  Example(s):
   * `deletemodule 1` deletes the module at position `1`
 
-#### Editing a module : `editmodule`(David, Joshua, Michael)
+#### Editing a module : `editmodule` (David, Joshua, Michael)
 
 Edits an existing module in the displayed module list with new details.
 
@@ -471,7 +471,7 @@ Edits an existing module in the displayed module list with new details.
    
   * You can remove all the contact’s tags by typing `t/` without specifying any tags after it.
 
- Examples:
+ Example(s):
   * `editmodule 1 n/CS2030` edits the `MODULE_NAME` for a module at index `1` to `CS2030`.
 
   * `editmodule 3 mc/8 gp/4.5` edits the `MODULAR_CREDITS` and `GRADE_POINT` for the module at index `3` to `8.0`
@@ -480,7 +480,7 @@ Edits an existing module in the displayed module list with new details.
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
-#### Clearing the module list: `clearmodule`(David)
+#### Clearing the module list: `clearmodule` (David)
 
 Clears all un-archived modules.
 
@@ -598,13 +598,13 @@ To be implemented:
      
 <p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
-#### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
+#### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
 Calculates your CAP based on completed modules
 
  Format: `calculatecap`
 
-  Example:
+  Example(s):
   * `calculatecap` calculate the user's cap
 
 Expected Outcome: 
@@ -621,7 +621,7 @@ Calculates helpful CAP details based on the target CAP you input
 
   * The target cap refers to the desired CAP input by you
 
-  Example:
+  Example(s):
   * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
 
 Expected Outcome: 
@@ -1254,7 +1254,7 @@ Format: `listevent`
 
 ### General Features
 
-#### Undo previous user command: `undo`(David)
+#### Undo previous user command: `undo` (David)
 
 Undoes the previous user command
 
@@ -1262,34 +1262,34 @@ Undoes the previous user command
 
  Format: `undo`
  
-  Example:
+  Example(s):
   * `undo`
 
-#### Redo previous user command: `redo`(David)
+#### Redo previous user command: `redo` (David)
 
 Redoes the previously undone user command
 
  Format: `redo`
  
-  Example:
+  Example(s):
   * `redo`
 
-#### Exiting the application: `exit`(David)
+#### Exiting the application: `exit` (David)
 
 Exits CAP5Buddy
 
 Format: `exit`
 
-  Example:
+  Example(s):
   * `exit`
 
-#### Getting help : `help`(Team)
+#### Getting help : `help` (David)
 
 Opens the help window
 
 Format: `help`
 
-  Example:
+  Example(s):
   * `help`
   
 ## FAQ
@@ -1309,7 +1309,7 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary for Module Tracker(David,Jonas,Joshua,Matthias)
+## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
 --------|------------------
