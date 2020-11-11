@@ -1,0 +1,77 @@
+@startuml
+!include style.puml
+skinparam arrowThickness 1.1
+skinparam arrowColor LOGIC_COLOR_T4
+skinparam classBackgroundColor LOGIC_COLOR
+
+package Logic {
+
+package Parser {
+Interface Parser <<Interface>>
+Class ModuleListParser
+Class ContactListParser
+Class TodoListParser
+Class GradeTrackerParser
+Class SchedulerParser
+Class XYZParser
+Class CliSyntax
+Class ParserUtil
+Class ArgumentMultimap
+Class ArgumentTokenizer
+Class Prefix
+}
+
+package Command {
+Class XYZCommand
+Class CommandResult
+Class "{abstract}\nCommand" as Command
+}
+
+Interface Logic <<Interface>>
+Class LogicManager
+Class ParserManager
+}
+
+package Model{
+Class HiddenModel #FFFFFF
+}
+
+Class HiddenOutside #FFFFFF
+HiddenOutside ..> Logic
+
+LogicManager .up.|> Logic
+LogicManager -->"1" ParserManager
+ParserManager -->"1" ModuleListParser
+ParserManager -->"1" ContactListParser
+ParserManager -->"1" TodoListParser
+ParserManager -->"1" GradeTrackerParser
+ParserManager -->"1" SchedulerParser
+
+ModuleListParser .down.> XYZParser: creates >
+ContactListParser .down.> XYZParser: creates >
+TodoListParser .down.> XYZParser: creates >
+GradeTrackerParser .down.> XYZParser: creates >
+SchedulerParser .down.> XYZParser: creates >
+
+XYZParser ..> XYZCommand : creates >
+XYZParser ..|> Parser
+XYZParser ..> ArgumentMultimap
+XYZParser ..> ArgumentTokenizer
+ArgumentTokenizer .left.> ArgumentMultimap
+XYZParser ..> CliSyntax
+CliSyntax ..> Prefix
+XYZParser ..> ParserUtil
+ParserUtil .down.> Prefix
+ArgumentTokenizer .down.> Prefix
+XYZCommand -up--|> Command
+LogicManager .left.> Command : executes      >
+
+LogicManager ---> Model
+Command .right.> Model
+note right of XYZCommand: XYZCommand = AddModuleCommand, \nFindTaskCommand, etc
+
+Logic ..> CommandResult
+LogicManager .down.> CommandResult
+Command .up.> CommandResult
+CommandResult -[hidden]-> Parser
+@enduml
