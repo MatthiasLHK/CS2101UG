@@ -290,7 +290,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
-#### Zoom link command parameters
+#### Zoom link command parameters (Jonas)
 
 * **`ZOOM_LINK`**:
 
@@ -313,7 +313,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
   * Example: `Lecture-weds`
 
 
-#### Adding a zoom link for a specific lesson to a module: `addzoom`
+#### Adding a zoom link for a specific lesson to a module: `addzoom`      (Jonas)
 
 Adds a zoom link for a specific lesson to an existing module.
 
@@ -352,7 +352,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   ![AddZoom](images/Module/AddZoomUG.PNG)
 
 
-#### Editing a zoom link of a specific lesson in a module: `editzoom`
+#### Editing a zoom link of a specific lesson in a module: `editzoom`         (Jonas)
 
 Edits a zoom link of a specific lesson in a module.
 
@@ -399,7 +399,7 @@ Edits a zoom link of a specific lesson in a module.
    
 
 
-#### Deleting a zoom link for a specific lesson from a module: `deletezoom`
+#### Deleting a zoom link for a specific lesson from a module: `deletezoom`        (Jonas)
 
 Deletes a zoom link for a specific lesson from an existing module.
 
@@ -727,7 +727,7 @@ and the priority to `HIGH`.
 and the `DATE` to `2020-11-04`.
 
 
-#### Locating tasks: `findtask` (Jonas)
+#### Locating tasks: `findtask`          (Jonas)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -890,7 +890,7 @@ The following features allow you to manage a list of contacts and perform variou
 
 The section below provides some useful details about the contact list features.
 
-#### Contact command parameters
+#### Contact command parameters    (Jonas)
 
 A contact list feature can use one or more of the following parameters:
 
@@ -952,7 +952,7 @@ A contact list feature can use one or more of the following parameters:
 
 
 
-#### Adding a contact: `addcontact`
+#### Adding a contact: `addcontact`             (Jonas)
 
 Adds a new contact into the contact list if it does not already exist.
 
@@ -970,7 +970,7 @@ Expected Outcome:
 ![AddContactOutcome](images/contact/AddContactUG.PNG)
 
 
-#### Locating contacts: `findcontact`
+#### Locating contacts: `findcontact`              (Jonas)
 
  Finds all contacts that fulfil all the provided search criteria.
 
@@ -1023,7 +1023,7 @@ Expected Outcome:
    * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags
 
 
-#### Listing all contacts: `listcontact`
+#### Listing all contacts: `listcontact`          (Jonas)
 
  Shows a list of all contacts in the contact list.
 
@@ -1045,7 +1045,7 @@ Expected Outcome:
  ![ListContact](images/contact/ListContactUG.PNG)
 
 
-#### Editing a contact: `editcontact`
+#### Editing a contact: `editcontact`              (Jonas)
 
  Edits an existing contact in the contact list.
 
@@ -1075,7 +1075,7 @@ Expected Outcome:
 
 
 
-#### Deleting a contact: `deletecontact`
+#### Deleting a contact: `deletecontact`               (Jonas)
 
 Deletes the specified contact from the contact list.
 
@@ -1112,7 +1112,7 @@ Examples:
 
 * `sortcontact r` might produce a list of `{sasha, michael}`.
 
-#### Marking contacts as important: `importantcontact`
+#### Marking contacts as important: `importantcontact`  
 
 Marks a task as `Important`.
 
@@ -1148,7 +1148,7 @@ Examples:
 * `resetcontact 2` mark the second contact in the list as `Not Important`.
 
 
-#### Clearing the contact list: `clearcontact`
+#### Clearing the contact list: `clearcontact`                  (Jonas)
 
 Clears all contacts in the contact list.
 
