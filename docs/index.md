@@ -20,8 +20,7 @@ details and information more efficiently than traditional GUI apps.
 
 
 --------------------------------------------------------------------------------------------------------------------
-(Matthias Li Huankang)
-## Quick start
+## Quick start (Matthias Li Huankang)
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
@@ -33,34 +32,33 @@ details and information more efficiently than traditional GUI apps.
 <p aligin="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-(Matthias Li Huankang)
-## Navigating the GUI
+## Navigating the GUI (Matthias Li Huankang)
 
 ![GUI](images/OverallGUISnapShotWithLabels.png)
 
-### Key Components
+### Key Components (Matthias Li Huankang)
 
-#### Help Window
+#### Help Window (Matthias Li Huankang)
 You can click this button to open up the User Guide help window.
 
-#### Additional information Display Panel
+#### Additional information Display Panel (Matthias Li Huankang)
 This panel displays all the additional information of each item when a view Command is called.
 
-#### Calendar
+#### Calendar (Matthias Li Huankang)
 This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
 those days that have an existing event with a color coded box.
 
-#### Command Box
+#### Command Box (Matthias Li Huankang)
 Here is where you enter your command input to be executed by the application.
 
-#### Results Display Panel
+#### Results Display Panel (Matthias Li Huankang)
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
-#### Main Item Display Panel
+#### Main Item Display Panel (Matthias Li Huankang)
 Here is where all of the items that are added into the application can be found. It shows all the items as individual cell boxes.
 
-#### List Tabs Panel
+#### List Tabs Panel (Matthias Li Huankang)
 From here, you can choose between the different windows to view.
 
 
@@ -103,8 +101,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-(Matthias Li Huankang)
-#### Adding a new module: `addmodule`
+#### Adding a new module: `addmodule` (Matthias Li Huankang)
 
 Creates and add a new module to be stored in the system.
 
@@ -114,7 +111,7 @@ Creates and add a new module to be stored in the system.
 
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
-   Example :
+   Example(s):
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
    
 Expected Outcome: 
@@ -1170,63 +1167,98 @@ Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
 
 
-### Scheduler Features
+### Scheduler Features (Matthias Li Huankang)
 
-(Matthias Li Huankang)
-#### Adding an Event to the Scheduler: `addevent`
+#### Scheduler Command Parameters (Matthias Li Huankang)
+
+* **Event name**<br>
+Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
+throw an invalid naming error.
+
+* **Event time**<br>
+The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
+follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
+be thrown.
+
+* **Tags**<br>
+For the naming of Tags, there cannot be any spacing in the name of the Tag.
+
+#### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
 Creates and add a new Event with the specified information from the user input
 
   Format: `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]`
-<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
-   Examples:
-    * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.(Expected result shown in above image.)
-    * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.
+  
+Example:<br>
+ * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.<br>
 
-#### Deleting an Event from the Scheduler: `deleteevent`
+Expected outcome:<br>
+<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+
+Other helpful example(s):<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.<br>
+
+#### Deleting an Event from the Scheduler: `deleteevent` (Matthias Li Huankang)
 
 You can delete an existing event from the list by specifying the index.
 
   Format: `deleteevent index`
 
-   Example:
-    * `deleteevent 1` deletes the event of index 1 from the EventList.
+   Example:<br>
+* `deleteevent 1` deletes the event of index 1 from the EventList.
 
-#### Editing an Event from the Scheduler: `editevent`
+Expected outcome:<br>
+<p aligin="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
+
+#### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
 You can select an existing event from the list and modify the information such
 as event name and the event date.
 
   Format: `editevent index [n/new name] [d/new date]`<br>
   **Note:** All fields are optional but at least 1 of them must be present.
-<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
-   Examples:
-    * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant. (Expected result shown in above image.)
-    * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.
-    * `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.
-    * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.
 
-#### Finding an Event from the Scheduler: `findevent`
+Example:<br>
+* `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
+
+Expected outcome:<br>
+
+<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+
+Other helpful example(s):<br>
+* `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
+* `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.<br>
+* `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.<br>
+
+#### Finding an Event from the Scheduler: `findevent` (Matthias Li Huankang)
 
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
 
-  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`
-  **Note:** All fields are optional but at least 1 of them must be present.
+  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
+  **Note:** All fields are optional but at least 1 of them must be present.<br>
+Example:<br>
+* `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
-   Examples:
-    * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.
-    * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.
+Expected outcome:<br>
+<p aligin="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
 
-#### List events: `listevent`
+Other helpful example(s):<br>
+* `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
+* `findevent n/ CS2103T d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
 
-Allows you to view all events.
+#### List events: `listevent` (Matthias Li Huankang)
 
-Format: `listevent`
+Allows you to view all events. <br>
 
- Examples:
- * `listevent` Views the event list on the display.
+  Format: `listevent`<br>
+
+   Example:<br>
+* `listevent` Views the event list on the display.<br>
+
+Expected outcome:<br>
+<p aligin="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
 
 ### General Features
 
@@ -1274,9 +1306,8 @@ Format: `help`
   to restore the list.
   
 
-## FAQ
+## FAQ (Matthias Li Huankang)
 
-(Matthias Li Huankang)
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
 
@@ -1345,9 +1376,8 @@ Action | Format, Examples
 **Clear Tasks** | `cleartask`
 
 
-## Command summary for Scheduler
+## Command summary for Scheduler (Matthias Li Huankang)
 
-(Matthias Li Huankang)
 Action | Format, Examples
 -------|-------------------------
 **Add Event** | `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]` <br> e.g. `addevent n/CS2103T d/12-2-2020 t/Important`
