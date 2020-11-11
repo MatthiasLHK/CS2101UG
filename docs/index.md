@@ -20,7 +20,7 @@ details and information more efficiently than traditional GUI apps.
 
 
 --------------------------------------------------------------------------------------------------------------------
-
+(Matthias Li Huankang)
 ## Quick start
 
 1. Ensure you have Java `11` or above installed in your Computer.
@@ -30,10 +30,10 @@ details and information more efficiently than traditional GUI apps.
 1. Copy the file to the folder you want to use as the _home folder_ for the CAP5Buddy application.
 
 1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. <br>
-![GUI](images/ui.png)
+<p aligin="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-
+(Matthias Li Huankang)
 ## Navigating the GUI
 
 ![GUI](images/OverallGUISnapShotWithLabels.png)
@@ -103,7 +103,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule`(David, Joshua)
+#### Adding a new module: `addmodule`(David, Joshua, Matthias Li Huankang)
 
 Creates and add a new module to be stored in the system.
 
@@ -1175,6 +1175,7 @@ Expected Outcome: <br>
 
 ### Scheduler Features
 
+(Matthias Li Huankang)
 #### Adding an Event to the Scheduler: `addevent`
 
 Creates and add a new Event with the specified information from the user input
@@ -1272,6 +1273,7 @@ Format: `help`
   
 ## FAQ
 
+(Matthias Li Huankang)
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
 
@@ -1342,6 +1344,7 @@ Action | Format, Examples
 
 ## Command summary for Scheduler
 
+(Matthias Li Huankang)
 Action | Format, Examples
 -------|-------------------------
 **Add Event** | `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]` <br> e.g. `addevent n/CS2103T d/12-2-2020 t/Important`
