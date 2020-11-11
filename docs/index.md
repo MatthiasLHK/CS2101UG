@@ -118,7 +118,7 @@ Expected Outcome:
   
 <p aligin="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
   
-  New module `CS2103T` has been added
+  _New module `CS2103T` has been added_
   
   Other helpful example(s):
 
@@ -141,7 +141,7 @@ Creates and add a new completed module to be stored in the system.
     
 <p aligin="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
     
-New module `CS2103T` tagged as completed has been added
+_New module `CS2103T` tagged as completed has been added_
 
    Other helpful example(s):
 
@@ -172,7 +172,7 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-Module details for `CS2030` is being displayed
+_Module details for `CS2030` is being displayed_
 
 #### Archiving a module: `archivemodule` (David)
 
@@ -195,7 +195,7 @@ Expected Outcome:
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
 
-`CS2105` has been shifted into the archived module list
+_`CS2105` has been shifted into the archived module list_
 
 #### Un-archiving a module: `unarchivemodule` (David)
   
@@ -272,7 +272,7 @@ Format: `listmodule`
    
 <p aligin="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
 
-Only `CS2030` is displayed
+_Only `CS2030` is displayed_
        
   Other helpful example(s):
 
@@ -598,35 +598,35 @@ To be implemented:
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
-Calculates your CAP based on completed modules
+Calculates your CAP based on completed modules.
 
  Format: `calculatecap`
 
   Example(s):
-  * `calculatecap` calculate the user's cap
+  * `calculatecap` calculate the user's cap.
 
 Expected Outcome: 
      
 <p aligin="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
 
-CAP has been calculated
+_CAP has been calculated_
 
 #### Calculating target CAP details: `targetcap` (David)
 
-Calculates helpful CAP details based on the target CAP you input
+Calculates helpful CAP details based on the target CAP you input.
 
  Format: `targetcap TARGET_CAP`
 
-  * The target cap refers to the desired CAP input by you
+  * The target cap refers to the desired CAP input by you.
 
   Example(s):
-  * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+  * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP.
 
 Expected Outcome: 
      
-<p aligin="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>  
 
-Target CAP details has been calculated
+_Target CAP details has been calculated_
 
 ### Todo List Features
 
