@@ -113,12 +113,14 @@ Creates and add a new module to be stored in the system.
 
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
-   Example :
+   Example(s) :
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
    
 Expected Outcome: 
   
-<p aligin="center"><img src="images/addmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
+  
+  New module `CS2103T` has been added
   
   Other helpful example(s):
 
@@ -134,9 +136,17 @@ Creates and add a new completed module to be stored in the system.
    * Completed modules can be modified using `editmodule`. Do note that editing tags will reset all existing tags, therefore in order to keep the completed tag after editing, you must specify the completed tag parameter in the `editmodule` command by adding `t/completed` to your command line exactly.
    * Completed modules added this way will be used for CAP calculation purposes.
 
-   Examples:
+   Example(s):
    * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
       and 5 grade points with a `completed` tag.
+   Expected Outcome: 
+    
+<p aligin="center"><img src="images/ModuleTracker/addcmodule.png" border="2px solid black"></p>
+    
+New module `CS2103T` tagged as completed has been added
+
+   Other helpful example(s):
+
    * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
       and 4.5 grade points with the tags `completed` and `year1`.
 
@@ -156,12 +166,14 @@ Displays a snapshot of a module stored in the system.
   
   * Note that the displayed snapshot is not updated when the module being displayed is changed.
 
-  Example:
+  Example(s):
    * `viewmodule 1` views the first module in the displayed list.
    
 Expected Outcome: 
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
+
+Module details for `CS2030` is being displayed
 
 #### Archiving a module: `archivemodule`(David)
 
@@ -177,17 +189,14 @@ Format: `archivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Example:
+ Example(s):
  * `archivemodule 1` Archives the first module in the displayed list.
  
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
 
-
-Other helpful example(s):
-
-  * `archivemodule 2` Archives the second module in the displayed list.
+`CS2105` has been shifted into the archived module list
 
 #### Un-archiving a module: `unarchivemodule`(David)
 
@@ -203,9 +212,8 @@ Format: `unarchivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Examples:
+ Example(s):
  * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
- * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
 
 #### View-archived modules: `viewarchive`(David)
 
@@ -255,13 +263,13 @@ Format: `listmodule`
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
 
-  Example:
+  Example(s):
 
    * `findmodule cs2030` returns the module(if any) with the module name `CS2030`.
 
    Expected Outcome: 
    
-<p aligin="center"><img src="images/findmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
 
 Only `CS2030` is displayed
        
@@ -594,19 +602,31 @@ Calculates your CAP based on completed modules
 
  Format: `calculatecap`
 
-  Examples:
+  Example:
   * `calculatecap` calculate the user's cap
 
-#### Calculating target CAP details: `targetcap`(David)
+Expected Outcome: 
+     
+<p aligin="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
+
+CAP has been calculated
+
+#### Calculating target CAP details: `targetcap` (David)
 
 Calculates helpful CAP details based on the target CAP you input
 
- Format: `targetcap [tc/TARGET_CAP]`
+ Format: `targetcap TARGET_CAP`
 
   * The target cap refers to the desired CAP input by you
 
   Example:
-  * `targetcap tc/4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+  * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+
+Expected Outcome: 
+     
+<p aligin="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
+
+Target CAP details has been calculated
 
 ### Todo List Features
 
