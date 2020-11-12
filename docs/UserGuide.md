@@ -5,7 +5,7 @@ title: User Guide
 
 ## Introduction
 
-Do you even find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
+Do you find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
 
 CAP5Buddy is a desktop application that helps NUS SoC students to keep track of their module details efficiently.
@@ -43,8 +43,8 @@ details and information more efficiently than traditional GUI apps.
 #### Help Window
 You can click this button to open up the User Guide help window.
 
-#### Additional information Display Panel
-This panel displays all the additional information of each item when a view Command is called.
+#### Additional Information Display Panel
+This panel displays all the additional information of each item when a `view` Command is called.
 
 #### Calendar
 This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
@@ -55,7 +55,7 @@ Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
-or error message.
+and error messages.
 
 #### Main Item Display Panel
 Here is where all of the items that are added into the application can be found. It shows all the items as individual cell boxes.
@@ -93,7 +93,7 @@ Some common symbols that can be found in the user guide and their meanings:
   e.g. if the command specifies `edittask INDEX [n/NAME] [p/PRIORITY]`, then `edittask INDEX [p/PRIORITY] [n/NAME]` is also acceptable, but
   `edittask [n/NAME] INDEX [p/PRIORITY]` is not allowed.
 
-* If you enter duplicate parameters when the command format does not expect multiple occurrence of the same parameter, i.e.
+* If you enter duplicate parameters when the command format does not expect multiple occurrences of the same parameter, i.e.
   parameters without `...` at the back in the command format (e.g. n/NAME), the application will only consider the argument of the last
   occurring duplicate parameter.
   e.g. in `addtask n/Week 11 quiz n/Lab assignment`, `n/Week 11 quiz` will be ignored and a task with the name `Lab assignment` will be added.
@@ -103,6 +103,55 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
+The modules mentioned below represent a module that you would be taking as an NUS School of Computing student, such as CS2103T or CS2101.
+
+The section below provides some useful details about the module tracker features.
+
+####Module command parameters (Joshua)
+
+A module tracker feature can use one or more of the following parameters:
+
+* **`MODULE_NAME`**: (Joshua)
+
+   * Represents the module code of the module.
+  
+   * Must match the module's module code exactly (i.e. capitalised and follows the same formatting).
+  
+   * Examples: `CS2103T`, `CS2100`
+  
+   * All modules must have a module name.
+  
+
+* **`MODULE_CREDITS`**: (Joshua)
+
+   * Represents the number of modular credits this module is worth.
+  
+   * Modular credits should be given as a valid number and follow the typical module's number of modular credits(e.g. 4.0, 8.0).
+       
+   * All modules start with 4.0 modular credits on creation but the value can be edited.
+   
+* **`GRADE`**: (Joshua)
+
+  * Represents the current overall grade achieved for the module.
+  
+  * Grades are updated automatically by the assignments (See [below](#what-is-an-assignment---assignment-joshua)).
+     
+* **`GRADE_POINT`**: (Joshua)
+
+   * Represents the grade point achieved after completion of the module.
+   
+   * Grade point should be converted to a number (e.g A- should be converted to 4.5, B to 3.5).
+
+* **`TAG`**: (Joshua)
+
+  * Represents a tag that can be used to describe a module.
+  
+  * Tag names should be alphanumeric and should not be blank or contain whitespaces.
+  
+  * Examples: `Coremodule`, `Completed`
+  
+  * Tag is not a compulsory field of a module.
+   
 #### Adding a new module: `addmodule`(David, Joshua)
 
 Creates and add a new module to be stored in the system.
@@ -114,7 +163,7 @@ Creates and add a new module to be stored in the system.
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
    Example :
-   * `addmodule n/CS2103T` creates and adds the module CS2103T.
+   * `addmodule n/CS2103T` creates and adds the module `CS2103T`.
    
 Expected Outcome: 
   
@@ -122,23 +171,25 @@ Expected Outcome:
   
   Other helpful example(s):
 
-   * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
+   * `addmodule n/CS2103T t/Coremodule` creates and adds the module `CS2103T` with the tag `CoreModule`.
 
 #### Adding a new completed module: `addcmodule`(David)
 
-Creates and add a new completed module to be stored in the system.
+Creates and adds a new, completed module to be stored in the system.
 
   Format: `addcmodule n/NAME mc/MODULAR_CREDITS gp/GRADE_POINT [t/TAG]...`
 
    * Using this command to add a completed module will automatically tag the module as completed.
+   
    * Completed modules can be modified using `editmodule`. Do note that editing tags will reset all existing tags, therefore in order to keep the completed tag after editing, you must specify the completed tag parameter in the `editmodule` command by adding `t/completed` to your command line exactly.
+   
    * Completed modules added this way will be used for CAP calculation purposes.
 
    Examples:
-   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
-      and 5 grade points with a `completed` tag.
-   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
-      and 4.5 grade points with the tags `completed` and `year1`.
+   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named `CS2103T` with `4` modular credits
+      and `5` grade points with a `completed` tag.
+   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named `CS2101` with `2` modular credits
+      and `4.5` grade points with the tags `completed` and `year1`.
 
 #### Viewing a module: `viewmodule`(David, Joshua)
 
@@ -146,7 +197,7 @@ Displays a snapshot of a module stored in the system.
 
  Format: `viewmodule` `INDEX`
     
-  * The module viewed will be at the `INDEX` position of the current displayed list.
+  * The module viewed will be the module at the `INDEX` position of the current displayed list.
 
   * The index refers to the index number of the module shown on the displayed module list.
 
@@ -169,7 +220,7 @@ Archives a module in the module list and moves it into archived storage.
 
 Format: `archivemodule` `INDEX`
 
- * The module archived will be at the `INDEX` position of the currently displayed un-archived list.
+ * The module archived will be at the `INDEX` position of the currently displayed un-archived module list.
 
  * The index refers to the index number of the module shown on the displayed un-archived module list.
  
@@ -178,24 +229,19 @@ Format: `archivemodule` `INDEX`
  * The index **must be a positive integer** 1, 2, 3...
 
  Example:
- * `archivemodule 1` Archives the first module in the displayed list.
+ * `archivemodule 1` archives the first module in the displayed list.
  
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
-
-
-Other helpful example(s):
-
-  * `archivemodule 2` Archives the second module in the displayed list.
-
+  
 #### Un-archiving a module: `unarchivemodule`(David)
 
-Un-Archives a module in the module list and moves it back into current module list storage.
+Un-Archives a module in the archived module list and moves it back into the current module list storage.
 
 Format: `unarchivemodule` `INDEX`
 
- * The module un-archived will be at the `INDEX` position of the currently displayed archived list.
+ * The module un-archived will be at the `INDEX` position of the currently displayed archived module list.
 
  * The index refers to the index number of the module shown on the displayed archived module list.
  
@@ -203,9 +249,8 @@ Format: `unarchivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Examples:
- * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
- * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
+ Example:
+ * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
 #### View-archived modules: `viewarchive`(David)
 
@@ -215,19 +260,19 @@ Format: `viewarchive`
 
  * Executing this command will remove the current un-archived module list from display if you are currently viewing it. You can use the `list` command to display the un-archived module list(See next section).
 
- Examples:
- * `viewarchive` Views the archived module list on the display.
+ Example:
+ * `viewarchive` views the archived module list on the display.
 
 #### View un-archived modules: `listmodule`(David)
 
-Allows you to view the un-archived module list on the display.
+Allows you to view the un-archived module list in the display.
 
 Format: `listmodule`
 
  * Executing this command will remove the current archived module list from display if you are currently viewing it. You can use the `viewarchive` command to display the archived module list(See previous section).
 
- Examples:
- * `listmodule` Views the un-archived module list on the display.
+ Example:
+ * `listmodule` views the un-archived module list on the display.
 
 #### Locating modules: `findmodule`(David)
 
@@ -340,7 +385,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
 
   Example(s):
   
-  `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+  * `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
   in the displayed module list for the lesson `lecture-weds`.
   
   <div markdown="block" class="alert alert-info">
@@ -373,9 +418,6 @@ Edits a zoom link of a specific lesson in a module.
    * The index **must be a positive integer** 1, 2, 3...
    
    * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
    
    <div markdown="block" class="alert alert-info">
 
@@ -427,7 +469,7 @@ Deletes a zoom link for a specific lesson from an existing module.
 
   Example(s):
   
-  `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
+  * `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the first module in the displayed module list.
 
   <div markdown="block" class="alert alert-info">
         
@@ -455,7 +497,7 @@ Deletes a module in the displayed module list.
 
    * The index refers to the index number of the module shown on the displayed module list.
 
-  Examples:
+  Example:
   * `deletemodule 1` deletes the module at position `1`
 
 #### Editing a module : `editmodule`(David, Joshua, Michael)
@@ -472,16 +514,13 @@ Edits an existing module in the displayed module list with new details.
 
   * You can add `[TAG]`s to a module through this command,eg. `Tutorial`.
    
-  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it.
+  * You can remove all the module’s tags by typing `t/` without specifying any tags after it.
 
  Examples:
   * `editmodule 1 n/CS2030` edits the `MODULE_NAME` for a module at index `1` to `CS2030`.
 
   * `editmodule 3 mc/8 gp/4.5` edits the `MODULAR_CREDITS` and `GRADE_POINT` for the module at index `3` to `8.0`
   modular credits and the grade points to `4.5`.
-
- To be implemented:
-  * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
 #### Clearing the module list: `clearmodule`(David)
 
@@ -492,8 +531,8 @@ Format: `clearmodule`
 * _**Tips :**_ If you accidentally cleared the whole module list, you can always use the `undo` command
   to restore the module list.
 
-#### What is an Assignment ? : `Assignment`
-Each assignment is stored under a module and represents the cumulative results achieved for that module. Your
+#### What is an Assignment ? : `Assignment` (Joshua)
+Each assignment is stored under a module and represents the results for the graded assignments for that module. Your
 assignments will contain the following fields:
 
 * **`ASSIGNMENT_NAME`**
@@ -505,25 +544,21 @@ assignments will contain the following fields:
   * Represents the percentage the assignment carries for the final grade, eg. if `Quiz 1` is worth `15`% of the final
   grade, the `ASSIGNMENT_PERCENTAGE` should be `15.0`%.
 
-  * Can only be a value from `0.00 - 1.00`
+  * Can only be a value from `0.00 - 100`
 
 * **`ASSIGNMENT_RESULT`**
 
   * Represents your results attained for the assignment, eg. if a score of `75/100` is achieved for
-  `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `0.75` should be input.
+  `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `75` should be input.
 
 
-#### Adding assignment to a module: `addassignment`
+##### Adding assignment to a module: `addassignment` (Joshua)
 
   Adds an assignment to an existing module.
 
   Format: `addassignment` `n/MODULE_NAME` `a/ASSIGNMENT_NAME` `%/ASSIGNMENT_PERCENTAGE` `r/ASSIGNMENT_RESULT`
 
-  * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME`
-
-  * The assignment takes up a percentage of the final grade, `ASSIGNMENT_PERCENTAGE`.
-
-  * Your `ASSIGNMENT_RESULT` can only range from `0.00 - 100`
+  * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME` that is currently in the displayed un-archived module list.
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
@@ -535,36 +570,41 @@ assignments will contain the following fields:
   
  <p aligin="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
 
-#### Editing an assignment in a module: `editassignment`
+  <div markdown="block" class="alert alert-info">
+        
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `addassignment` command, where `INDEX` refers to the index of the module with the added.
+        
+  </div>
+
+##### Editing an assignment in a module: `editassignment` (Joshua)
 
   Edits an assignment at the specified position in the specified module.
 
   Format: `editassignment` `INDEX` `n/MODULE_NAME` `[a/ASSIGNMENT_NAME]` `[%/ASSIGNMENT_PERCENTAGE]` 
   `[r/ASSIGNMENT_RESULT]`
 
-  * The fields that can be edited are the `ASSIGNMENT_NAME`, `ASSIGNMENT_PERCENTAGE` of the final grade
-  and `ASSIGNMENT_RESULT`.
+  * The fields that can be edited are the `ASSIGNMENT_NAME`, `ASSIGNMENT_PERCENTAGE` and `ASSIGNMENT_RESULT`.
 
   * At least **one** of the optional fields must be present.
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  * Your new `ASSIGNMENT_RESULT` can only range from `0.00 - 100`
-  
-  * The `viewmodule` command needs to be called again to update the assignment visually.
-
-  Examples of usage:
-   * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at position `1` of the module `CS2100` with a new
+  Examples:
+   * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at the first position of the module `CS2100` with a new
    assignment name, `Quiz 1`.
 
-   * `editassignment 1 n/CS2100 %/20 r/80` edits the assignment at position `1` of the module `CS2100` with a new
+   * `editassignment 1 n/CS2100 %/20 r/80` edits the assignment at the first position of the module `CS2100` with a new
    assignment percentage, `20`% of the final grade, and a new assignment result, `80`.
 
-To be implemented:
-  * We are working on showing the assignment changes without the need to call `viewmodule` again as we see the
-  possible hassle involved.
-  
-#### Deleting an assignment in a module: `deleteassignment`
+  <div markdown="block" class="alert alert-info">
+        
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module with the edited assignment.
+        
+  </div>
+    
+##### Deleting an assignment in a module: `deleteassignment` (Joshua)
 
   Deletes an assignment at the specified position in the specified module.
 
@@ -573,28 +613,25 @@ To be implemented:
   * You can retrieve the index of the assignment list by using the `viewmodule` command to list out the details of the module.
 
   * The index **must be a positive integer** 1, 2, 3...
+
+  Example:
+   * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
+
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module where the assignment was deleted from.
+        
+  </div>
   
-  * The changes for your assignment would only be seen through using the `viewmodule` command.
+    
+##### Adding a grade to a module: `addgrade` (Joshua)
 
-
-  Example of usage:
-   * `deleteassignment 1 n/CS2100` deletes the assignment at position `1` of the module `CS2100`.
-   
-#### Adding a grade to a module: `addgrade`
-
-  Adds a grade to the specified module.
+  Adds a grade to the specified module, overwriting the existing grade.
 
   Format: `addgrade` `n/MODULE_NAME` `g/GRADE`
 
   * The `MODULE_NAME` must match exactly with an existing module in the module list.
-  
-  * The `GRADE` can only range from 0 - 100.
-  
-  * The existing `GRADE` will be overwritten by the new `GRADE` being added.
-  
-  * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example of usage:
+  Example:
    * `addgrade n/CS2100 g/85` adds a grade of `85` to the module `CS2100`.
    
    Expected Outcome: 
@@ -608,18 +645,18 @@ Calculates your CAP based on completed modules
  Format: `calculatecap`
 
   Examples:
-  * `calculatecap` calculate the user's cap
+  * `calculatecap` calculate the user's cap.
 
 #### Calculating target CAP details: `targetcap`(David)
 
 Calculates helpful CAP details based on the target CAP you input
 
- Format: `targetcap [tc/TARGET_CAP]`
+ Format: `targetcap tc/TARGET_CAP`
 
   * The target cap refers to the desired CAP input by you
 
   Example:
-  * `targetcap tc/4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+  * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
 
 ### Todo List Features
 
