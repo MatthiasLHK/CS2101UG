@@ -707,6 +707,7 @@ Below are the explanations for each of the information shown above:
   * Task name should contain **30 characters or fewer**.
   
   * **:bulb: Tips :**<br>
+  
   You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
   This way, you can read through the list much faster.
 
@@ -728,6 +729,7 @@ Below are the explanations for each of the information shown above:
   * Each `TAG` can only consist of **one word**.
   
   * **:bulb: Tips :**<br>
+  
   You can set the `TAG` to represent the module that is related to a task.
 
   * Below are examples for the input:
@@ -747,13 +749,14 @@ Below are the explanations for each of the information shown above:
   * You can choose 3 **pre-defined** priority level, which are,
     * `HIGH` (★★★★)
     * `NORMAL` (★★★)
-    * `LOW` (★★)
+    * `LOW` (★★) 
 
   * **:bulb: Tips :**<br>
+  
   Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
   based on `PRIORITY`!
 
-  * **:information: Coming soon!**<br>
+  * **:information_source: Coming soon!**<br>
   In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
 
   * Below are examples for the input:
@@ -772,6 +775,7 @@ Below are the explanations for each of the information shown above:
   * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
   * **:bulb: Tips :**<br>
+  
   You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
   a target deadline that is earlier than the real deadline. It's all up to you.
 
@@ -797,7 +801,8 @@ Below are the explanations for each of the information shown above:
 
   * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
   
-  * **:warning: Warning:**
+  * **:warning: Warning:**<br>
+  
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
 
@@ -841,7 +846,7 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
 
-Examples:
+Example(s):
 
 * `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
 
@@ -860,7 +865,7 @@ Format: `deletetask INDEX`
 
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-Examples:
+Example(s):
 
 * `deletetask 3` deletes the third task in the Todo List.
 
@@ -892,10 +897,11 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
   * Only optional information can be deleted.
 
 * **:warning: Warning:**<br>
+
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
   use the `undo` command. So, don't worry!
 
-Examples:
+Example(s):
 
 Below is an example of editing information of a task:
 
@@ -1005,9 +1011,10 @@ Format: `completetask INDEX`
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
 * **:bulb: Tips:**<br>
+
   You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
 
-Examples:
+Example(s):
 
 * `completetask 1` labels the first task in the list as `COMPLETED`.
 
@@ -1025,9 +1032,11 @@ Format: `resettask INDEX`
 
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-Examples:
+Example(s):
 
 * `resettask 3` resets the third task in the list.
+
+Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png" border="2px solid black"></p>
 
@@ -1048,14 +1057,15 @@ Format: `sorttask [r] CRITERION`
 * `CRITERION` is **pre-defined**, you can choose `NAME`, `PRIORITY`, or `DATE`.
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
-* **:bulb: Tips:**<br>
-Each `CRITERION` has an abbreviated or synonym version that you can use:
-  * You can input `NAME` as `n` (not case-sensitive).
-  * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
-  * You can input `DATE` as `deadline`, `d` (not case-sensitive).
-Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
 
-Examples:
+* **:bulb: Tips:**<br>
+  * Each `CRITERION` has an abbreviated or synonym version that you can use:
+    * You can input `NAME` as `n` (not case-sensitive).
+    * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
+    * You can input `DATE` as `deadline`, `d` (not case-sensitive).
+  * Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
+
+Example(s):
 
 * `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
 
@@ -1070,10 +1080,11 @@ This command allows you to list all the tasks on the list, and also resets the o
 Format: `listtask`
 
 * **:bulb: Tips:**<br> 
+
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
 
-Examples:
+Example(s):
 
 * `listtask` resets the current displayed Todo List to the original list.
 
@@ -1093,7 +1104,7 @@ Format: `cleartask`
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
-Examples :
+Example(s) :
 
 * `cleartask` deletes the whole TodoList.
 
