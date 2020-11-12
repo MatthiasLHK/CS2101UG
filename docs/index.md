@@ -156,7 +156,7 @@ _New module `CS2103T` tagged as completed has been added_
 
 Displays a snapshot of a module stored in the system.
 
- Format: `viewmodule` `INDEX`
+ Format: `viewmodule INDEX`
     
   * The module viewed will be at the `INDEX` position of the current displayed list.
 
@@ -175,13 +175,13 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-_Module details for `CS2030` is being displayed_
+_Module details for `CS2105` is being displayed_
 
 #### Archiving a module: `archivemodule` (David)
 
 Archives a module in the module list and moves it into archived storage.
 
-Format: `archivemodule` `INDEX`
+Format: `archivemodule INDEX`
 
  * The module archived will be at the `INDEX` position of the currently displayed un-archived list.
 
@@ -204,7 +204,7 @@ _`CS2105` has been shifted into the archived module list_
   
 Un-Archives a module in the module list and moves it back into current module list storage.
 
-Format: `unarchivemodule` `INDEX`
+Format: `unarchivemodule INDEX`
 
  * The module un-archived will be at the `INDEX` position of the currently displayed archived list.
 
@@ -226,7 +226,7 @@ Format: `viewarchive`
 
  * Executing this command will remove the current un-archived module list from display if you are currently viewing it. You can use the `list` command to display the un-archived module list(See next section).
 
- Examples:
+ Example(s):
  * `viewarchive` Views the archived module list on the display.
 
 #### View un-archived modules: `listmodule` (David)
@@ -237,7 +237,7 @@ Format: `listmodule`
 
  * Executing this command will remove the current archived module list from display if you are currently viewing it. You can use the `viewarchive` command to display the archived module list(See previous section).
 
- Examples:
+ Example(s):
  * `listmodule` Views the un-archived module list on the display.
 
 
@@ -317,7 +317,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
     
     * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank.
     
-    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`.
+    * Example(s): `https://nus-sg.zoom.us/j/babcyg?pwd=`.
 
 * **`LESSON_NAME`**:
 
@@ -325,7 +325,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
   
   * Lesson name should only contain alphanumeric characters, spaces and the hyphen character, and it should not be blank.
 
-  * Example: `Lecture-weds`.
+  * Example(s): `Lecture-weds`.
 
 
 #### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
@@ -540,7 +540,7 @@ assignments will contain the following fields:
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example:
+  Example(s):
   * `addassignment n/CS2100 a/Quiz 1 %/5 r/80` adds an assignment called `Quiz 1` to the module `CS2100`. `Quiz 1`
   carries `5`% of the final grade and the result for this assignment is `80`.
 
@@ -566,7 +566,7 @@ assignments will contain the following fields:
   
   * The `viewmodule` command needs to be called again to update the assignment visually.
 
-  Examples of usage:
+  Example(s):
    * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at position `1` of the module `CS2100` with a new
    assignment name, `Quiz 1`.
 
@@ -590,7 +590,7 @@ To be implemented:
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
 
-  Example of usage:
+  Example(s):
    * `deleteassignment 1 n/CS2100` deletes the assignment at position `1` of the module `CS2100`.
    
 #### Adding a grade to a module: `addgrade`
@@ -607,7 +607,7 @@ To be implemented:
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example of usage:
+  Example(s):
    * `addgrade n/CS2100 g/85` adds a grade of `85` to the module `CS2100`.
    
    Expected Outcome: 
@@ -715,7 +715,7 @@ Format: `addtask` `n/TASK_NAME` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
 
 * `Date` must be in the form of `YYYY-MM-DD` e.g. `2020-12-20`.
 
-Examples:
+Example(s):
 
 * `addtask n/read book t/DAILY t/HOBBY p/low d/2020-10-10` adds a task with the given input.
 
@@ -735,7 +735,7 @@ Format: `deletetask` `INDEX`
 
 * Index must be a **positive integer**.
 
-Examples:
+Example(s):
 
 * `deletetask 1` deletes the first task in the list.
 
@@ -759,7 +759,7 @@ Format: `edittask` `INDEX` `[n/TASK_NAME]` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]
 
 * Editing the `TAG` will overwrite all the current `TAG`s.
 
-Examples:
+Example(s):
 
 * `edittask 1 n/read chapter 5 p/HIGH` edits the first task name to `read chapter 5` and
 and the priority to `HIGH`.
@@ -863,7 +863,7 @@ Format: `completetask` `INDEX`
 
 * _**Tips :**_ You can change back the status to `Not Completed` by using either the `undo` or `resettask` command.
 
-Examples:
+Example(s):
 
 * `completetask 1` labels the first task in the list as `Completed`.
 
@@ -879,7 +879,7 @@ Format: `resettask` `INDEX`
 
 * `INDEX` must be a **positive integer**.
 
-Examples:
+Example(s):
 
 * `resettask 1` reset the first task in the list.
 
@@ -901,7 +901,7 @@ Format: `sorttask` `[r]` `CRITERION`
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
 
-Examples:
+Example(s):
 
 * `sorttask date` sorts the task from the task with the closest date to the current date to.
 
@@ -942,7 +942,7 @@ A contact list feature can use one or more of the following parameters:
   
    * Can only contain alphanumeric characters and spaces, and should not be blank.
   
-   * Examples: `John`, `Amy`.
+   * Example(s): `John`, `Amy`.
   
    * All contacts must have a name.
   
@@ -962,7 +962,7 @@ A contact list feature can use one or more of the following parameters:
         * Start and end with alphanumeric characters.
         * Consist of alphanumeric characters, a period or a hyphen for the characters in between, if any.
 
-   * Example: `johndoe@gmail.com`.
+   * Example(s): `johndoe@gmail.com`.
 
    * All contacts must have an email address.
 
@@ -977,7 +977,7 @@ A contact list feature can use one or more of the following parameters:
     2. At least 5 characters long, not including the `@` symbol.
     3. Contains only alphanumeric characters or underscore.
     
-  * Examples: `@john_doe`, `@johndoe`.
+  * Example(s): `@john_doe`, `@johndoe`.
   
   * Telegram is a not a compulsory field of a contact.
 
@@ -988,7 +988,7 @@ A contact list feature can use one or more of the following parameters:
   
   * Tags names should be alphanumeric and should not be blank or contain whitespaces.
   
-  * Examples: `friend`, `TA`.
+  * Example(s): `friend`, `TA`.
   
   * Tag is not a compulsory field of a contact.
 
@@ -1166,7 +1166,7 @@ Format: `sortcontact` `[r]`
 
 * `r` is **optional**.
 
-Examples:
+Example(s):
 
 * `sortcontact` might produce a list of `{michael, sasha}`.
 
@@ -1184,7 +1184,7 @@ Format: `importantcontact` `INDEX`
 
 * _**Tips :**_ You remove important mark from contact by using either the `undo` or `resetcontact` command.
 
-Examples:
+Example(s):
 
 * `importantcontact 1` marks the first contact in the list as `Important`.
 
@@ -1201,7 +1201,7 @@ Format: `resetcontact` `INDEX`
 
 * `INDEX` must be a **positive integer**.
 
-Examples:
+Example(s):
 
 * `resetcontact 1` marks the first contact in the list as `Not Important`.
 
@@ -1253,7 +1253,7 @@ Creates and add a new Event with the specified information from the user input
 
   Format: `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]`
   
-Example:<br>
+Example(s):<br>
  * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.<br>
 
 Expected outcome:<br>
@@ -1270,7 +1270,7 @@ You can delete an existing event from the list by specifying the index.
 
   Format: `deleteevent index`
 
-   Example:<br>
+   Example(s):<br>
 * `deleteevent 1` deletes the event of index 1 from the EventList.
 
 Expected outcome:<br>
@@ -1284,7 +1284,7 @@ as event name and the event date.
   Format: `editevent index [n/new name] [d/new date]`<br>
   **Note:** All fields are optional but at least 1 of them must be present.
 
-Example:<br>
+Example(s):<br>
 * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
 
 Expected outcome:<br>
@@ -1302,7 +1302,7 @@ You can search for a particular event based on the name and date. This will retu
 
   Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
   **Note:** All fields are optional but at least 1 of them must be present.<br>
-Example:<br>
+Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
 Expected outcome:<br>
@@ -1318,7 +1318,7 @@ Allows you to view all events. <br>
 
   Format: `listevent`<br>
 
-   Example:<br>
+   Example(s):<br>
 * `listevent` Views the event list on the display.<br>
 
 Expected outcome:<br>
@@ -1444,7 +1444,7 @@ Action | Format, Examples
 **Find Event** | `findevent [n/EVENT_NAME] [d/DATE_TIME]` <br> e.g. `findevent n/CS2103T`
 **List Event** | `listevet` <br> e.g. `listevent`
 
-## Command summary for general features(David)
+## Command summary for general features (David)
 
 Action | Format, Examples
 --------|------------------
