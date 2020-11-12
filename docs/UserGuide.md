@@ -665,28 +665,28 @@ for Todo List, it is a good idea to understand the basic features first.
 
 To access the Todo List, you can click the **Tasks** button to change the tab as shown in the picture below.
 
-<p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png"></p>
 
 The GUI for Todo List will look like this:
 
-<p aligin="center"><img src="images/TodoList/UG/todolistGUI.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
 
 There are 3 big main feature that you can use, which are:
 
 * **Todo List**
   * A **list** that shows all of your tasks.
   
-  <p aligin="center"><img src="images/TodoList/UG/todoList.png" border="2px solid black"></p>
+  <p aligin="center"><img src="images/TodoList/UG/todoList.png"></p>
   
 * **Completion Pie**
   * A **completion chart** that represents the ratio between completed and not completed tasks.
   
-  <p aligin="center"><img src="images/TodoList/UG/completionPie.png" border="2px solid black"></p>
+  <p aligin="center"><img src="images/TodoList/UG/completionPie.png"></p>
   
 * **Future Bar**
   * A **bar chart** that shows your workload in the next 7 days.
   
-  <p aligin="center"><img src="images/TodoList/UG/futureBar.png" border="2px solid black"></p>
+  <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
 
 Now that you understand the GUI, let's take a look how you can store your future tasks!
 
@@ -696,7 +696,7 @@ A task contains some information that can be useful when you are trying to track
 
 Below is a picture of how each task will look like in the Todo List and what information can be stored:
 
-<p aligin="center"><img src="images/TodoList/UG/taskEntry.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/taskEntry.png"></p>
 
 Below are the explanations for each of the information shown above:
 
@@ -852,7 +852,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/addTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
 
 #### Deleting a task: `deletetask` (Michael)
 
@@ -871,7 +871,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/deleteTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
 
 #### Editing a task: `edittask` (Michael)
 
@@ -910,7 +910,7 @@ and the priority to `normal`.
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/editTask1.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/editTask1.png"></p>
 
 In addition, below is an example of how you can delete information of a task:
 
@@ -918,7 +918,7 @@ In addition, below is an example of how you can delete information of a task:
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/editTask2.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/editTask2.png"></p>
 
 #### Locating tasks: `findtask` (Jonas Ng)
 
@@ -1020,7 +1020,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/completeTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
 
 #### Resetting a task: `resettask` (Michael)
 
@@ -1038,7 +1038,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/resetTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
 
 #### Sorting tasks: `sorttask` (Michael)
 
@@ -1071,7 +1071,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/sortTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
 
 #### Listing all tasks: `listtask` (Michael)
 
@@ -1090,7 +1090,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/listTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
 
 #### Clearing the list: `cleartask` (Michael)
 
@@ -1110,7 +1110,7 @@ Example(s) :
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/clearTask.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
