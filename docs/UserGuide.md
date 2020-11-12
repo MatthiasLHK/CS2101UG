@@ -758,7 +758,7 @@ Below are the explanations for each of the information shown above:
     * `HIGH` (★★★★)
     * `NORMAL` (★★★)
     * `LOW` (★★)<br> 
-
+  
 
   <div markdown="block" class="alert alert-info">
   
@@ -918,11 +918,15 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * `TASK_NAME` should not be longer than **30 characters**.
 
+<div markdown="block" class="alert alert-info">
+
 **:information_source: Delete an information from a task:**
 
   * You can delete an information from a task by specifying the prefix with an empty description.
   
   * Only optional information can be deleted.
+
+</div>
 
 <div markdown="block" class="alert alert-info">
 
