@@ -16,7 +16,8 @@ details and information more efficiently than traditional GUI apps.
 
 ### About this user guide (David)
 This user guide will teach you how to use CAP5Buddy and its features to their maximum potential. This user guide contains
- information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below.
+information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below. 
+For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.
 
 * Table of Contents
 {:toc}
@@ -1404,7 +1405,7 @@ Action | Format, Examples
 **View Archived Module List** | `viewarchive `<br> e.g. `viewarchive`
 **View Un-archived Module List** | `listmodule `<br> e.g. `list`
 **Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
-**Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
+**Calculate Target CAP details** | `targetcap TARGET_CAP` <br> e.g. `targetcap 4.5`
 
 ## Command Summary for Contact List (Jonas Ng)
 
