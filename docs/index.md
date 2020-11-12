@@ -45,47 +45,47 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 #### Help Window (Matthias Li Huankang)
 <p align="center"><img src="images/Help.png" border="2px solid black"></p>
-<p align="center"> Help Window </p>
+<p align="center"> <em>Help Window</em> </p>
 
 You can click this button to open up the User Guide help window. It will pop open a new window with the link to
 the User Guide Website.
 
 #### Command Box (Matthias Li Huankang)
 <p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
-<p align="center"> Command Box </p>
+<p align="center"> <em>Command Box</em> </p>
 
 Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
-<p align="center"> Result Display Panel </p>
+<p align="center"> <em>Result Display Panel</em> </p>
 
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
 #### List Tabs Panel (Matthias Li Huankang)
 <p align="center"><img src="images/TabsBar.png" border="2px solid black"></p>
-<p align="center"> List Tabs Panel </p>
+<p align="center"> <em>List Tabs Panel</em> </p>
 
 From here, you can choose between the different windows to view.
 
 #### Main Item Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Main Item Display Panel </p>
+<p align="center"> <em>Main Item Display Panel</em></p>
 
 Here is where all items that are added into the application can be found.
 It shows all the items as individual cell boxes with some of the basic information on the item being shown.
 
 #### Additional Information Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Additional Information Display Panel </p>
+<p align="center"> <em>Additional Information Display Panel</em> </p>
 
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
 #### Calendar (Matthias Li Huankang)
 <p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
-<p align="center"> Calendar </p>
+<p align="center"> <em>Calendar</em> </p>
 
 This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
 that it can easily be identified. From the Calendar figure above, the Calendar also have two buttons that allows the user to
