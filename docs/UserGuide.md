@@ -640,7 +640,7 @@ assignments will contain the following fields:
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
 
-Calculates your CAP based on completed modules
+Calculates your CAP based on completed modules.
 
  Format: `calculatecap`
 
@@ -649,11 +649,11 @@ Calculates your CAP based on completed modules
 
 #### Calculating target CAP details: `targetcap`(David)
 
-Calculates helpful CAP details based on the target CAP you input
+Calculates helpful CAP details based on the target CAP you input.
 
  Format: `targetcap tc/TARGET_CAP`
 
-  * The target cap refers to the desired CAP input by you
+  * The target cap refers to the desired CAP input by you.
 
   Example:
   * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
