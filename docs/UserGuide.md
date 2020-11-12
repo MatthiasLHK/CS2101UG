@@ -778,7 +778,7 @@ Below are the explanations for each of the information shown above:
   
   **:information_source: Coming soon!**<br>
   
-  In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
+  In the next version of CAP5Buddy, you will be able to add <span style="color = yellow;">★★★★★</span> (`HIGHEST`) and <span style="color = yellow;">★</span> (`LOWEST`) priority!
   
   </div>
   
@@ -786,9 +786,9 @@ Below are the explanations for each of the information shown above:
   
     Input | Display Format
     --------|------------------
-    "high" | `HIGH`(★★★★)
-    "High" | `HIGH`(★★★★)
-    "HIGH" | `HIGH`(★★★★)
+    "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
+    "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
+    "LOW" | <span style="color = yellow;">★★</span> (`LOW`)
     "hi" | _**Invalid Input**_<br>(Input should match the priority name)
 
 <br/>
