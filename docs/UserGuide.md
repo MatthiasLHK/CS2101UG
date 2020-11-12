@@ -717,7 +717,7 @@ Below are the explanations for each of the information shown above:
     "Finish Lab02" | `Finish Lab02`
     "Submit reflection" | `Submit reflection`
     " &nbsp; Finalize UG" | `Finalize UG`<br>(Preceding whitespaces are ignored)
-    "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 character)
+    "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 characters)
 
 * **`TAG`**
 
