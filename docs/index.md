@@ -544,6 +544,8 @@ assignments will contain the following fields:
 
   * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME` that is currently in the displayed un-archived module list.
   
+  * All fields are compulsory.
+  
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
   Example:
@@ -553,6 +555,9 @@ assignments will contain the following fields:
   Expected Outcome: 
   
  <p aligin="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
+
+
+_An assignment called `Quiz 1` has been added to `CS2100`. The assignment carries `5`% of the final grade and the result for this assignment is 80/100_
 
   <div markdown="block" class="alert alert-info">
         
