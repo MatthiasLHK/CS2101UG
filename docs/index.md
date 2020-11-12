@@ -952,7 +952,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 **:warning: Warning:**<br>
 
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
-  use the `undo` command. So, don't worry!
+  use the [undo](#undo-previous-user-command-undodavid) command. So, don't worry!
 
 </div>
 
@@ -1073,7 +1073,7 @@ Format: `completetask INDEX`
 
 **:bulb: Tips:**<br>
 
-  You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
+  You can always change back the status to `Not COMPLETED` by using either the [undo](#undo-previous-user-command-undodavid) or [resettask](#resetting-a-task-resettask-michael) command.
 
 </div>
 
@@ -1182,7 +1182,7 @@ Format: `cleartask`
 **:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
-  * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
+  * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undodavid) or [redo](#redo-previous-user-command-redodavid) command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
 </div>
@@ -1433,55 +1433,81 @@ Other helpful example(s):
 
 #### Sorting contacts: `sortcontact`
 
-Sorts the list based on the name of the contact.
+Sorts the list based on the name of the contact using lexicographic ordering.
 
 Format: `sortcontact [r]`
 
-* `r` indicates if the sorted list should have reversed order.
+* `r` indicates if the sorted contact list should have the reversed order of the lexicographic ordering. For example, `sortcontact` 
+will sort the contact list from the name with the lowest lexicographic value to the highest lexicographic value. On the other hand
+`sortcontact r` will have the opposite ordering.
 
 * `r` is **optional**.
 
+
+<div markdown="block" class="alert alert-info">
+
+**:information_source: Lexicographic ordering:**
+
+  * Below are some concrete examples on how the lexicographic ordering works:
+    
+    List | Sorted with `sortcontact` | Sorted with `sortcontact r`
+    -----|---------------------------|--------------------------
+    {Bobby, Bob, Jonathan} | {Bob, Bobby, Jonathan} | {Jonathan, Bobby, Bob}
+    {Mike, Michael, Michelle} | {Michael, Michelle, Mike} | {Mike, Michelle, Michael}
+
+</div>
+
 Examples:
 
-* `sortcontact` might produce a list of `{michael, sasha}`.
+* `sortcontact r` will sort the contact list based on name.
 
-* `sortcontact r` might produce a list of `{sasha, michael}`.
+Expected Outcome:
+
+<p aligin="center"><img src="images/contact/SortContactUG.png"></p>
 
 #### Marking contacts as important: `importantcontact` (Michael)
 
 Marks a task as `Important`.
 
-Format: `importantcontact` `INDEX`
+Format: `importantcontact INDEX`
 
-* You can get the `INDEX` from the current displayed list under the `Contacts` tab.
+* You can get the `INDEX` from the current displayed contact list.
 
-* `INDEX` must be a **positive integer**.
+* Index must be a **positive whole number** and does not exceed the number of contact in the contact list.
 
-* _**Tips :**_ You remove important mark from contact by using either the `undo` or `resetcontact` command.
+  <div markdown="block" class="alert alert-info">
+  
+  **:bulb: Tips :**<br>
+  
+  You can remove `Important` mark from a contact by using either the [undo](#undo-previous-user-command-undodavid) or [resetcontact](#resetting-contacts-resetcontact-michael) command.
 
-Examples:
+  </div>
 
-* `importantcontact 1` marks the first contact in the list as `Important`.
+Example(s):
 
-* `importantcontact 2` mark the second contact in the list as `Important`.
+* `importantcontact 3` marks the third contact in the contact list as `Important`.
 
+Expected Outcome:
+
+<p aligin="center"><img src="images/contact/ImportantContactUG.png"></p>
 
 #### Resetting contacts: `resetcontact` (Michael)
 
-Removes a contact's important mark and replaces it with `Not Important` (default).
+Removes a contact's `Important` mark.
 
 Format: `resetcontact` `INDEX`
 
-* You can get the `INDEX` from the current displayed list under the `Contacts` tab.
+* You can get the `INDEX` from the current displayed contact list.
 
-* `INDEX` must be a **positive integer**.
+* Index must be a **positive whole number** and does not exceed the number of contact in the contact list.
 
 Examples:
 
-* `resetcontact 1` marks the first contact in the list as `Not Important`.
+* `resetcontact 4` removes `Important` mark from the fourth contact in the contact list.
 
-* `resetcontact 2` mark the second contact in the list as `Not Important`.
+Expected Outcome:
 
+<p aligin="center"><img src="images/contact/ResetContactUG.png"></p>
 
 #### Clearing the contact list: `clearcontact` (Jonas Ng)
 
