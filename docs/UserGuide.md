@@ -724,6 +724,8 @@ Below are the explanations for each of the information shown above:
     " &nbsp; Finalize UG" | `Finalize UG`<br>(Preceding whitespaces are ignored)
     "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 characters)
 
+<br/>
+
 * **`TAG`**
 
   * Represents a tag that can help describe the type of a task.
@@ -748,6 +750,8 @@ Below are the explanations for each of the information shown above:
     "Assignment" | `Assignment`
     "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
 
+<br/>
+
 * **`PRIORITY`**
 
   * Represents how important a task is.
@@ -759,7 +763,7 @@ Below are the explanations for each of the information shown above:
     * `NORMAL` (★★★)
     * `LOW` (★★)
   
-  <br>
+  <br/>
 
   <div markdown="block" class="alert alert-info">
   
@@ -774,7 +778,7 @@ Below are the explanations for each of the information shown above:
   
   **:information_source: Coming soon!**<br>
   
-  In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
+  In the next version of CAP5Buddy, you will be able to add <span style="color = yellow;">★★★★★</span> (`HIGHEST`) and <span style="color = yellow;">★</span> (`LOWEST`) priority!
   
   </div>
   
@@ -782,10 +786,12 @@ Below are the explanations for each of the information shown above:
   
     Input | Display Format
     --------|------------------
-    "high" | `HIGH`(★★★★)
-    "High" | `HIGH`(★★★★)
-    "HIGH" | `HIGH`(★★★★)
+    "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
+    "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
+    "LOW" | <span style="color = yellow;">★★</span> (`LOW`)
     "hi" | _**Invalid Input**_<br>(Input should match the priority name)
+
+<br/>
 
 * **`DATE`**
 
@@ -813,6 +819,8 @@ Below are the explanations for each of the information shown above:
     "2020-13-10" | _**Invalid Input**_<br>(Incorrect value for month)
     "05-10-2018" | _**Invalid Input**_<br>(Incorrect order)
     "2020-13" | _**Invalid Input**_<br>(Missing value for day)
+    
+    <br/>
     
 * **`STATUS`**
 
@@ -844,6 +852,8 @@ Below are the explanations for each of the information shown above:
     "INCOMPLETE" | `NOT COMPLETED`
     "Incomplete" | `NOT COMPLETED`
 
+<br/>
+
 The following information is not an input type but it is referenced from other information that you have given:
 
 * **`REMAINING DAYS & PROGRESS BAR`**
@@ -854,6 +864,8 @@ The following information is not an input type but it is referenced from other i
   the blue area will increase from day to day.
 
 We have covered the basic feature of Todo List. Next, we will discuss how to use each commands that the Todo List offers.
+
+<br/>
 
 #### Adding a task: `addtask` (Michael)
 
@@ -901,6 +913,8 @@ Example(s):
 Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
+
+<br/>
 
 #### Editing a task: `edittask` (Michael)
 
@@ -956,6 +970,8 @@ In addition, below is an example of how you can delete information of a task:
 Expected output:
 
 <img src="images/TodoList/UG/editTask2.png">
+
+<br/>
 
 #### Locating tasks: `findtask` (Jonas Ng)
 
@@ -1037,6 +1053,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
   * `findtask n/lab quiz t/difficult` returns all tasks with their name containing **either**
      the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
+<br/>
+
 #### Marking a task as completed: `completetask` (Michael)
 
 This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
@@ -1063,6 +1081,8 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
 
+<br/>
+
 #### Resetting a task: `resettask` (Michael)
 
 This command allows you to reset the status of a task back to `NOT COMPLETED`. The task will then have the red `NOT COMPLETED` label.
@@ -1080,6 +1100,8 @@ Example(s):
 Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
+
+<br/>
 
 #### Sorting tasks: `sorttask` (Michael)
 
@@ -1118,6 +1140,8 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
 
+<br/>
+
 #### Listing all tasks: `listtask` (Michael)
 
 This command allows you to list all the tasks on the list, and also resets the ordering at the same time.
@@ -1140,6 +1164,8 @@ Example(s):
 Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
+
+<br/>
 
 #### Clearing the list: `cleartask` (Michael)
 
@@ -1167,6 +1193,9 @@ Expected output:
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
+<br/>
+<br/>
+<br/>
 
 ### Contact List Features (Jonas Ng)
 
