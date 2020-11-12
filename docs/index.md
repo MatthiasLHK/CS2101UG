@@ -37,7 +37,6 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 --------------------------------------------------------------------------------------------------------------------
 ## Navigating the GUI (Matthias Li Huankang)
-<p align="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
 <p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
 
@@ -45,47 +44,47 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 #### Help Window (Matthias Li Huankang)
 <p align="center"><img src="images/Help.png" border="2px solid black"></p>
-<p align="center"> Help Window </p>
+<p align="center"> <em>Help Window</em> </p>
 
 You can click this button to open up the User Guide help window. It will pop open a new window with the link to
 the User Guide Website.
 
 #### Command Box (Matthias Li Huankang)
 <p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
-<p align="center"> Command Box </p>
+<p align="center"> <em>Command Box</em> </p>
 
 Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
-<p align="center"> Result Display Panel </p>
+<p align="center"> <em>Result Display Panel</em> </p>
 
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
 #### List Tabs Panel (Matthias Li Huankang)
 <p align="center"><img src="images/TabsBar.png" border="2px solid black"></p>
-<p align="center"> List Tabs Panel </p>
+<p align="center"> <em>List Tabs Panel</em> </p>
 
 From here, you can choose between the different windows to view.
 
 #### Main Item Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Main Item Display Panel </p>
+<p align="center"> <em>Main Item Display Panel</em></p>
 
 Here is where all items that are added into the application can be found.
 It shows all the items as individual cell boxes with some of the basic information on the item being shown.
 
 #### Additional Information Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Additional Information Display Panel </p>
+<p align="center"> <em>Additional Information Display Panel</em> </p>
 
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
 #### Calendar (Matthias Li Huankang)
 <p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
-<p align="center"> Calendar </p>
+<p align="center"> <em>Calendar</em> </p>
 
 This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
 that it can easily be identified. From the Calendar figure above, the Calendar also have two buttons that allows the user to
@@ -151,8 +150,7 @@ Creates and adds a new module to be stored in the system.
 Expected Outcome: 
   
 <p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
-  
-  _New module `CS2103T` has been added_
+<p align="center"> <em>New module CS2103T has been added</em></p>
   
   Other helpful example(s):
 
@@ -179,8 +177,7 @@ Creates and add a new completed module to be stored in the system.
 Expected Outcome: 
     
 <p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
-    
-_New module `CS2103T` tagged as completed has been added_
+<p align="center"> <em>New module CS2103T tagged as completed has been added</em></p>    
 
    Other helpful example(s):
 
@@ -210,8 +207,7 @@ Displays a snapshot of a module stored in the system.
 Expected Outcome: 
 
 <p align="center"><img src="images/viewmodule.png" border="2px solid black"></p>
-
-_Module details for `CS2105` is being displayed_
+<p align="center"> <em>Module details for CS2105 is being displayed</em></p>
 
 #### Archiving a module: `archivemodule` (David)
 
@@ -233,8 +229,7 @@ Format: `archivemodule INDEX`
 Expected Outcome: 
  
 <p align="center"><img src="images/archivemodule.png" border="2px solid black"></p>
-
-_`CS2105` has been shifted into the archived module list_
+<p align="center"> <em>CS2105 has been shifted into the archived module list</em></p>
 
 #### Un-archiving a module: `unarchivemodule` (David)
   
@@ -310,8 +305,7 @@ Format: `listmodule`
    Expected Outcome: 
    
 <p align="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
-
-_Only `CS2030` is displayed_
+<p align="center"> <em>Only CS2030 is displayed</em></p>
        
   Other helpful example(s):
 
@@ -420,10 +414,7 @@ Edits a zoom link of a specific lesson in a module.
 
    * The index **must be a positive integer** 1, 2, 3...
    
-   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
+   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.   
    
    <div markdown="block" class="alert alert-info">
 
@@ -579,10 +570,8 @@ assignments will contain the following fields:
 
   Expected Outcome: 
   
- <p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
-
-
-_An assignment called `Quiz 1` has been added to `CS2100`. The assignment carries `5`% of the final grade and the result for this assignment is 80/100_
+<p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
+<p align="center"> <em>An assignment called Quiz 1 has been added to CS2100. The assignment carries 5% of the final grade and the result for this assignment is 80/100.</em></p>
 
   <div markdown="block" class="alert alert-info">
         
@@ -651,8 +640,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
    Expected Outcome: 
      
 <p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
-
-_Grade for CS2100 has been updated_
+<p align="center"> <em>Grade for CS2100 has been updated.</em></p>
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
@@ -666,8 +654,7 @@ Calculates your CAP based on completed modules.
 Expected Outcome: 
      
 <p align="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
-
-_CAP has been calculated_
+<p align="center"> <em>CAP has been calculated.</em></p>
 
 #### Calculating target CAP details: `targetcap` (David)
 
@@ -683,8 +670,7 @@ Calculates helpful CAP details based on the target CAP you input.
 Expected Outcome: 
      
 <p align="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
-
-_Target CAP details has been calculated_
+<p align="center"> <em>Target CAP details has been calculated.</em></p>
 
 <br/>
 
@@ -1040,10 +1026,10 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
    * **`PRIORITY`**
 
-     * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
+     * Your search priority should be one of the following: `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
 
-     * You should only provide one search priority, i.e. `p/highest low` is not allowed.
+     * You should only provide one search priority, i.e. `p/high low` is not allowed.
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
@@ -1583,6 +1569,7 @@ Example(s):<br>
 
 Expected outcome:<br>
 <p align="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>An Event called CS2100 Assignment has been added with the deadline of 10 Aug 2020 12:00 and the tag of Important.</em></p>
 
 Other helpful example(s):<br>
  * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
@@ -1602,6 +1589,7 @@ You can delete an existing event from the list by specifying the index.
 
 Expected outcome:<br>
 <p align="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>The first event has been deleted from the list.</em></p>
 
 #### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
@@ -1617,6 +1605,7 @@ Example(s):<br>
 Expected outcome:<br>
 
 <p align="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>The first event has been updated with the new inputs from the user.</em></p>
 
 Other helpful example(s):<br>
 * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
@@ -1636,6 +1625,7 @@ Example(s):<br>
 
 Expected outcome:<br>
 <p align="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>Only events with the keywords are filtered and shown in the list, in this case, there is no event.</em></p>
 
 Other helpful example(s):<br>
 * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
@@ -1653,6 +1643,7 @@ Allows you to view all events. <br>
 
 Expected outcome:<br>
 <p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>All events are shown in the list again.</em></p>
 
 ### General Features
 
