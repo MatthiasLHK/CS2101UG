@@ -1035,13 +1035,13 @@ Other helpful example(s):
 
   * Search Parameters:
 
-    * `NAME`
+    * **`NAME`**
 
       * Contacts with their name matching at least one of the name keywords provided will be considered to have fulfilled the contact name search criteria.
 
       * Only full words will be matched, e.g. `Bob` will match `Bob Abraham` but not `Bobs`.
 
-    * `TAG`
+    * **`TAG`**
 
       * Contacts containing tags which match at least one of the tag keywords provided will be considered to have fulfilled the contact tag search criteria.
 
