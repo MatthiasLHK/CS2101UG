@@ -23,8 +23,7 @@ This user guide will teach you how to use CAP5Buddy and its features to their ma
 
 
 --------------------------------------------------------------------------------------------------------------------
-(Matthias Li Huankang)
-## Quick start
+## Quick start (Matthias Li Huankang)
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
@@ -36,38 +35,37 @@ This user guide will teach you how to use CAP5Buddy and its features to their ma
 <p aligin="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-(Matthias Li Huankang)
-## Navigating the GUI
+## Navigating the GUI (Matthias Li Huankang)
 
 ![GUI](images/OverallGUISnapShotWithLabels.png)
 
-### Key Components
+### Key Components (Matthias Li Huankang)
 
-#### Help Window
+#### Help Window (Matthias Li Huankang)
 You can click this button to open up the User Guide help window.
 
-#### Additional information Display Panel
+#### Additional information Display Panel (Matthias Li Huankang)
 This panel displays all the additional information of each item when a view Command is called.
 
-#### Calendar
+#### Calendar (Matthias Li Huankang)
 This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
 those days that have an existing event with a color coded box.
 
-#### Command Box
+#### Command Box (Matthias Li Huankang)
 Here is where you enter your command input to be executed by the application.
 
-#### Results Display Panel
+#### Results Display Panel (Matthias Li Huankang)
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
-#### Main Item Display Panel
+#### Main Item Display Panel (Matthias Li Huankang)
 Here is where all of the items that are added into the application can be found. It shows all the items as individual cell boxes.
 
-#### List Tabs Panel
+#### List Tabs Panel (Matthias Li Huankang)
 From here, you can choose between the different windows to view.
 
 
-## Features
+## Features (Jonas Ng)
 
 Some common symbols that can be found in the user guide and their meanings:
 
@@ -116,7 +114,7 @@ Creates and add a new module to be stored in the system.
 
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
-   Example(s) :
+   Example(s):
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
    
 Expected Outcome: 
@@ -284,7 +282,7 @@ _Only `CS2030` is displayed_
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
-### Zoom link management feature
+#### Zoom link management feature (Jonas Ng)
 
 The following features allow you to manage the zoom links for your respective modules and perform various zoom link related functions. 
 
@@ -307,30 +305,30 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
-#### Zoom link command parameters
+#### Zoom link command parameters (Jonas Ng)
 
 * **`ZOOM_LINK`**:
 
-  * Represents the zoom link of a module
+  * Represents the zoom link of a module.
   
   * All zoom links should adhere to the following constraints:
   
-    * Belong to the NUS domain and have the following format: `https://nus-sg.zoom.us/[path]`
+    * Belong to the NUS domain and have the following format: `https://nus-sg.zoom.us/[path]`.
     
-    * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank
+    * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank.
     
-    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`
+    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`.
 
 * **`LESSON_NAME`**:
 
-  * Represents the name of a module lesson which contains the zoom link
+  * Represents the name of a module lesson which contains the zoom link.
   
   * Lesson name should only contain alphanumeric characters, spaces and the hyphen character, and it should not be blank.
 
-  * Example: `Lecture-weds`
+  * Example: `Lecture-weds`.
 
 
-#### Adding a zoom link for a specific lesson to a module: `addzoom`
+#### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
 
 Adds a zoom link for a specific lesson to an existing module.
 
@@ -352,7 +350,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
    
    * `LESSON_NAME` refers to the name of the module lesson which the added zoom link belongs to.
 
-  Example:
+  Example(s):
   
   `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
   in the displayed module list for the lesson `lecture-weds`.
@@ -360,16 +358,21 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   <div markdown="block" class="alert alert-info">
   
   **:information_source: Note:** <br> 
-  To view the newly added zoom link, you have to use the `viewmodule INDEX` command after the `addzoom` command, where `INDEX` refers to the index of the module which contains the added zoom link
+  To view the newly added zoom link, you have to use the `viewmodule INDEX` command after the `addzoom` command, where `INDEX` refers to the index of the module which contains the added zoom link.
   
   </div>
   
   Expected Outcome: 
   
   ![AddZoom](images/Module/AddZoomUG.PNG)
+  
+  Other helpful example(s):
+  
+  `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+   in the displayed module list for the lesson `lecture on weds`.
 
 
-#### Editing a zoom link of a specific lesson in a module: `editzoom`
+#### Editing a zoom link of a specific lesson in a module: `editzoom` (Jonas Ng)
 
 Edits a zoom link of a specific lesson in a module.
 
@@ -398,15 +401,15 @@ Edits a zoom link of a specific lesson in a module.
 
    </div>
 
-   Example:
+   Example(s):
    
    `editzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `lecture-weds`
-    in the first module to be `https://nus-sg.zoom.us/editedZoom`
+    in the first module to be `https://nus-sg.zoom.us/editedZoom`.
 
    <div markdown="block" class="alert alert-info">
       
    **:information_source: Note:** <br> 
-   To view the newly edited zoom link, you have to use the `viewmodule INDEX` command after the `editzoom` command, where `INDEX` refers to the index of the module which contains the edited zoom link
+   To view the newly edited zoom link, you have to use the `viewmodule INDEX` command after the `editzoom` command, where `INDEX` refers to the index of the module which contains the edited zoom link.
       
    </div>
 
@@ -414,9 +417,13 @@ Edits a zoom link of a specific lesson in a module.
    
    ![EditZoom](images/Module/EditZoomUG.PNG)
    
+   Other helpful example(s):
+   
+   `editzoom 2 n/tutorial z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `tutorial`
+    in the second module to be `https://nus-sg.zoom.us/editedZoom`.
 
 
-#### Deleting a zoom link for a specific lesson from a module: `deletezoom`
+#### Deleting a zoom link for a specific lesson from a module: `deletezoom` (Jonas Ng)
 
 Deletes a zoom link for a specific lesson from an existing module.
 
@@ -430,7 +437,7 @@ Deletes a zoom link for a specific lesson from an existing module.
 
    * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be deleted.
 
-  Example
+  Example(s):
   
   `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
 
@@ -445,6 +452,12 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
+  Other helpful example(s):
+  
+  `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
+
+
+
 #### Deleting a module: `deletemodule` (David, Joshua)
 
 Deletes a module in the displayed module list.
@@ -755,7 +768,7 @@ and the priority to `HIGH`.
 and the `DATE` to `2020-11-04`.
 
 
-#### Locating tasks: `findtask`
+#### Locating tasks: `findtask` (Jonas Ng)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -770,7 +783,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Search Parameters:
 
-   * **`Name`**
+   * **`NAME`**
 
      * You are allowed to provide multiple name keywords.
 
@@ -780,7 +793,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Only full words will be matched, e.g. `lab` will match `lab assignment` but not `labs`.
 
-   * **`Date`**
+   * **`DATE`**
 
      * Your search date should be of the format: `YYYY-MM-DD`.
 
@@ -788,7 +801,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
-   * **`Priority`**
+   * **`PRIORITY`**
 
      * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
@@ -805,7 +818,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
      
      * Tasks with their status matching the search status exactly are considered to have fulfilled the task status search criteria.
 
-   * **`Tag`**
+   * **`TAG`**
 
      * You are allowed to provide multiple tag keywords.
      
@@ -818,22 +831,23 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Only tasks matching all search criteria provided will be returned.
 
- Example:
+ Example(s):
  
- `findtask `
+ `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
  
  Expected Outcome:
  
+ ![FindTask](images/Task/FindTaskUG.PNG)
  
 
- Other helpful examples:
+ Other helpful example(s):
 
-  * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority
+  * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority.
 
-  * `findtask t/difficult online` returns all tasks that have the `difficult` **or** `online` tag
+  * `findtask t/difficult online` returns all tasks that have the `difficult` **or** `online` tag.
 
   * `findtask n/lab quiz t/difficult` returns all tasks with their name containing **either**
-     the word `lab` or  `quiz` **and** has `difficult` as one of its tags
+     the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
 
 
@@ -912,93 +926,97 @@ Format: `cleartask`
   to restore the list.
 
 
-### Contact List Features
+### Contact List Features (Jonas Ng)
 
 The following features allow you to manage a list of contacts and perform various contact related functions. 
 
 The section below provides some useful details about the contact list features.
 
-#### Contact command parameters
+#### Contact command parameters (Jonas Ng)
 
 A contact list feature can use one or more of the following parameters:
 
 * **`NAME`**:
 
-   * Represents the name of a contact
+   * Represents the name of a contact.
   
    * Can only contain alphanumeric characters and spaces, and should not be blank.
   
-   * Examples: `John`, `Amy`
+   * Examples: `John`, `Amy`.
   
-   * All contacts must have a name
+   * All contacts must have a name.
   
 
 * **`EMAIL`**:
 
-   * Represents the email address of a contact
+   * Represents the email address of a contact.
   
    * `Email`should be of the format `local-part@domain` and adhere to the following constraints:
        
-     1. The local-part should only contain alphanumeric characters and these special characters: `!#$%&'*+/=?{|}~^.-` 
+     1. The local-part should only contain alphanumeric characters and these special characters: `!#$%&'*+/=?{|}~^.-` .
          
      2. This is followed by a `@` and then a domain name. 
          
      3. The domain name must:
-        * Be at least 2 characters long
-        * Start and end with alphanumeric characters
+        * Be at least 2 characters long.
+        * Start and end with alphanumeric characters.
         * Consist of alphanumeric characters, a period or a hyphen for the characters in between, if any.
 
-   * Example: `johndoe@gmail.com`
+   * Example: `johndoe@gmail.com`.
 
-   * All contacts must have an email address
+   * All contacts must have an email address.
 
 
-* **`Telegram`**:
+* **`TELEGRAM`**:
 
-  * Represents the telegram username of a contact
+  * Represents the telegram username of a contact.
   
   * The `TELEGRAM` field provided must be a valid telegram username that follows the following constraints:
   
-    1. Must start with the `@` symbol
-    2. At least 5 characters long, not including the `@` symbol
-    3. Contains only alphanumeric characters or underscore
+    1. Must start with the `@` symbol.
+    2. At least 5 characters long, not including the `@` symbol.
+    3. Contains only alphanumeric characters or underscore.
     
-  * Examples: `@john_doe`, `@johndoe`
+  * Examples: `@john_doe`, `@johndoe`.
   
-  * Telegram is a not a compulsory field of a contact
+  * Telegram is a not a compulsory field of a contact.
 
 
-* **`Tag`**:
+* **`TAG`**:
 
-  * Represents a tag that can be used to describe a contact
+  * Represents a tag that can be used to describe a contact.
   
   * Tags names should be alphanumeric and should not be blank or contain whitespaces.
   
-  * Examples: `friend`, `TA`
+  * Examples: `friend`, `TA`.
   
-  * Tag is not a compulsory field of a contact
+  * Tag is not a compulsory field of a contact.
 
 
 
-#### Adding a contact: `addcontact`
+#### Adding a contact: `addcontact` (Jonas Ng)
 
 Adds a new contact into the contact list if it does not already exist.
 
 Format: `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...`
 
- * A contact can have any number of tags (including 0)
+ * A contact can have any number of tags (including 0).
 
 
-Example: 
+Example(s): 
 
-`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`
+`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
  
 Expected Outcome:
 
 ![AddContactOutcome](images/contact/AddContactUG.PNG)
 
+Other helpful example(s):
 
-#### Locating contacts: `findcontact`
+`addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
+
+
+#### Locating contacts: `findcontact` (Jonas Ng)
 
  Finds all contacts that fulfil all the provided search criteria.
 
@@ -1017,13 +1035,13 @@ Expected Outcome:
 
   * Search Parameters:
 
-    * Name
+    * **`NAME`**
 
       * Contacts with their name matching at least one of the name keywords provided will be considered to have fulfilled the contact name search criteria.
 
       * Only full words will be matched, e.g. `Bob` will match `Bob Abraham` but not `Bobs`.
 
-    * Tag
+    * **`TAG`**
 
       * Contacts containing tags which match at least one of the tag keywords provided will be considered to have fulfilled the contact tag search criteria.
 
@@ -1034,24 +1052,24 @@ Expected Outcome:
 
   * Only contacts matching all search criteria provided will be returned.
 
-  Example: 
+  Example(s): 
   
-  `findcontact n/amy` finds all contacts with the word `amy` in their name
+  `findcontact n/amy` finds all contacts with the word `amy` in their name.
   
   Expected Outcome: 
   
   ![FindContact](images/contact/FindContactUG.PNG)
   
-  Other helpful examples:
+  Other helpful example(s):
 
-   * `findcontact n/Bob Abraham` returns all contacts with the word `Bob` **or** `Abraham` in their name, e.g. `Bob Lim`, `Tommy Abraham`
+   * `findcontact n/Bob Abraham` returns all contacts with the word `Bob` **or** `Abraham` in their name, e.g. `Bob Lim`, `Tommy Abraham`.
 
-   * `findcontact t/friend coworker` returns all contacts that have the `friend` **or** `coworker` tag
+   * `findcontact t/friend coworker` returns all contacts that have the `friend` **or** `coworker` tag.
 
-   * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags
+   * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags.
 
 
-#### Listing all contacts: `listcontact`
+#### Listing all contacts: `listcontact` (Jonas Ng)
 
  Shows a list of all contacts in the contact list.
 
@@ -1066,14 +1084,16 @@ Expected Outcome:
 
  </div>
  
- Example: `listcontact`
+ Example(s): 
+ 
+ `listcontact`
  
  Expected Outcome: 
  
  ![ListContact](images/contact/ListContactUG.PNG)
 
 
-#### Editing a contact: `editcontact`
+#### Editing a contact: `editcontact` (Jonas Ng)
 
  Edits an existing contact in the contact list.
 
@@ -1086,24 +1106,31 @@ Expected Outcome:
 
  * Existing values will be updated to the input values.
  
- * If the contact has an existing telegram field, you can remove it by typing `te/` without specifying any telegram field after it, i.e. `editcontact 1 te/`
+ * If the contact has an existing telegram field, you can remove it by typing `te/` without specifying any telegram field after it, i.e. `editcontact 1 te/`.
 
  * When editing tags, the existing tags of the contact will be removed i.e adding of tags is not cumulative.
 
- * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`
+ * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`.
 
 
- Example: 
+ Example(s): 
  
- `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`
+ `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`.
  
  Expected Outcome: 
  
  ![EditContact](images/contact/EditContactUG.PNG)
 
 
+ Other helpful example(s):
+ 
+ `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
 
-#### Deleting a contact: `deletecontact`
+
+ `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+ 
+
+#### Deleting a contact: `deletecontact` (Jonas Ng)
 
 Deletes the specified contact from the contact list.
 
@@ -1115,13 +1142,18 @@ Format: `deletecontact INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
-Example: 
+Example(s): 
 
-`deletecontact 2` deletes the second contact in the displayed contact list
+`deletecontact 2` deletes the second contact in the displayed contact list.
 
 Expected Outcome: 
 
 ![DeleteContact](images/contact/DeleteContactUG.PNG)
+
+
+Other helpful example(s):
+
+`deletecontact 5` deletes the fifth contact in the displayed contact list.
 
 
 #### Sorting contacts: `sortcontact`
@@ -1176,7 +1208,7 @@ Examples:
 * `resetcontact 2` mark the second contact in the list as `Not Important`.
 
 
-#### Clearing the contact list: `clearcontact`
+#### Clearing the contact list: `clearcontact` (Jonas Ng)
 
 Clears all contacts in the contact list.
 
@@ -1191,7 +1223,9 @@ Format: `clearcontact`
 
  </div>
 
-Example: `clearcontact`
+Example(s): 
+
+`clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
@@ -1199,61 +1233,96 @@ Expected Outcome: <br>
 
 ### Scheduler Features
 
-(Matthias Li Huankang)
-#### Adding an Event to the Scheduler: `addevent`
+#### Scheduler Command Parameters (Matthias Li Huankang)
+
+* **Event name**<br>
+Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
+throw an invalid naming error.
+
+* **Event time**<br>
+The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
+follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
+be thrown.
+
+* **Tags**<br>
+For the naming of Tags, there cannot be any spacing in the name of the Tag.
+
+#### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
 Creates and add a new Event with the specified information from the user input
 
   Format: `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]`
-<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
-   Examples:
-    * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.(Expected result shown in above image.)
-    * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.
+  
+Example:<br>
+ * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.<br>
 
-#### Deleting an Event from the Scheduler: `deleteevent`
+Expected outcome:<br>
+<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+
+Other helpful example(s):<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.<br>
+ * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.<br>
+
+#### Deleting an Event from the Scheduler: `deleteevent` (Matthias Li Huankang)
 
 You can delete an existing event from the list by specifying the index.
 
   Format: `deleteevent index`
 
-   Example:
-    * `deleteevent 1` deletes the event of index 1 from the EventList.
+   Example:<br>
+* `deleteevent 1` deletes the event of index 1 from the EventList.
 
-#### Editing an Event from the Scheduler: `editevent`
+Expected outcome:<br>
+<p aligin="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
+
+#### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
 You can select an existing event from the list and modify the information such
 as event name and the event date.
 
   Format: `editevent index [n/new name] [d/new date]`<br>
   **Note:** All fields are optional but at least 1 of them must be present.
-<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
-   Examples:
-    * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant. (Expected result shown in above image.)
-    * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.
-    * `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.
-    * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.
 
-#### Finding an Event from the Scheduler: `findevent`
+Example:<br>
+* `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
+
+Expected outcome:<br>
+
+<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+
+Other helpful example(s):<br>
+* `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
+* `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.<br>
+* `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.<br>
+
+#### Finding an Event from the Scheduler: `findevent` (Matthias Li Huankang)
 
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
 
-  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`
-  **Note:** All fields are optional but at least 1 of them must be present.
+  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
+  **Note:** All fields are optional but at least 1 of them must be present.<br>
+Example:<br>
+* `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
-   Examples:
-    * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.
-    * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.
+Expected outcome:<br>
+<p aligin="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
 
-#### List events: `listevent`
+Other helpful example(s):<br>
+* `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
+* `findevent n/ CS2103T d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
 
-Allows you to view all events.
+#### List events: `listevent` (Matthias Li Huankang)
 
-Format: `listevent`
+Allows you to view all events. <br>
 
- Examples:
- * `listevent` Views the event list on the display.
+  Format: `listevent`<br>
+
+   Example:<br>
+* `listevent` Views the event list on the display.<br>
+
+Expected outcome:<br>
+<p aligin="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
 
 ### General Features
 
@@ -1295,9 +1364,8 @@ Format: `help`
   Example(s):
   * `help`
   
-## FAQ
+## FAQ (Matthias Li Huankang)
 
-(Matthias Li Huankang)
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
 
@@ -1336,7 +1404,7 @@ Action | Format, Examples
 **Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
 **Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
 
-## Command Summary for Contact List
+## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
 -------|-------------------------
@@ -1366,9 +1434,8 @@ Action | Format, Examples
 **Clear Tasks** | `cleartask`
 
 
-## Command summary for Scheduler
+## Command summary for Scheduler (Matthias Li Huankang)
 
-(Matthias Li Huankang)
 Action | Format, Examples
 -------|-------------------------
 **Add Event** | `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]` <br> e.g. `addevent n/CS2103T d/12-2-2020 t/Important`

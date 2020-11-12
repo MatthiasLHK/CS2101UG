@@ -5,7 +5,7 @@ title: User Guide
 
 ## Introduction
 
-Do you even find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
+Do you find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
 
 CAP5Buddy is a desktop application that helps NUS SoC students to keep track of their module details efficiently.
@@ -43,8 +43,8 @@ details and information more efficiently than traditional GUI apps.
 #### Help Window
 You can click this button to open up the User Guide help window.
 
-#### Additional information Display Panel
-This panel displays all the additional information of each item when a view Command is called.
+#### Additional Information Display Panel
+This panel displays all the additional information of each item when a `view` Command is called.
 
 #### Calendar
 This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
@@ -55,7 +55,7 @@ Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
-or error message.
+and error messages.
 
 #### Main Item Display Panel
 Here is where all of the items that are added into the application can be found. It shows all the items as individual cell boxes.
@@ -93,7 +93,7 @@ Some common symbols that can be found in the user guide and their meanings:
   e.g. if the command specifies `edittask INDEX [n/NAME] [p/PRIORITY]`, then `edittask INDEX [p/PRIORITY] [n/NAME]` is also acceptable, but
   `edittask [n/NAME] INDEX [p/PRIORITY]` is not allowed.
 
-* If you enter duplicate parameters when the command format does not expect multiple occurrence of the same parameter, i.e.
+* If you enter duplicate parameters when the command format does not expect multiple occurrences of the same parameter, i.e.
   parameters without `...` at the back in the command format (e.g. n/NAME), the application will only consider the argument of the last
   occurring duplicate parameter.
   e.g. in `addtask n/Week 11 quiz n/Lab assignment`, `n/Week 11 quiz` will be ignored and a task with the name `Lab assignment` will be added.
@@ -103,6 +103,55 @@ Some common symbols that can be found in the user guide and their meanings:
 
 ### Module Tracker Features
 
+The modules mentioned below represent a module that you would be taking as an NUS School of Computing student, such as CS2103T or CS2101.
+
+The section below provides some useful details about the module tracker features.
+
+####Module command parameters (Joshua)
+
+A module tracker feature can use one or more of the following parameters:
+
+* **`MODULE_NAME`**: (Joshua)
+
+   * Represents the module code of the module.
+  
+   * Must match the module's module code exactly (i.e. capitalised and follows the same formatting).
+  
+   * Examples: `CS2103T`, `CS2100`
+  
+   * All modules must have a module name.
+  
+
+* **`MODULE_CREDITS`**: (Joshua)
+
+   * Represents the number of modular credits this module is worth.
+  
+   * Modular credits should be given as a valid number and follow the typical module's number of modular credits(e.g. 4.0, 8.0).
+       
+   * All modules start with 4.0 modular credits on creation but the value can be edited.
+   
+* **`GRADE`**: (Joshua)
+
+  * Represents the current overall grade achieved for the module.
+  
+  * Grades are updated automatically by the assignments (See [below](#what-is-an-assignment---assignment-joshua)).
+     
+* **`GRADE_POINT`**: (Joshua)
+
+   * Represents the grade point achieved after completion of the module.
+   
+   * Grade point should be converted to a number (e.g A- should be converted to 4.5, B to 3.5).
+
+* **`TAG`**: (Joshua)
+
+  * Represents a tag that can be used to describe a module.
+  
+  * Tag names should be alphanumeric and should not be blank or contain whitespaces.
+  
+  * Examples: `Coremodule`, `Completed`
+  
+  * Tag is not a compulsory field of a module.
+   
 #### Adding a new module: `addmodule`(David, Joshua)
 
 Creates and add a new module to be stored in the system.
@@ -114,7 +163,7 @@ Creates and add a new module to be stored in the system.
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
    Example :
-   * `addmodule n/CS2103T` creates and adds the module CS2103T.
+   * `addmodule n/CS2103T` creates and adds the module `CS2103T`.
    
 Expected Outcome: 
   
@@ -122,23 +171,25 @@ Expected Outcome:
   
   Other helpful example(s):
 
-   * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
+   * `addmodule n/CS2103T t/Coremodule` creates and adds the module `CS2103T` with the tag `CoreModule`.
 
 #### Adding a new completed module: `addcmodule`(David)
 
-Creates and add a new completed module to be stored in the system.
+Creates and adds a new, completed module to be stored in the system.
 
   Format: `addcmodule n/NAME mc/MODULAR_CREDITS gp/GRADE_POINT [t/TAG]...`
 
    * Using this command to add a completed module will automatically tag the module as completed.
+   
    * Completed modules can be modified using `editmodule`. Do note that editing tags will reset all existing tags, therefore in order to keep the completed tag after editing, you must specify the completed tag parameter in the `editmodule` command by adding `t/completed` to your command line exactly.
+   
    * Completed modules added this way will be used for CAP calculation purposes.
 
    Examples:
-   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
-      and 5 grade points with a `completed` tag.
-   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
-      and 4.5 grade points with the tags `completed` and `year1`.
+   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named `CS2103T` with `4` modular credits
+      and `5` grade points with a `completed` tag.
+   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named `CS2101` with `2` modular credits
+      and `4.5` grade points with the tags `completed` and `year1`.
 
 #### Viewing a module: `viewmodule`(David, Joshua)
 
@@ -146,7 +197,7 @@ Displays a snapshot of a module stored in the system.
 
  Format: `viewmodule` `INDEX`
     
-  * The module viewed will be at the `INDEX` position of the current displayed list.
+  * The module viewed will be the module at the `INDEX` position of the current displayed list.
 
   * The index refers to the index number of the module shown on the displayed module list.
 
@@ -169,7 +220,7 @@ Archives a module in the module list and moves it into archived storage.
 
 Format: `archivemodule` `INDEX`
 
- * The module archived will be at the `INDEX` position of the currently displayed un-archived list.
+ * The module archived will be at the `INDEX` position of the currently displayed un-archived module list.
 
  * The index refers to the index number of the module shown on the displayed un-archived module list.
  
@@ -178,24 +229,19 @@ Format: `archivemodule` `INDEX`
  * The index **must be a positive integer** 1, 2, 3...
 
  Example:
- * `archivemodule 1` Archives the first module in the displayed list.
+ * `archivemodule 1` archives the first module in the displayed list.
  
 Expected Outcome: 
  
 <p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
-
-
-Other helpful example(s):
-
-  * `archivemodule 2` Archives the second module in the displayed list.
-
+  
 #### Un-archiving a module: `unarchivemodule`(David)
 
-Un-Archives a module in the module list and moves it back into current module list storage.
+Un-Archives a module in the archived module list and moves it back into the current module list storage.
 
 Format: `unarchivemodule` `INDEX`
 
- * The module un-archived will be at the `INDEX` position of the currently displayed archived list.
+ * The module un-archived will be at the `INDEX` position of the currently displayed archived module list.
 
  * The index refers to the index number of the module shown on the displayed archived module list.
  
@@ -203,9 +249,8 @@ Format: `unarchivemodule` `INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Examples:
- * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
- * `unarchivemodule 2` Un-Archives the second module in the displayed archived module list.
+ Example:
+ * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
 #### View-archived modules: `viewarchive`(David)
 
@@ -215,19 +260,19 @@ Format: `viewarchive`
 
  * Executing this command will remove the current un-archived module list from display if you are currently viewing it. You can use the `list` command to display the un-archived module list(See next section).
 
- Examples:
- * `viewarchive` Views the archived module list on the display.
+ Example:
+ * `viewarchive` views the archived module list on the display.
 
 #### View un-archived modules: `listmodule`(David)
 
-Allows you to view the un-archived module list on the display.
+Allows you to view the un-archived module list in the display.
 
 Format: `listmodule`
 
  * Executing this command will remove the current archived module list from display if you are currently viewing it. You can use the `viewarchive` command to display the archived module list(See previous section).
 
- Examples:
- * `listmodule` Views the un-archived module list on the display.
+ Example:
+ * `listmodule` views the un-archived module list on the display.
 
 #### Locating modules: `findmodule`(David)
 
@@ -270,7 +315,7 @@ Only `CS2030` is displayed
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
-### Zoom link management feature (Jonas)
+#### Zoom link management feature (Jonas Ng)
 
 The following features allow you to manage the zoom links for your respective modules and perform various zoom link related functions. 
 
@@ -293,30 +338,30 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
-#### Zoom link command parameters (Jonas)
+#### Zoom link command parameters (Jonas Ng)
 
 * **`ZOOM_LINK`**:
 
-  * Represents the zoom link of a module
+  * Represents the zoom link of a module.
   
   * All zoom links should adhere to the following constraints:
   
-    * Belong to the NUS domain and have the following format: `https://nus-sg.zoom.us/[path]`
+    * Belong to the NUS domain and have the following format: `https://nus-sg.zoom.us/[path]`.
     
-    * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank
+    * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank.
     
-    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`
+    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`.
 
 * **`LESSON_NAME`**:
 
-  * Represents the name of a module lesson which contains the zoom link
+  * Represents the name of a module lesson which contains the zoom link.
   
   * Lesson name should only contain alphanumeric characters, spaces and the hyphen character, and it should not be blank.
 
-  * Example: `Lecture-weds`
+  * Example: `Lecture-weds`.
 
 
-#### Adding a zoom link for a specific lesson to a module: `addzoom`      (Jonas)
+#### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
 
 Adds a zoom link for a specific lesson to an existing module.
 
@@ -338,24 +383,29 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
    
    * `LESSON_NAME` refers to the name of the module lesson which the added zoom link belongs to.
 
-  Example:
+  Example(s):
   
-  `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+  * `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
   in the displayed module list for the lesson `lecture-weds`.
   
   <div markdown="block" class="alert alert-info">
   
   **:information_source: Note:** <br> 
-  To view the newly added zoom link, you have to use the `viewmodule INDEX` command after the `addzoom` command, where `INDEX` refers to the index of the module which contains the added zoom link
+  To view the newly added zoom link, you have to use the `viewmodule INDEX` command after the `addzoom` command, where `INDEX` refers to the index of the module which contains the added zoom link.
   
   </div>
   
   Expected Outcome: 
   
   ![AddZoom](images/Module/AddZoomUG.PNG)
+  
+  Other helpful example(s):
+  
+  `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+   in the displayed module list for the lesson `lecture on weds`.
 
 
-#### Editing a zoom link of a specific lesson in a module: `editzoom`         (Jonas)
+#### Editing a zoom link of a specific lesson in a module: `editzoom` (Jonas Ng)
 
 Edits a zoom link of a specific lesson in a module.
 
@@ -368,9 +418,6 @@ Edits a zoom link of a specific lesson in a module.
    * The index **must be a positive integer** 1, 2, 3...
    
    * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
    
    <div markdown="block" class="alert alert-info">
 
@@ -384,15 +431,15 @@ Edits a zoom link of a specific lesson in a module.
 
    </div>
 
-   Example:
+   Example(s):
    
    `editzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `lecture-weds`
-    in the first module to be `https://nus-sg.zoom.us/editedZoom`
+    in the first module to be `https://nus-sg.zoom.us/editedZoom`.
 
    <div markdown="block" class="alert alert-info">
       
    **:information_source: Note:** <br> 
-   To view the newly edited zoom link, you have to use the `viewmodule INDEX` command after the `editzoom` command, where `INDEX` refers to the index of the module which contains the edited zoom link
+   To view the newly edited zoom link, you have to use the `viewmodule INDEX` command after the `editzoom` command, where `INDEX` refers to the index of the module which contains the edited zoom link.
       
    </div>
 
@@ -400,9 +447,13 @@ Edits a zoom link of a specific lesson in a module.
    
    ![EditZoom](images/Module/EditZoomUG.PNG)
    
+   Other helpful example(s):
+   
+   `editzoom 2 n/tutorial z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `tutorial`
+    in the second module to be `https://nus-sg.zoom.us/editedZoom`.
 
 
-#### Deleting a zoom link for a specific lesson from a module: `deletezoom`        (Jonas)
+#### Deleting a zoom link for a specific lesson from a module: `deletezoom` (Jonas Ng)
 
 Deletes a zoom link for a specific lesson from an existing module.
 
@@ -416,9 +467,9 @@ Deletes a zoom link for a specific lesson from an existing module.
 
    * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be deleted.
 
-  Example
+  Example(s):
   
-  `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
+  * `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the first module in the displayed module list.
 
   <div markdown="block" class="alert alert-info">
         
@@ -431,6 +482,10 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   ![DeleteZoom](images/Module/DeleteZoomUG.PNG)
   
+  Other helpful example(s):
+  
+  `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
+  
 
 #### Deleting a module: `deletemodule`(David, Joshua)
 
@@ -442,7 +497,7 @@ Deletes a module in the displayed module list.
 
    * The index refers to the index number of the module shown on the displayed module list.
 
-  Examples:
+  Example:
   * `deletemodule 1` deletes the module at position `1`
 
 #### Editing a module : `editmodule`(David, Joshua, Michael)
@@ -459,16 +514,13 @@ Edits an existing module in the displayed module list with new details.
 
   * You can add `[TAG]`s to a module through this command,eg. `Tutorial`.
    
-  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it.
+  * You can remove all the module’s tags by typing `t/` without specifying any tags after it.
 
  Examples:
   * `editmodule 1 n/CS2030` edits the `MODULE_NAME` for a module at index `1` to `CS2030`.
 
   * `editmodule 3 mc/8 gp/4.5` edits the `MODULAR_CREDITS` and `GRADE_POINT` for the module at index `3` to `8.0`
   modular credits and the grade points to `4.5`.
-
- To be implemented:
-  * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
 #### Clearing the module list: `clearmodule`(David)
 
@@ -479,8 +531,8 @@ Format: `clearmodule`
 * _**Tips :**_ If you accidentally cleared the whole module list, you can always use the `undo` command
   to restore the module list.
 
-#### What is an Assignment ? : `Assignment`
-Each assignment is stored under a module and represents the cumulative results achieved for that module. Your
+#### What is an Assignment ? : `Assignment` (Joshua)
+Each assignment is stored under a module and represents the results for the graded assignments for that module. Your
 assignments will contain the following fields:
 
 * **`ASSIGNMENT_NAME`**
@@ -492,25 +544,21 @@ assignments will contain the following fields:
   * Represents the percentage the assignment carries for the final grade, eg. if `Quiz 1` is worth `15`% of the final
   grade, the `ASSIGNMENT_PERCENTAGE` should be `15.0`%.
 
-  * Can only be a value from `0.00 - 1.00`
+  * Can only be a value from `0.00 - 100`
 
 * **`ASSIGNMENT_RESULT`**
 
   * Represents your results attained for the assignment, eg. if a score of `75/100` is achieved for
-  `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `0.75` should be input.
+  `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `75` should be input.
 
 
-#### Adding assignment to a module: `addassignment`
+##### Adding assignment to a module: `addassignment` (Joshua)
 
   Adds an assignment to an existing module.
 
   Format: `addassignment` `n/MODULE_NAME` `a/ASSIGNMENT_NAME` `%/ASSIGNMENT_PERCENTAGE` `r/ASSIGNMENT_RESULT`
 
-  * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME`
-
-  * The assignment takes up a percentage of the final grade, `ASSIGNMENT_PERCENTAGE`.
-
-  * Your `ASSIGNMENT_RESULT` can only range from `0.00 - 100`
+  * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME` that is currently in the displayed un-archived module list.
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
@@ -522,36 +570,41 @@ assignments will contain the following fields:
   
  <p aligin="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
 
-#### Editing an assignment in a module: `editassignment`
+  <div markdown="block" class="alert alert-info">
+        
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `addassignment` command, where `INDEX` refers to the index of the module with the added.
+        
+  </div>
+
+##### Editing an assignment in a module: `editassignment` (Joshua)
 
   Edits an assignment at the specified position in the specified module.
 
   Format: `editassignment` `INDEX` `n/MODULE_NAME` `[a/ASSIGNMENT_NAME]` `[%/ASSIGNMENT_PERCENTAGE]` 
   `[r/ASSIGNMENT_RESULT]`
 
-  * The fields that can be edited are the `ASSIGNMENT_NAME`, `ASSIGNMENT_PERCENTAGE` of the final grade
-  and `ASSIGNMENT_RESULT`.
+  * The fields that can be edited are the `ASSIGNMENT_NAME`, `ASSIGNMENT_PERCENTAGE` and `ASSIGNMENT_RESULT`.
 
   * At least **one** of the optional fields must be present.
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  * Your new `ASSIGNMENT_RESULT` can only range from `0.00 - 100`
-  
-  * The `viewmodule` command needs to be called again to update the assignment visually.
-
-  Examples of usage:
-   * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at position `1` of the module `CS2100` with a new
+  Examples:
+   * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at the first position of the module `CS2100` with a new
    assignment name, `Quiz 1`.
 
-   * `editassignment 1 n/CS2100 %/20 r/80` edits the assignment at position `1` of the module `CS2100` with a new
+   * `editassignment 1 n/CS2100 %/20 r/80` edits the assignment at the first position of the module `CS2100` with a new
    assignment percentage, `20`% of the final grade, and a new assignment result, `80`.
 
-To be implemented:
-  * We are working on showing the assignment changes without the need to call `viewmodule` again as we see the
-  possible hassle involved.
-  
-#### Deleting an assignment in a module: `deleteassignment`
+  <div markdown="block" class="alert alert-info">
+        
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module with the edited assignment.
+        
+  </div>
+    
+##### Deleting an assignment in a module: `deleteassignment` (Joshua)
 
   Deletes an assignment at the specified position in the specified module.
 
@@ -560,28 +613,25 @@ To be implemented:
   * You can retrieve the index of the assignment list by using the `viewmodule` command to list out the details of the module.
 
   * The index **must be a positive integer** 1, 2, 3...
+
+  Example:
+   * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
+
+  **:information_source: Note:** <br> 
+     To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module where the assignment was deleted from.
+        
+  </div>
   
-  * The changes for your assignment would only be seen through using the `viewmodule` command.
+    
+##### Adding a grade to a module: `addgrade` (Joshua)
 
-
-  Example of usage:
-   * `deleteassignment 1 n/CS2100` deletes the assignment at position `1` of the module `CS2100`.
-   
-#### Adding a grade to a module: `addgrade`
-
-  Adds a grade to the specified module.
+  Adds a grade to the specified module, overwriting the existing grade.
 
   Format: `addgrade` `n/MODULE_NAME` `g/GRADE`
 
   * The `MODULE_NAME` must match exactly with an existing module in the module list.
-  
-  * The `GRADE` can only range from 0 - 100.
-  
-  * The existing `GRADE` will be overwritten by the new `GRADE` being added.
-  
-  * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example of usage:
+  Example:
    * `addgrade n/CS2100 g/85` adds a grade of `85` to the module `CS2100`.
    
    Expected Outcome: 
@@ -595,79 +645,239 @@ Calculates your CAP based on completed modules
  Format: `calculatecap`
 
   Examples:
-  * `calculatecap` calculate the user's cap
+  * `calculatecap` calculate the user's cap.
 
 #### Calculating target CAP details: `targetcap`(David)
 
 Calculates helpful CAP details based on the target CAP you input
 
- Format: `targetcap [tc/TARGET_CAP]`
+ Format: `targetcap tc/TARGET_CAP`
 
   * The target cap refers to the desired CAP input by you
 
   Example:
-  * `targetcap tc/4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP
+  * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
 
-### Todo List Features
+### Todo List Features (Michael)
 
-The GUI for TodoList is shown below
-<p aligin="center"><img src="images/TodoList/todo1.png" border="2px solid black"></p>
+Todo List allows you to store all of your tasks that you need to accomplish. Before you start learning how to use the commands
+for Todo List, it is a good idea to understand the basic features first.
 
-Todo List can store all of your tasks that you need to complete. Before you start learning how to use the commands
-for Todo List, you should first understand the details of a task.
+To access the Todo List, you can click the **Tasks** button to change the tab as shown in the picture below.
 
-#### What is a Task ? : `Task`
+<p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png"></p>
 
-A task contains 5 type of information that can be useful when you are tying to track all the things that you need to do.
-Below are the explanations for each information that you can add to a task.
+The GUI for Todo List will look like this:
+
+<p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
+
+There are 3 big main feature that you can use, which are:
+
+* **Todo List**
+  * A **list** that shows all of your tasks.
+  
+  <p aligin="center"><img src="images/TodoList/UG/todoList.png"></p>
+  
+* **Completion Pie**
+  * A **completion chart** that represents the ratio between completed and not completed tasks.
+  
+  <p aligin="center"><img src="images/TodoList/UG/completionPie.png"></p>
+  
+* **Future Bar**
+  * A **bar chart** that shows your workload in the next 7 days.
+  
+  <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
+
+Now that you understand the GUI, let's take a look how you can store your future tasks!
+
+#### What is a Task ? : `Task` (Michael)
+
+A task contains some information that can be useful when you are trying to track all the things that you need to do.
+
+Below is a picture of how each task will look like in the Todo List and what information can be stored:
+
+<p aligin="center"><img src="images/TodoList/UG/taskEntry.png"></p>
+
+Below are the explanations for each of the information shown above:
 
 * **`TASK_NAME`**
 
-  * Represents the name of the task which can be a short description.
+  * Represents the name of a task which can be a short description.
+  
+  * Task name should contain **30 characters or fewer**.
+  
+   <div markdown="block" class="alert alert-info">
+  
+  **:bulb: Tips :**<br>
+  
+  You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
+  This way, you can read through the list much faster.
 
-  * Can only consist of 30 characters.
+  </div>
 
-  * _**Tips :**_ You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
-    this way, you can read through the list much faster.
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "Finish Lab02" | `Finish Lab02`
+    "Submit reflection" | `Submit reflection`
+    " &nbsp; Finalize UG" | `Finalize UG`<br>(Preceding whitespaces are ignored)
+    "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 characters)
+
+<br/>
 
 * **`TAG`**
 
-  * Represents a single-word (tag) that can help describe the type of the task.
+  * Represents a tag that can help describe the type of a task.
+
+  * You can add multiple `TAG`s to each task.
+  
+  * Each `TAG` can only consist of **one word**.
+  
+  <div markdown="block" class="alert alert-info">
+  
+  **:bulb: Tips :**<br>
+  
+  You can set the `TAG` to represent the module that is related to a task.
+
+  </div>
+
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "CS2101" | `CS2101`
+    "Assignment" | `Assignment`
+    "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
+
+<br/>
 
 * **`PRIORITY`**
 
-  * Represents how important the task is.
+  * Represents how important a task is.
+  
+  * More stars implies that the task is more important.
 
-  * You can choose 4 **pre-defined** priority level, which are,
-    * `HIGHEST`
-    * `HIGH`
-    * `NORMAL`
-    * `LOW`
+  * You can choose 3 **pre-defined** priority level, which are,
+    * `HIGH` (★★★★)
+    * `NORMAL` (★★★)
+    * `LOW` (★★)
+  
+  <br/>
+
+  <div markdown="block" class="alert alert-info">
+  
+  **:bulb: Tips :**<br>
+  
+  Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
+  based on `PRIORITY`!
+
+  </div>
+
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Coming soon!**<br>
+  
+  In the next version of CAP5Buddy, you will be able to add <span style="color = yellow;">★★★★★</span> (`HIGHEST`) and <span style="color = yellow;">★</span> (`LOWEST`) priority!
+  
+  </div>
+  
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
+    "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
+    "LOW" | <span style="color = yellow;">★★</span> (`LOW`)
+    "hi" | _**Invalid Input**_<br>(Input should match the priority name)
+
+<br/>
 
 * **`DATE`**
 
-  * You can use `DATE` based on your need, for instance, you can set the `DATE as the deadline of a task or
-    a target deadline that is earlier than the real deadline. It's all up to you.
+  * Represents the date or deadline of a task.
+  
+  * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:bulb: Tips :**<br>
+  
+  You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
+  a target deadline that is earlier than the real deadline. It's all up to you.
+
+  </div>
+
+  * Below are examples for the input:
+
+    Input | Display Format
+    --------|------------------
+    "2020-10-10" | `2020-10-10`
+    "2019-10-05" | `2019-10-05`
+    "2020-10-3" | _**Invalid Input**_<br>(Day with a single number should have a preceding `0` i.e. `03`)
+    "2020-oct-03" | _**Invalid Input**_<br>(All values should be in numbers)
+    "2020-13-10" | _**Invalid Input**_<br>(Incorrect value for month)
+    "05-10-2018" | _**Invalid Input**_<br>(Incorrect order)
+    "2020-13" | _**Invalid Input**_<br>(Missing value for day)
+    
+    <br/>
+    
 * **`STATUS`**
 
-  * Represents the progress status of a task.
+  * Represents the status of a task.
 
-  * Only have two value which are `Completed` or `Note Completed`.
+  * In normal condition, `STATUS` only has two value which are `COMPLETED` or `NOT COMPLETED`.
+  
+  * `COMPLETED` will be displayed with a green label, while `NOT COMPLETED` will be displayed with an orange label.
 
-  * When you create a new task, it will have a status of `Not Completed` by default.
+  * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
+  
+  <div markdown="block" class="alert alert-info">
+  
+  **:warning: Warning:**<br>
+  
+  Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
+  complete it by the given deadline.
 
-#### Adding a task: `addtask`
+  <p aligin="center"><img src="images/TodoList/UG/taskOverdue.png"></p>
 
-Adds a task to the list.
+  </div>
+  
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "COMPLETED" | `COMPLETED`
+    "Completed" | `COMPLETED`
+    "INCOMPLETE" | `NOT COMPLETED`
+    "Incomplete" | `NOT COMPLETED`
 
-Format: `addtask` `n/TASK_NAME` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
+<br/>
 
-* All fields except `TASK_NAME` are **optional**.
+The following information is not an input type but it is referenced from other information that you have given:
 
-* The order of the input does not matter.
+* **`REMAINING DAYS & PROGRESS BAR`**
 
-* `TASK_NAME` should not be longer than **30 characters**.
+  * **Remaining days** tells you how many more days left until the deadline of a task.
+  
+  * **Progress bar** tells you the percentage of days that have passed since the day you created the task. In this case, 
+  the blue area will increase from day to day.
+
+We have covered the basic feature of Todo List. Next, we will discuss how to use each commands that the Todo List offers.
+
+<br/>
+
+#### Adding a task: `addtask` (Michael)
+
+This command allows you to add a task to the Todo List.
+
+Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
+
+* All fields except `TASK_NAME` are **optional**. This means you can leave the details out if you feel it's not necessary.
+
+* You can input the information in any order.
+
+* Task name should contain 30 characters or fewer.
 
 * You can provide more than one `TAG` e.g. `t/LAB t/DAILY`.
 
@@ -675,62 +885,95 @@ Format: `addtask` `n/TASK_NAME` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
 
 * Input for `PRIORITY` is not case-sensitive e.g. `highest`, `Highest` work fine.
 
-* `Date` must be in the form of `YYYY-MM-DD` e.g. `2020-12-20`.
+* `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
 
-Examples:
+Example(s):
 
-* `addtask n/read book t/DAILY t/HOBBY p/low d/2020-10-10` adds a task with the given input.
-
-* `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given input.
+* `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/todo2.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
 
-#### Deleting a task: `deletetask`
+#### Deleting a task: `deletetask` (Michael)
 
-Deletes a task from the list.
+This command allows you to delete a task from the Todo List. You can delete a task by specifying the index of the task
+in the TodoList.
 
-Format: `deletetask` `INDEX`
+Format: `deletetask INDEX`
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+* `INDEX` must be a **positive whole number** e.g. 1, 2, 10.
 
-* Index must be a **positive integer**.
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-Examples:
+Example(s):
 
-* `deletetask 1` deletes the first task in the list.
+* `deletetask 3` deletes the third task in the Todo List.
 
-* `deletetask 2` deletes the second task in the list.
+Expected output:
 
-#### Editing a task: `edittask`
+<p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
 
-Edits a task in the list.
+<br/>
 
-Format: `edittask` `INDEX` `[n/TASK_NAME]` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
+#### Editing a task: `edittask` (Michael)
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
+a task when you mistakenly input an incorrect information.
 
-* `INDEX` must be a **positive integer**.
+Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
-* The order of the input does not matter.
+* You can get the `INDEX` from the current displayed Todo List.
 
-* At least one field must not be empty.
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+
+* You can input the information in any order.
+
+* At least one field must be provided.
 
 * `TASK_NAME` should not be longer than **30 characters**.
 
-* Editing the `TAG` will overwrite all the current `TAG`s.
+<div markdown="block" class="alert alert-info">
 
-Examples:
+**:information_source: Delete an information from a task:**
 
-* `edittask 1 n/read chapter 5 p/HIGH` edits the first task name to `read chapter 5` and
-and the priority to `HIGH`.
+  * You can delete an information from a task by specifying the prefix with an empty description.
+  
+  * Only optional information can be deleted.
 
-* `edittask 2 n/read tutorial d/2020-11-04` edits the second task name to `read tutorial` and
-and the `DATE` to `2020-11-04`.
+</div>
 
+<div markdown="block" class="alert alert-info">
 
-#### Locating tasks: `findtask`          (Jonas)
+**:warning: Warning:**<br>
+
+  Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
+  use the `undo` command. So, don't worry!
+
+</div>
+
+Example(s):
+
+Below is an example of editing information of a task:
+
+* `edittask 1 n/read chapter 5 p/normal` edits the first `TASK_NAME` to `read chapter 5` and
+and the priority to `normal`.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/editTask1.png"></p>
+
+In addition, below is an example of how you can delete information of a task:
+
+* `edittask 1 p/ d/` deletes the `PRIORITY` and the `DATE` of the first task.
+
+Expected output:
+
+<img src="images/TodoList/UG/editTask2.png">
+
+<br/>
+
+#### Locating tasks: `findtask` (Jonas Ng)
 
 Finds all tasks that fulfil all the provided search criteria.
 
@@ -793,187 +1036,258 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Only tasks matching all search criteria provided will be returned.
 
- Example:
+ Example(s):
  
- `findtask `
+ `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
  
  Expected Outcome:
  
+ ![FindTask](images/Task/FindTaskUG.PNG)
  
-
  Other helpful examples:
 
-  * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority
+  * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority.
 
-  * `findtask t/difficult online` returns all tasks that have the `difficult` **or** `online` tag
+  * `findtask t/difficult online` returns all tasks that have the `difficult` **or** `online` tag.
 
   * `findtask n/lab quiz t/difficult` returns all tasks with their name containing **either**
-     the word `lab` or  `quiz` **and** has `difficult` as one of its tags
+     the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
+<br/>
 
+#### Marking a task as completed: `completetask` (Michael)
 
-#### Marking a task as completed: `completetask`
+This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
 
-Labels a task as `Completed`.
+Format: `completetask INDEX`
 
-Format: `completetask` `INDEX`
+* You can get the `INDEX` from the current displayed Todo List.
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-* `INDEX` must be a **positive integer**.
+<div markdown="block" class="alert alert-info">
 
-* _**Tips :**_ You can change back the status to `Not Completed` by using either the `undo` or `resettask` command.
+**:bulb: Tips:**<br>
 
-Examples:
+  You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
 
-* `completetask 1` labels the first task in the list as `Completed`.
+</div>
 
-* `completetask 2` labels the second task in the list as `Completed`.
+Example(s):
 
-#### Resetting a task: `resettask`
+* `completetask 1` labels the first task in the list as `COMPLETED`.
 
-Reset the status of a task back to `Not Completed`.
+Expected output:
 
-Format: `resettask` `INDEX`
+<p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+<br/>
 
-* `INDEX` must be a **positive integer**.
+#### Resetting a task: `resettask` (Michael)
 
-Examples:
+This command allows you to reset the status of a task back to `NOT COMPLETED`. The task will then have the red `NOT COMPLETED` label.
 
-* `resettask 1` reset the first task in the list.
+Format: `resettask INDEX`
 
-* `resettask 2` reset the second task in the list.
+* You can get the `INDEX` from the current displayed Todo List.
 
-#### Sorting tasks: `sorttask`
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-Sorts the list based on a criterion.
+Example(s):
 
-Format: `sorttask` `[r]` `CRITERION`
+* `resettask 3` resets the third task in the list.
 
-* `r` indicates if the sorted list should have reversed order, for example, if `sorttask priority` sorts
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
+
+<br/>
+
+#### Sorting tasks: `sorttask` (Michael)
+
+This command is one of the powerful commands in Todo List. It  allows you to sort the list based on a criterion. In addition,
+you will have 3 options when sorting the Todo List which can be very handy, especially to help you become more productive
+in managing your tasks.
+
+Format: `sorttask [r] CRITERION`
+
+* `r` indicates if the sorted list should have the reversed order, for example, if `sorttask priority` sorts
   the list from the highest priority to the lowest priority then `sorttask r priority` will sort the list
   from the lowest to the highest priority instead.
 
-* `r` is **optional**.
+* `r` is **optional**. You can use it everytime you need the opposite ordering.
 
 * `CRITERION` is **pre-defined**, you can choose `NAME`, `PRIORITY`, or `DATE`.
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
 
-Examples:
+<div markdown="block" class="alert alert-info">
 
-* `sorttask date` sorts the task from the task with the closest date to the current date to.
+**:bulb: Tips:**<br>
+  * Each `CRITERION` has an abbreviated or synonym version that you can use:
+    * You can input `NAME` as `n` (not case-sensitive).
+    * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
+    * You can input `DATE` as `deadline`, `d` (not case-sensitive).
+  * Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
 
-* `sorttask r date` sorts the task from the task with the farthest date from the current date.
+</div>
 
-#### Listing all tasks: `listtask`
+Example(s):
 
-List all the tasks on the list and resets ordering.
+* `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
+
+<br/>
+
+#### Listing all tasks: `listtask` (Michael)
+
+This command allows you to list all the tasks on the list, and also resets the ordering at the same time.
 
 Format: `listtask`
 
-* _**Tips :**_ You can use `listtask` to go back to the original list after
+<div markdown="block" class="alert alert-info">
+
+**:bulb: Tips:**<br> 
+
+  You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
 
-#### Clearing the list: `cleartask`
+</div>
 
-Clears all tasks in the list.
+Example(s):
+
+* `listtask` resets the current displayed Todo List to the original list.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
+
+<br/>
+
+#### Clearing the list: `cleartask` (Michael)
+
+This command allows you to clear all tasks in the Todo List.
 
 Format: `cleartask`
 
-* _**Tips :**_ If you accidentally cleared the whole list, you can always use the `undo` command
-  to restore the list.
+<div markdown="block" class="alert alert-info">
 
+**:warning: Warning:**<br>
+  * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
+    in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
+  * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
+    you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
-### Contact List Features (Jonas)
+</div>
+
+Example(s) :
+
+* `cleartask` deletes the whole TodoList.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
+
+Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
+
+<br/>
+<br/>
+<br/>
+
+### Contact List Features (Jonas Ng)
 
 The following features allow you to manage a list of contacts and perform various contact related functions. 
 
 The section below provides some useful details about the contact list features.
 
-#### Contact command parameters    (Jonas)
+#### Contact command parameters (Jonas Ng)
 
 A contact list feature can use one or more of the following parameters:
 
 * **`NAME`**:
 
-   * Represents the name of a contact
+   * Represents the name of a contact.
   
    * Can only contain alphanumeric characters and spaces, and should not be blank.
   
-   * Examples: `John`, `Amy`
+   * Examples: `John`, `Amy`.
   
-   * All contacts must have a name
+   * All contacts must have a name.
   
 
 * **`EMAIL`**:
 
-   * Represents the email address of a contact
+   * Represents the email address of a contact.
   
    * `Email`should be of the format `local-part@domain` and adhere to the following constraints:
        
-     1. The local-part should only contain alphanumeric characters and these special characters: `!#$%&'*+/=?{|}~^.-` 
+     1. The local-part should only contain alphanumeric characters and these special characters: `!#$%&'*+/=?{|}~^.-` .
          
      2. This is followed by a `@` and then a domain name. 
          
      3. The domain name must:
-        * Be at least 2 characters long
-        * Start and end with alphanumeric characters
+        * Be at least 2 characters long.
+        * Start and end with alphanumeric characters.
         * Consist of alphanumeric characters, a period or a hyphen for the characters in between, if any.
 
-   * Example: `johndoe@gmail.com`
+   * Example: `johndoe@gmail.com`.
 
-   * All contacts must have an email address
+   * All contacts must have an email address.
 
 
-* **`Telegram`**:
+* **`TELEGRAM`**:
 
-  * Represents the telegram username of a contact
+  * Represents the telegram username of a contact.
   
   * The `TELEGRAM` field provided must be a valid telegram username that follows the following constraints:
   
-    1. Must start with the `@` symbol
-    2. At least 5 characters long, not including the `@` symbol
-    3. Contains only alphanumeric characters or underscore
+    1. Must start with the `@` symbol.
+    2. At least 5 characters long, not including the `@` symbol.
+    3. Contains only alphanumeric characters or underscore.
     
-  * Examples: `@john_doe`, `@johndoe`
+  * Examples: `@john_doe`, `@johndoe`.
   
-  * Telegram is a not a compulsory field of a contact
+  * Telegram is a not a compulsory field of a contact.
 
 
-* **`Tag`**:
+* **`TAG`**:
 
-  * Represents a tag that can be used to describe a contact
+  * Represents a tag that can be used to describe a contact.
   
   * Tags names should be alphanumeric and should not be blank or contain whitespaces.
   
-  * Examples: `friend`, `TA`
+  * Examples: `friend`, `TA`.
   
-  * Tag is not a compulsory field of a contact
+  * Tag is not a compulsory field of a contact.
 
 
 
-#### Adding a contact: `addcontact`             (Jonas)
+#### Adding a contact: `addcontact` (Jonas Ng)
 
 Adds a new contact into the contact list if it does not already exist.
 
 Format: `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...`
 
- * A contact can have any number of tags (including 0)
+ * A contact can have any number of tags (including 0).
 
 
-Example: 
+Example(s): 
 
-`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`
+`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
  
 Expected Outcome:
 
 ![AddContactOutcome](images/contact/AddContactUG.PNG)
 
+Other helpful example(s):
 
-#### Locating contacts: `findcontact`              (Jonas)
+`addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
+
+
+#### Locating contacts: `findcontact` (Jonas Ng)
 
  Finds all contacts that fulfil all the provided search criteria.
 
@@ -1009,24 +1323,24 @@ Expected Outcome:
 
   * Only contacts matching all search criteria provided will be returned.
 
-  Example: 
+  Example(s): 
   
-  `findcontact n/amy` finds all contacts with the word `amy` in their name
+  `findcontact n/amy` finds all contacts with the word `amy` in their name.
   
   Expected Outcome: 
   
   ![FindContact](images/contact/FindContactUG.PNG)
   
-  Other helpful examples:
+  Other helpful example(s):
 
-   * `findcontact n/Bob Abraham` returns all contacts with the word `Bob` **or** `Abraham` in their name, e.g. `Bob Lim`, `Tommy Abraham`
+   * `findcontact n/Bob Abraham` returns all contacts with the word `Bob` **or** `Abraham` in their name, e.g. `Bob Lim`, `Tommy Abraham`.
 
-   * `findcontact t/friend coworker` returns all contacts that have the `friend` **or** `coworker` tag
+   * `findcontact t/friend coworker` returns all contacts that have the `friend` **or** `coworker` tag.
 
-   * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags
+   * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags.
 
 
-#### Listing all contacts: `listcontact`          (Jonas)
+#### Listing all contacts: `listcontact` (Jonas Ng)
 
  Shows a list of all contacts in the contact list.
 
@@ -1041,14 +1355,16 @@ Expected Outcome:
 
  </div>
  
- Example: `listcontact`
+ Example(s): 
+ 
+ `listcontact`
  
  Expected Outcome: 
  
  ![ListContact](images/contact/ListContactUG.PNG)
 
 
-#### Editing a contact: `editcontact`              (Jonas)
+#### Editing a contact: `editcontact` (Jonas Ng)
 
  Edits an existing contact in the contact list.
 
@@ -1061,24 +1377,31 @@ Expected Outcome:
 
  * Existing values will be updated to the input values.
  
- * If the contact has an existing telegram field, you can remove it by typing `te/` without specifying any telegram field after it, i.e. `editcontact 1 te/`
+ * If the contact has an existing telegram field, you can remove it by typing `te/` without specifying any telegram field after it, i.e. `editcontact 1 te/`.
 
  * When editing tags, the existing tags of the contact will be removed i.e adding of tags is not cumulative.
 
- * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`
+ * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`.
 
 
- Example: 
+ Example(s): 
  
- `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`
+ `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`.
  
  Expected Outcome: 
  
  ![EditContact](images/contact/EditContactUG.PNG)
 
 
+ Other helpful example(s):
+ 
+ `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
 
-#### Deleting a contact: `deletecontact`               (Jonas)
+
+ `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+ 
+
+#### Deleting a contact: `deletecontact` (Jonas Ng)
 
 Deletes the specified contact from the contact list.
 
@@ -1090,13 +1413,18 @@ Format: `deletecontact INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
-Example: 
+Example(s): 
 
-`deletecontact 2` deletes the second contact in the displayed contact list
+`deletecontact 2` deletes the second contact in the displayed contact list.
 
 Expected Outcome: 
 
 ![DeleteContact](images/contact/DeleteContactUG.PNG)
+
+
+Other helpful example(s):
+
+`deletecontact 5` deletes the fifth contact in the displayed contact list.
 
 
 #### Sorting contacts: `sortcontact`
@@ -1115,7 +1443,7 @@ Examples:
 
 * `sortcontact r` might produce a list of `{sasha, michael}`.
 
-#### Marking contacts as important: `importantcontact`  
+#### Marking contacts as important: `importantcontact` (Michael)
 
 Marks a task as `Important`.
 
@@ -1134,7 +1462,7 @@ Examples:
 * `importantcontact 2` mark the second contact in the list as `Important`.
 
 
-#### Resetting contacts: `resetcontact`
+#### Resetting contacts: `resetcontact` (Michael)
 
 Removes a contact's important mark and replaces it with `Not Important` (default).
 
@@ -1151,7 +1479,7 @@ Examples:
 * `resetcontact 2` mark the second contact in the list as `Not Important`.
 
 
-#### Clearing the contact list: `clearcontact`                  (Jonas)
+#### Clearing the contact list: `clearcontact` (Jonas Ng)
 
 Clears all contacts in the contact list.
 
@@ -1166,7 +1494,9 @@ Format: `clearcontact`
 
  </div>
 
-Example: `clearcontact`
+Example(s): 
+
+`clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
@@ -1309,7 +1639,7 @@ Action | Format, Examples
 **Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
 **Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
 
-## Command Summary for Contact List
+## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
 -------|-------------------------
@@ -1324,7 +1654,7 @@ Action | Format, Examples
 **Clear Contact**  | `clearcontact`
 
 
-## Command summary for Todo List
+## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
