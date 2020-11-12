@@ -33,59 +33,59 @@ For a quick summary of all available commands, you may scroll to the end of this
 1. Copy the file to the folder you want to use as the _home folder_ for the CAP5Buddy application.
 
 1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. <br>
-<p aligin="center"><img src="images/Ui.png" border="2px solid black"></p>
+<p align="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
 ## Navigating the GUI (Matthias Li Huankang)
-<p aligin="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
-<p aligin="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
+<p align="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
+<p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
 
 ### Key Components (Matthias Li Huankang)
 
 #### Help Window (Matthias Li Huankang)
-<p aligin="center"><img src="images/Help.png" border="2px solid black"></p>
-<p aligin="center"> Help Window </p>
+<p align="center"><img src="images/Help.png" border="2px solid black"></p>
+<p align="center"> Help Window </p>
 
 You can click this button to open up the User Guide help window. It will pop open a new window with the link to
 the User Guide Website.
 
 #### Command Box (Matthias Li Huankang)
-<p aligin="center"><img src="images/CommandBox.png" border="2px solid black"></p>
-<p aligin="center"> Command Box </p>
+<p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
+<p align="center"> Command Box </p>
 
 Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel (Matthias Li Huankang)
-<p aligin="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
-<p aligin="center"> Result Display Panel </p>
+<p align="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
+<p align="center"> Result Display Panel </p>
 
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
 #### List Tabs Panel (Matthias Li Huankang)
-<p aligin="center"><img src="images/TabsBar.png" border="2px solid black"></p>
-<p aligin="center"> List Tabs Panel </p>
+<p align="center"><img src="images/TabsBar.png" border="2px solid black"></p>
+<p align="center"> List Tabs Panel </p>
 
 From here, you can choose between the different windows to view.
 
 #### Main Item Display Panel (Matthias Li Huankang)
-<p aligin="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
-<p aligin="center"> Main Item Display Panel </p>
+<p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
+<p align="center"> Main Item Display Panel </p>
 
 Here is where all items that are added into the application can be found.
 It shows all the items as individual cell boxes with some of the basic information on the item being shown.
 
 #### Additional Information Display Panel (Matthias Li Huankang)
-<p aligin="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
-<p aligin="center"> Additional Information Display Panel </p>
+<p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
+<p align="center"> Additional Information Display Panel </p>
 
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
 #### Calendar (Matthias Li Huankang)
-<p aligin="center"><img src="images/Calendar.png" border="2px solid black"></p>
-<p aligin="center"> Calendar </p>
+<p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
+<p align="center"> Calendar </p>
 
 This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
 that it can easily be identified. From the Calendar figure above, the Calendar also have two buttons that allows the user to
@@ -150,7 +150,7 @@ Creates and adds a new module to be stored in the system.
 
 Expected Outcome: 
   
-<p aligin="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
   
   _New module `CS2103T` has been added_
   
@@ -178,7 +178,7 @@ Creates and add a new completed module to be stored in the system.
    
 Expected Outcome: 
     
-<p aligin="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
     
 _New module `CS2103T` tagged as completed has been added_
 
@@ -209,7 +209,7 @@ Displays a snapshot of a module stored in the system.
    
 Expected Outcome: 
 
-<p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
 _Module details for `CS2105` is being displayed_
 
@@ -232,7 +232,7 @@ Format: `archivemodule INDEX`
  
 Expected Outcome: 
  
-<p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/archivemodule.png" border="2px solid black"></p>
 
 _`CS2105` has been shifted into the archived module list_
 
@@ -309,7 +309,7 @@ Format: `listmodule`
 
    Expected Outcome: 
    
-<p aligin="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
 
 _Only `CS2030` is displayed_
        
@@ -579,7 +579,7 @@ assignments will contain the following fields:
 
   Expected Outcome: 
   
- <p aligin="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
+ <p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
 
 
 _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carries `5`% of the final grade and the result for this assignment is 80/100_
@@ -650,7 +650,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
    
    Expected Outcome: 
      
-<p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
+<p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
 _Grade for CS2100 has been updated_
 
@@ -665,7 +665,7 @@ Calculates your CAP based on completed modules.
 
 Expected Outcome: 
      
-<p aligin="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
 
 _CAP has been calculated_
 
@@ -682,14 +682,14 @@ Calculates helpful CAP details based on the target CAP you input.
 
 Expected Outcome: 
      
-<p aligin="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>  
+<p align="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
 
 _Target CAP details has been calculated_
 
 ### Todo List Features
 
 The GUI for TodoList is shown below
-<p aligin="center"><img src="images/TodoList/todo1.png" border="2px solid black"></p>
+<p align="center"><img src="images/TodoList/todo1.png" border="2px solid black"></p>
 
 Todo List can store all of your tasks that you need to complete. Before you start learning how to use the commands
 for Todo List, you should first understand the details of a task.
@@ -763,7 +763,7 @@ Example(s):
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/todo2.png" border="2px solid black"></p>
+<p align="center"><img src="images/TodoList/todo2.png" border="2px solid black"></p>
 
 #### Deleting a task: `deletetask`
 
@@ -1295,7 +1295,7 @@ Example(s):<br>
  * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.<br>
 
 Expected outcome:<br>
-<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+<p align="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
 
 Other helpful example(s):<br>
  * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
@@ -1314,7 +1314,7 @@ You can delete an existing event from the list by specifying the index.
 * `deleteevent 1` deletes the event of index 1 from the EventList.
 
 Expected outcome:<br>
-<p aligin="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
+<p align="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
 
 #### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
@@ -1329,7 +1329,7 @@ Example(s):<br>
 
 Expected outcome:<br>
 
-<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+<p align="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
 
 Other helpful example(s):<br>
 * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
@@ -1348,7 +1348,7 @@ Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
 Expected outcome:<br>
-<p aligin="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
+<p align="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
 
 Other helpful example(s):<br>
 * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
@@ -1365,7 +1365,7 @@ Allows you to view all events. <br>
 * `listevent` Views the event list on the display.<br>
 
 Expected outcome:<br>
-<p aligin="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
+<p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
 
 ### General Features
 
