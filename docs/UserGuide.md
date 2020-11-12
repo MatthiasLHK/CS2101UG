@@ -706,10 +706,14 @@ Below are the explanations for each of the information shown above:
   
   * Task name should contain **30 characters or fewer**.
   
+   <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
   This way, you can read through the list much faster.
+
+  </div>
 
   * Below are examples for the input:
   
@@ -720,6 +724,8 @@ Below are the explanations for each of the information shown above:
     " &nbsp; Finalize UG" | `Finalize UG`<br>(Preceding whitespaces are ignored)
     "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 characters)
 
+<br/>
+
 * **`TAG`**
 
   * Represents a tag that can help describe the type of a task.
@@ -728,9 +734,13 @@ Below are the explanations for each of the information shown above:
   
   * Each `TAG` can only consist of **one word**.
   
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can set the `TAG` to represent the module that is related to a task.
+
+  </div>
 
   * Below are examples for the input:
   
@@ -739,6 +749,8 @@ Below are the explanations for each of the information shown above:
     "CS2101" | `CS2101`
     "Assignment" | `Assignment`
     "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
+
+<br/>
 
 * **`PRIORITY`**
 
@@ -749,24 +761,37 @@ Below are the explanations for each of the information shown above:
   * You can choose 3 **pre-defined** priority level, which are,
     * `HIGH` (★★★★)
     * `NORMAL` (★★★)
-    * `LOW` (★★) 
+    * `LOW` (★★)
+  
+  <br/>
 
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
   based on `PRIORITY`!
 
-  **:information_source: Coming soon!**<br>
-  In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
+  </div>
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Coming soon!**<br>
+  
+  In the next version of CAP5Buddy, you will be able to add <span style="color = yellow;">★★★★★</span> (`HIGHEST`) and <span style="color = yellow;">★</span> (`LOWEST`) priority!
+  
+  </div>
+  
   * Below are examples for the input:
   
     Input | Display Format
     --------|------------------
-    "high" | `HIGH`(★★★★)
-    "High" | `HIGH`(★★★★)
-    "HIGH" | `HIGH`(★★★★)
+    "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
+    "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
+    "LOW" | <span style="color = yellow;">★★</span> (`LOW`)
     "hi" | _**Invalid Input**_<br>(Input should match the priority name)
+
+<br/>
 
 * **`DATE`**
 
@@ -774,10 +799,14 @@ Below are the explanations for each of the information shown above:
   
   * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
   a target deadline that is earlier than the real deadline. It's all up to you.
+
+  </div>
 
   * Below are examples for the input:
 
@@ -791,6 +820,8 @@ Below are the explanations for each of the information shown above:
     "05-10-2018" | _**Invalid Input**_<br>(Incorrect order)
     "2020-13" | _**Invalid Input**_<br>(Missing value for day)
     
+    <br/>
+    
 * **`STATUS`**
 
   * Represents the status of a task.
@@ -801,11 +832,17 @@ Below are the explanations for each of the information shown above:
 
   * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
   
+  <div markdown="block" class="alert alert-info">
+  
   **:warning: Warning:**<br>
   
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
 
+  <p aligin="center"><img src="images/TodoList/UG/taskOverdue.png"></p>
+
+  </div>
+  
   * Below are examples for the input:
   
     Input | Display Format
@@ -815,16 +852,20 @@ Below are the explanations for each of the information shown above:
     "INCOMPLETE" | `NOT COMPLETED`
     "Incomplete" | `NOT COMPLETED`
 
+<br/>
+
 The following information is not an input type but it is referenced from other information that you have given:
 
 * **`REMAINING DAYS & PROGRESS BAR`**
 
-  * Remaining days tells you how many more days left until the deadline of a task.
+  * **Remaining days** tells you how many more days left until the deadline of a task.
   
-  * Progress bar tells you the percentage of days that have passed since the day you created the task. In this case, 
+  * **Progress bar** tells you the percentage of days that have passed since the day you created the task. In this case, 
   the blue area will increase from day to day.
 
-We have covered the basic feature of Todo List. Next, we will discuss how to use each command that the Todo List offers.
+We have covered the basic features of Todo List. Next, we will discuss how to use each command that the Todo List offers.
+
+<br/>
 
 #### Adding a task: `addtask` (Michael)
 
@@ -873,6 +914,8 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
 
+<br/>
+
 #### Editing a task: `edittask` (Michael)
 
 This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
@@ -890,16 +933,24 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * `TASK_NAME` should not be longer than **30 characters**.
 
+<div markdown="block" class="alert alert-info">
+
 **:information_source: Delete information from a task:**
 
   * You can delete any information from a task by specifying the prefix with an empty description.
   
   * Only optional information can be deleted.
 
+</div>
+
+<div markdown="block" class="alert alert-info">
+
 **:warning: Warning:**<br>
 
   Editing the `TAG` will overwrite all of the current `TAG`s. If you accidentally overwrite all of your tags, you can always
   use the `undo` command. So, don't worry!
+
+</div>
 
 Example(s):
 
@@ -918,7 +969,9 @@ In addition, below is an example of how you can delete information of a task:
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/editTask2.png"></p>
+<img src="images/TodoList/UG/editTask2.png">
+
+<br/>
 
 #### Locating tasks: `findtask` (Jonas Ng)
 
@@ -1000,6 +1053,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
   * `findtask n/lab quiz t/difficult` returns all tasks with their name containing **either**
      the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
+<br/>
+
 #### Marking a task as completed: `completetask` (Michael)
 
 This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
@@ -1010,9 +1065,13 @@ Format: `completetask INDEX`
 
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br>
 
   You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
+
+</div>
 
 Example(s):
 
@@ -1021,6 +1080,8 @@ Example(s):
 Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
+
+<br/>
 
 #### Resetting a task: `resettask` (Michael)
 
@@ -1040,6 +1101,8 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
 
+<br/>
+
 #### Sorting tasks: `sorttask` (Michael)
 
 This command is one of the powerful commands in Todo List. It  allows you to sort the list based on a criterion. In addition,
@@ -1058,12 +1121,16 @@ Format: `sorttask [r] CRITERION`
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br>
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
     * You can input `DATE` as `deadline` or `d` (not case-sensitive).
   * Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
+
+</div>
 
 Example(s):
 
@@ -1073,16 +1140,22 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
 
+<br/>
+
 #### Listing all tasks: `listtask` (Michael)
 
 This command allows you to list all the tasks on the list, and also resets the ordering at the same time.
 
 Format: `listtask`
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br> 
 
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
+
+</div>
 
 Example(s):
 
@@ -1092,17 +1165,23 @@ Expected output:
 
 <p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
 
+<br/>
+
 #### Clearing the list: `cleartask` (Michael)
 
 This command allows you to clear all tasks in the Todo List.
 
 Format: `cleartask`
 
+<div markdown="block" class="alert alert-info">
+
 **:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
-    in this current version of CAP5BUddy.
+    in this current version of CAP5Buddy in case you changed your mind and it's not viable anymore to use the `undo` command.
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
+
+</div>
 
 Example(s) :
 
@@ -1114,6 +1193,9 @@ Expected output:
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
+<br/>
+<br/>
+<br/>
 
 ### Contact List Features (Jonas Ng)
 
@@ -1143,7 +1225,9 @@ A contact list feature can use one or more of the following parameters:
    * `Email`should be of the format `local-part@domain` and adhere to the following constraints:
        
      1. The local-part should only contain alphanumeric characters and these special characters: `!#$%&'*+/=?{|}~^.-` .
+         
      2. This is followed by a `@` and then a domain name. 
+         
      3. The domain name must:
         * Be at least 2 characters long.
         * Start and end with alphanumeric characters.
@@ -1369,7 +1453,7 @@ Format: `importantcontact` `INDEX`
 
 * `INDEX` must be a **positive integer**.
 
-* _**Tips :**_ You remove the important mark from a contact by using either the `undo` or `resetcontact` command.
+* _**Tips :**_ You can remove the important mark from a contact by using either the `undo` or `resetcontact` command.
 
 Examples:
 
