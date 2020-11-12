@@ -1759,7 +1759,7 @@ Action | Format, Examples
 **Clear Contact**  | `clearcontact`
 
 
-## Command summary for Todo List
+## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
