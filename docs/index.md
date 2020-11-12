@@ -37,7 +37,6 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 --------------------------------------------------------------------------------------------------------------------
 ## Navigating the GUI (Matthias Li Huankang)
-<p align="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
 <p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
 
