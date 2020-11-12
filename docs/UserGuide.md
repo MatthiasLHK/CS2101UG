@@ -757,7 +757,7 @@ Below are the explanations for each of the information shown above:
   * You can choose 3 **pre-defined** priority level, which are,
     * `HIGH` (★★★★)
     * `NORMAL` (★★★)
-    * `LOW` (★★) 
+    * `LOW` (★★)<br> 
 
   <div markdown="block" class="alert alert-info">
   
@@ -768,9 +768,14 @@ Below are the explanations for each of the information shown above:
 
   </div>
 
+  <div markdown="block" class="alert alert-info">
+  
   **:information_source: Coming soon!**<br>
+  
   In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
-
+  
+  </div>
+  
   * Below are examples for the input:
   
     Input | Display Format
@@ -944,7 +949,7 @@ In addition, below is an example of how you can delete information of a task:
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/UG/editTask2.png"></p>
+<img src="images/TodoList/UG/editTask2.png">
 
 #### Locating tasks: `findtask` (Jonas Ng)
 
@@ -1140,7 +1145,7 @@ Format: `cleartask`
 
 **:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
-    in this current version of CAP5BUddy.
+    in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
