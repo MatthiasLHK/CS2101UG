@@ -682,27 +682,32 @@ for Todo List, it is a good idea to understand the basic features first.
 To access the Todo List, you can click the **Tasks** button to change the tab as shown in the picture below.
 
 <p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png"></p>
+<p align="center"> <em>Main GUI</em></p>
 
 The GUI for Todo List will look like this:
 
 <p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
+<p align="center"> <em>Todo List GUI</em></p>
 
-There are 3 big main feature that you can use, which are:
+In total, there are 3 main components, Todo List as the main feature, and the other two are additional features to enhance the user experience:
 
 * **Todo List**
   * A **list** that shows all of your tasks.
   
   <p aligin="center"><img src="images/TodoList/UG/todoList.png"></p>
+  <p align="center"> <em>Todo List</em></p>
   
 * **Completion Pie**
   * A **completion chart** that represents the ratio between completed and not completed tasks.
   
   <p aligin="center"><img src="images/TodoList/UG/completionPie.png"></p>
+  <p align="center"> <em>Completion Pie (color may change dynamically)</em></p>
   
 * **Future Bar**
   * A **bar chart** that shows your workload in the next 7 days.
   
   <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
+<p align="center"> <em>Future Bar</em></p>
 
 Now that you understand the GUI, let's take a look how you can store your future tasks!
 
@@ -715,6 +720,7 @@ A task contains some information that can be useful when you are trying to track
 Below is a picture of how each task will look like in the Todo List and what information can be stored:
 
 <p aligin="center"><img src="images/TodoList/UG/taskEntry.png"></p>
+<p align="center"> <em>Example of an entry (task) in Todo List</em></p>
 
 Below are the explanations for each of the information shown above:
 
@@ -858,6 +864,7 @@ Below are the explanations for each of the information shown above:
   complete it by the given deadline.
 
   <p aligin="center"><img src="images/TodoList/UG/taskOverdue.png"></p>
+  <p align="center"> <em>Example of an overdue task</em></p>
 
   </div>
   
@@ -912,6 +919,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
+<p align="center"> <em>Example outcome from adding a task</em></p>
 
 #### Deleting a task: `deletetask` (Michael)
 
@@ -931,6 +939,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
+<p align="center"> <em>Example outcome from deleting a task</em></p>
 
 <br/>
 
@@ -980,6 +989,7 @@ and the priority to `normal`.
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/editTask1.png"></p>
+<p align="center"> <em>Example outcome from editing a task</em></p>
 
 In addition, below is an example of how you can delete information of a task:
 
@@ -988,6 +998,7 @@ In addition, below is an example of how you can delete information of a task:
 Expected Outcome:
 
 <img src="images/TodoList/UG/editTask2.png">
+<p align="center"> <em>Example outcome from deleting an information from a task</em></p>
 
 <br/>
 
@@ -1061,6 +1072,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
  Expected Outcome:
  
  ![FindTask](images/Task/FindTaskUG.PNG)
+ <p align="center"> <em>Example outcome from finding a task</em></p>
  
 
  Other helpful example(s):
@@ -1099,6 +1111,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
+<p align="center"> <em>Example outcome from labelling a task as completed</em></p>
 
 <br/>
 
@@ -1119,6 +1132,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
+<p align="center"> <em>Example outcome from resetting a task</em></p>
 
 <br/>
 
@@ -1158,6 +1172,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
+<p align="center"> <em>Example outcome from sorting the Todo List</em></p>
 
 <br/>
 
@@ -1183,6 +1198,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
+<p align="center"> <em>Example outcome from listing all tasks</em></p>
 
 <br/>
 
@@ -1209,6 +1225,7 @@ Example(s) :
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
+<p align="center"> <em>Example outcome from clearing the Todo List</em></p>
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
@@ -1474,6 +1491,7 @@ Examples:
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/SortContactUG.png"></p>
+<p align="center"> <em>Example outcome from sorting the contact list</em></p>
 
 #### Marking contacts as important: `importantcontact` (Michael)
 
@@ -1500,6 +1518,7 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/ImportantContactUG.png"></p>
+<p align="center"> <em>Example outcome from marking a contact as important</em></p>
 
 #### Resetting contacts: `resetcontact` (Michael)
 
@@ -1518,6 +1537,7 @@ Examples:
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/ResetContactUG.png"></p>
+<p align="center"> <em>Example outcome from resetting a contact</em></p>
 
 #### Clearing the contact list: `clearcontact` (Jonas Ng)
 
@@ -1527,7 +1547,7 @@ Format: `clearcontact`
 
 <div markdown="block" class="alert alert-info">
 
- **:bulb:**<br>
+ **:bulb: Tips :**<br>
 
  If you accidentally cleared the whole contact list, you can always use the `undo` command
  to restore the list.
@@ -1743,14 +1763,14 @@ Action | Format, Examples
 
 Action | Format, Examples
 --------|------------------
-**Add Task** | `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
-**Edit Task** | `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
-**Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]`
-**Delete Task** | `deletetask INDEX`
+**Add Task** | `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]` <br> e.g. `addtask n/finish assignment t/CS2105 p/high d/2020-11-10` 
+**Delete Task** | `deletetask INDEX` <br> e.g. `deletetask 1`
+**Edit Task** | `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]` <br> e.g. `edittask 1 n/read chapter 6 t/MA1521  p/high d/2020-03-10`
+**Sort Tasks** | `sorttask [r] CRITERION` <br> e.g. `sorttask r priority`
+**Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]` <br> e.g. `findtask n/lab d/2020-10-10 p/high s/incomplete t/CS2100`
 **List Tasks** | `listtask`
-**Sort Tasks** | `sorttask [r] CRITERION`
-**Label Task as Completed** | `completetask INDEX`
-**Label Task as Not Completed** | `resettask INDEX`
+**Label Task as Completed** | `completetask INDEX` <br> e.g. `completetask 2`
+**Reset Task Status** | `resettask INDEX` <br> e.g. `resettask 3`
 **Clear Tasks** | `cleartask`
 
 
