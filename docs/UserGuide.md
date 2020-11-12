@@ -757,8 +757,9 @@ Below are the explanations for each of the information shown above:
   * You can choose 3 **pre-defined** priority level, which are,
     * `HIGH` (★★★★)
     * `NORMAL` (★★★)
-    * `LOW` (★★)<br> 
+    * `LOW` (★★)
   
+  <br>
 
   <div markdown="block" class="alert alert-info">
   
