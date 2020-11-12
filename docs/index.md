@@ -1390,7 +1390,9 @@ Action | Format, Examples
 **Delete Module** | `deletemodule INDEX`<br> e.g. `deletemodule 3`
 **Edit Module** | `editmodule INDEX n/NEW_NAME [mc/MODULAR_CREDITS] [gp/GRADE_POINT] [t/TAG]...`<br> e.g. `editmodule 2 n/CS2103T gp/4.5`
 **Clear Module List** | `clearmodule`<br> e.g. `clearmodule`
-**Add Zoom to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
+**Add zoom link to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
+**Delete zoom link from module** | `deletezoom INDEX n/LESSON_NAME` <br> e.g. `deletezoom 1 n/lecture`
+**Edit zoom link in a module** | `editzoom INDEX n/LESSON_NAME z/EDITED_ZOOM_LINK` <br> `editzoom 1 n/lecture z/https://nus-sg.zoom.us/newlink`
 **Add Assignment** | `addassignment n/MODULE_NAME a/ASSIGNMENT_NAME %/ASSIGNMENT_PERCENTAGE r/ASSIGNMENT_RESULT` <br> e.g. `addassignment n/CS2100 a/Quiz 1 %/5.0 r/80`
 **Edit Assignment** | `editassignment INDEX n/MODULE_NAME [a/ASSIGNMENT_NAME] [%/ASSIGNMENT_PERCENTAGE] [r/ASSIGNMENT_RESULT]` <br> e.g. `editassignment 1 n/CS2100 a/Quiz 3 %/20.0`
 **Delete Assignment** | `deleteassignment INDEX n/MODULE_NAME` <br> e.g. `deleteassignment 1 n/CS2100`
