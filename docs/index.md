@@ -414,10 +414,7 @@ Edits a zoom link of a specific lesson in a module.
 
    * The index **must be a positive integer** 1, 2, 3...
    
-   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
+   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.   
    
    <div markdown="block" class="alert alert-info">
 
@@ -1029,10 +1026,10 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
    * **`PRIORITY`**
 
-     * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
+     * Your search priority should be one of the following: `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
 
-     * You should only provide one search priority, i.e. `p/highest low` is not allowed.
+     * You should only provide one search priority, i.e. `p/high low` is not allowed.
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
