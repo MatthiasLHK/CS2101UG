@@ -5,7 +5,9 @@ title: User Guide
 
 ## Introduction
 
+
 Do you find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
+
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
 
 CAP5Buddy is a desktop application that helps NUS SoC students to keep track of their module details efficiently.
@@ -542,9 +544,9 @@ assignments will contain the following fields:
 * **`ASSIGNMENT_PERCENTAGE`**
 
   * Represents the percentage the assignment carries for the final grade, eg. if `Quiz 1` is worth `15`% of the final
-  grade, the `ASSIGNMENT_PERCENTAGE` should be `15.0`%.
+  grade, the `ASSIGNMENT_PERCENTAGE` should be `15`%.
 
-  * Can only be a value from `0.00 - 100`
+  * Can only be a value from `0 - 100`
 
 * **`ASSIGNMENT_RESULT`**
 
@@ -1019,7 +1021,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
-   * **`Status`**
+   * **`STATUS`**
    
      * Your search status should be one of the following: `completed`, `incomplete` (case-insensitive).
      
