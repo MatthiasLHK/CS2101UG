@@ -908,7 +908,7 @@ Format: `deletetask INDEX`
 
 * `INDEX` must be a **positive whole number** e.g. 1, 2, 10.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
@@ -929,7 +929,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 * You can input the information in any order.
 
@@ -1067,7 +1067,7 @@ Format: `completetask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 <div markdown="block" class="alert alert-info">
 
@@ -1095,7 +1095,7 @@ Format: `resettask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
