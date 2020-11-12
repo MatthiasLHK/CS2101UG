@@ -783,7 +783,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Search Parameters:
 
-   * **`Name`**
+   * **`NAME`**
 
      * You are allowed to provide multiple name keywords.
 
@@ -793,7 +793,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Only full words will be matched, e.g. `lab` will match `lab assignment` but not `labs`.
 
-   * **`Date`**
+   * **`DATE`**
 
      * Your search date should be of the format: `YYYY-MM-DD`.
 
@@ -801,7 +801,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
-   * **`Priority`**
+   * **`PRIORITY`**
 
      * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
@@ -818,7 +818,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
      
      * Tasks with their status matching the search status exactly are considered to have fulfilled the task status search criteria.
 
-   * **`Tag`**
+   * **`TAG`**
 
      * You are allowed to provide multiple tag keywords.
      
@@ -1035,13 +1035,13 @@ Other helpful example(s):
 
   * Search Parameters:
 
-    * Name
+    * **`NAME`**
 
       * Contacts with their name matching at least one of the name keywords provided will be considered to have fulfilled the contact name search criteria.
 
       * Only full words will be matched, e.g. `Bob` will match `Bob Abraham` but not `Bobs`.
 
-    * Tag
+    * **`TAG`**
 
       * Contacts containing tags which match at least one of the tag keywords provided will be considered to have fulfilled the contact tag search criteria.
 
