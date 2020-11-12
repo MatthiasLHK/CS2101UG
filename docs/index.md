@@ -394,9 +394,6 @@ Edits a zoom link of a specific lesson in a module.
    * The index **must be a positive integer** 1, 2, 3...
    
    * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
    
    <div markdown="block" class="alert alert-info">
 
