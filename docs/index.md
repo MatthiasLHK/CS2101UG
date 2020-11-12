@@ -658,6 +658,8 @@ Calculates helpful CAP details based on the target CAP you input
   Example:
   * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
 
+<br/>
+
 ### Todo List Features (Michael)
 
 Todo List allows you to store all of your tasks that you need to accomplish. Before you start learning how to use the commands
@@ -689,6 +691,8 @@ There are 3 big main feature that you can use, which are:
   <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
 
 Now that you understand the GUI, let's take a look how you can store your future tasks!
+
+<br/>
 
 #### What is a Task ? : `Task` (Michael)
 
@@ -891,7 +895,7 @@ Example(s):
 
 * `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
 
@@ -910,7 +914,7 @@ Example(s):
 
 * `deletetask 3` deletes the third task in the Todo List.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
 
@@ -959,7 +963,7 @@ Below is an example of editing information of a task:
 * `edittask 1 n/read chapter 5 p/normal` edits the first `TASK_NAME` to `read chapter 5` and
 and the priority to `normal`.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/editTask1.png"></p>
 
@@ -967,7 +971,7 @@ In addition, below is an example of how you can delete information of a task:
 
 * `edittask 1 p/ d/` deletes the `PRIORITY` and the `DATE` of the first task.
 
-Expected output:
+Expected Outcome:
 
 <img src="images/TodoList/UG/editTask2.png">
 
@@ -1077,7 +1081,7 @@ Example(s):
 
 * `completetask 1` labels the first task in the list as `COMPLETED`.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
 
@@ -1097,7 +1101,7 @@ Example(s):
 
 * `resettask 3` resets the third task in the list.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
 
@@ -1136,7 +1140,7 @@ Example(s):
 
 * `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
 
@@ -1161,7 +1165,7 @@ Example(s):
 
 * `listtask` resets the current displayed Todo List to the original list.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
 
@@ -1187,7 +1191,7 @@ Example(s) :
 
 * `cleartask` deletes the whole TodoList.
 
-Expected output:
+Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
 
