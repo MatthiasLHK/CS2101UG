@@ -1343,7 +1343,7 @@ Action | Format, Examples
 **Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
 **Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
 
-## Command Summary for Contact List
+## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
 -------|-------------------------
