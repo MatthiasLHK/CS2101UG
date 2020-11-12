@@ -112,7 +112,7 @@ Some common symbols that can be found in the user guide and their meanings:
   e.g. in `addtask n/NAME`, `NAME` is a parameter which can be used as `addtask n/Week 11 quiz`.
 
 * Items in square brackets are optional. Items without square brackets are compulsory fields. <br>
-  e.g. `addtask n/NAME [p/PRIORITY]` can be used as `addtask n/Week 11 quiz p/highest` or as `addtask n/Week 11 quiz`
+  e.g. `addtask n/NAME [p/PRIORITY]` can be used as `addtask n/Week 11 quiz p/high` or as `addtask n/Week 11 quiz`
 
 * Items with `...` after them can be used multiple times, including zero times. <br>
   e.g. `[t/TAG]...` can be used as `   ` (i.e. 0 times), `t/easy`, `t/friend t/important` etc.
@@ -908,7 +908,7 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can choose 3 level of `PRIORITY` i.e. `HIGH`, `NORMAL`, `LOW`.
 
-* Input for `PRIORITY` is not case-sensitive e.g. `highest`, `Highest` work fine.
+* Input for `PRIORITY` is not case-sensitive e.g. `high` or `High` works fine.
 
 * `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
 
