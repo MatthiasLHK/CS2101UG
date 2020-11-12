@@ -866,7 +866,7 @@ Below are the explanations for each of the information shown above:
   
   <div markdown="block" class="alert alert-info">
   
-  **:warning: Warning:**<br>
+  **:warning: Warning :**<br>
   
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
@@ -967,7 +967,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Delete an information from a task:**
+**:information_source: How to delete an information from a task :**
 
   * You can delete an information from a task by specifying the prefix with an empty description.
   
@@ -977,7 +977,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 <div markdown="block" class="alert alert-info">
 
-**:warning: Warning:**<br>
+**:warning: Warning :**<br>
 
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
   use the [undo](#undo-previous-user-command-undodavid) command. So, don't worry!
@@ -1100,7 +1100,7 @@ Format: `completetask INDEX`
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br>
+**:bulb: Tips :****<br>
 
   You can always change back the status to `Not COMPLETED` by using either the [undo](#undo-previous-user-command-undodavid) or [resettask](#resetting-a-task-resettask-michael) command.
 
@@ -1156,7 +1156,7 @@ Format: `sorttask [r] CRITERION`
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br>
+**:bulb: Tips :**<br>
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
@@ -1183,7 +1183,7 @@ Format: `listtask`
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br> 
+**:bulb: Tips :**<br> 
 
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
@@ -1208,7 +1208,7 @@ Format: `cleartask`
 
 <div markdown="block" class="alert alert-info">
 
-**:warning: Warning:**<br>
+**:warning: Warning :**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
   * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undodavid) or [redo](#redo-previous-user-command-redodavid) command to restore the Todo List. However,
@@ -1226,7 +1226,6 @@ Expected Outcome:
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
-<br/>
 <br/>
 <br/>
 
@@ -1457,7 +1456,7 @@ Other helpful example(s):
 
 * `deletecontact 5` deletes the fifth contact in the displayed contact list.
 
-#### Sorting contacts: `sortcontact`
+#### Sorting contacts: `sortcontact` (Michael)
 
 Sorts the list based on the name of the contact using lexicographic ordering.
 
