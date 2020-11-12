@@ -19,6 +19,7 @@ This user guide will teach you how to use CAP5Buddy and its features to their ma
 information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below. 
 For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.
 
+<div style="page-break-after: always;"></div>
 * Table of Contents
 {:toc}
 
@@ -65,6 +66,7 @@ Here is where all of the items that are added into the application can be found.
 #### List Tabs Panel (Matthias Li Huankang)
 From here, you can choose between the different windows to view.
 
+<div style="page-break-after: always;"></div>
 
 ## Features (Jonas Ng)
 
@@ -102,6 +104,7 @@ Some common symbols that can be found in the user guide and their meanings:
 
 </div>
 
+<div style="page-break-after: always;"></div>
 
 ### Module Tracker Features
 
@@ -118,6 +121,8 @@ Creates and add a new module to be stored in the system.
    Example(s):
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
    
+<div style="page-break-after: always;"></div>
+
 Expected Outcome: 
   
 <p aligin="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
@@ -141,7 +146,10 @@ Creates and add a new completed module to be stored in the system.
    Example(s):
    * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
       and 5 grade points with a `completed` tag.
-   Expected Outcome: 
+
+<div style="page-break-after: always;"></div>
+   
+Expected Outcome: 
     
 <p aligin="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
     
