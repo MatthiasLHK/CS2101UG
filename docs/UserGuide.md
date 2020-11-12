@@ -107,7 +107,7 @@ The modules mentioned below represent a module that you would be taking as an NU
 
 The section below provides some useful details about the module tracker features.
 
-####Module command parameters (Joshua)
+#### Module command parameters (Joshua)
 
 A module tracker feature can use one or more of the following parameters:
 
@@ -278,7 +278,7 @@ Format: `listmodule`
 
  Finds all modules that fulfil your provided module name search criteria.
 
- Format: `findmodule [MODULE_NAME_KEYWORDS...]`
+ Format: `findmodule [MODULE_NAME_KEYWORDS]...`
 
   * The search is case-insensitive, e.g. `cs2030` will match `CS2030`.
 
@@ -293,7 +293,7 @@ Format: `listmodule`
     
   * Search Parameters:
 
-    * Name
+    * `NAME`
 
       * Module with a name matching at least one of the name keywords provided will be considered to have fulfilled the module name search criteria.
 
@@ -640,7 +640,7 @@ assignments will contain the following fields:
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
 
-Calculates your CAP based on completed modules
+Calculates your CAP based on completed modules.
 
  Format: `calculatecap`
 
@@ -649,11 +649,11 @@ Calculates your CAP based on completed modules
 
 #### Calculating target CAP details: `targetcap`(David)
 
-Calculates helpful CAP details based on the target CAP you input
+Calculates helpful CAP details based on the target CAP you input.
 
  Format: `targetcap tc/TARGET_CAP`
 
-  * The target cap refers to the desired CAP input by you
+  * The target cap refers to the desired CAP input by you.
 
   Example:
   * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
@@ -671,7 +671,7 @@ The GUI for Todo List will look like this:
 
 <p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
 
-There are 3 big main feature that you can use, which are:
+There are 3 big main features that you can use, which are:
 
 * **Todo List**
   * A **list** that shows all of your tasks.
@@ -684,7 +684,7 @@ There are 3 big main feature that you can use, which are:
   <p aligin="center"><img src="images/TodoList/UG/completionPie.png"></p>
   
 * **Future Bar**
-  * A **bar chart** that shows your workload in the next 7 days.
+  * A **bar chart** that shows your workload for the next 7 days.
   
   <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
 
@@ -815,7 +815,7 @@ Below are the explanations for each of the information shown above:
     "2020-10-10" | `2020-10-10`
     "2019-10-05" | `2019-10-05`
     "2020-10-3" | _**Invalid Input**_<br>(Day with a single number should have a preceding `0` i.e. `03`)
-    "2020-oct-03" | _**Invalid Input**_<br>(All values should be in numbers)
+    "2020-oct-03" | _**Invalid Input**_<br>(All values should be given as numbers)
     "2020-13-10" | _**Invalid Input**_<br>(Incorrect value for month)
     "05-10-2018" | _**Invalid Input**_<br>(Incorrect order)
     "2020-13" | _**Invalid Input**_<br>(Missing value for day)
@@ -863,7 +863,7 @@ The following information is not an input type but it is referenced from other i
   * **Progress bar** tells you the percentage of days that have passed since the day you created the task. In this case, 
   the blue area will increase from day to day.
 
-We have covered the basic feature of Todo List. Next, we will discuss how to use each commands that the Todo List offers.
+We have covered the basic features of Todo List. Next, we will discuss how to use each command that the Todo List offers.
 
 <br/>
 
@@ -881,7 +881,7 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can provide more than one `TAG` e.g. `t/LAB t/DAILY`.
 
-* You can choose 3 level of `PRIORITY` i.e. `HIGH`, `NORMAL`, `LOW`.
+* You can choose 3 levels of `PRIORITY` i.e. `HIGH`, `NORMAL`, `LOW`.
 
 * Input for `PRIORITY` is not case-sensitive e.g. `highest`, `Highest` work fine.
 
@@ -919,13 +919,13 @@ Expected output:
 #### Editing a task: `edittask` (Michael)
 
 This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
-a task when you mistakenly input an incorrect information.
+a task when you mistakenly input incorrect information.
 
 Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of tasks in the Todo List.
 
 * You can input the information in any order.
 
@@ -935,9 +935,9 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Delete an information from a task:**
+**:information_source: Delete information from a task:**
 
-  * You can delete an information from a task by specifying the prefix with an empty description.
+  * You can delete any information from a task by specifying the prefix with an empty description.
   
   * Only optional information can be deleted.
 
@@ -947,7 +947,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 **:warning: Warning:**<br>
 
-  Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
+  Editing the `TAG` will overwrite all of the current `TAG`s. If you accidentally overwrite all of your tags, you can always
   use the `undo` command. So, don't worry!
 
 </div>
@@ -988,7 +988,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Search Parameters:
 
-   * **`Name`**
+   * **`NAME`**
 
      * You are allowed to provide multiple name keywords.
 
@@ -998,7 +998,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Only full words will be matched, e.g. `lab` will match `lab assignment` but not `labs`.
 
-   * **`Date`**
+   * **`DATE`**
 
      * Your search date should be of the format: `YYYY-MM-DD`.
 
@@ -1006,7 +1006,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
-   * **`Priority`**
+   * **`PRIORITY`**
 
      * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
@@ -1015,7 +1015,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
-   * **`Status`**
+   * **`STATUS`**
    
      * Your search status should be one of the following: `completed`, `incomplete` (case-insensitive).
      
@@ -1023,7 +1023,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
      
      * Tasks with their status matching the search status exactly are considered to have fulfilled the task status search criteria.
 
-   * **`Tag`**
+   * **`TAG`**
 
      * You are allowed to provide multiple tag keywords.
      
@@ -1091,7 +1091,7 @@ Format: `resettask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+* Index must be a **positive whole number** and does not exceed the number of tasks in the Todo List.
 
 Example(s):
 
@@ -1127,7 +1127,7 @@ Format: `sorttask [r] CRITERION`
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
-    * You can input `DATE` as `deadline`, `d` (not case-sensitive).
+    * You can input `DATE` as `deadline` or `d` (not case-sensitive).
   * Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
 
 </div>
@@ -1177,7 +1177,7 @@ Format: `cleartask`
 
 **:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
-    in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
+    in this current version of CAP5Buddy in case you changed your mind and it's not viable anymore to use the `undo` command.
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
@@ -1297,22 +1297,22 @@ Other helpful example(s):
 
   * You are allowed to provide multiple search keywords for both the name and tag parameter.
 
-  * The order of the search keywords does not matter, e.g. `Bob Abramham` will match `Abraham Bob`.
+  * The order of the search keywords does not matter, e.g. `Bob Abraham` will match `Abraham Bob`.
 
   * When you are providing name or tag keywords, separate distinct keywords with a whitespace,
     e.g. `findcontact n/bob abraham` will search for contacts using the 2 distinct keywords `bob` and `abraham`.
 
-  * You should ensure that keywords are not be blank and at least one search parameter should be provided.
+  * You should ensure that keywords are not blank and at least one search parameter is provided.
 
   * Search Parameters:
 
-    * Name
+    * **`NAME`**
 
       * Contacts with their name matching at least one of the name keywords provided will be considered to have fulfilled the contact name search criteria.
 
       * Only full words will be matched, e.g. `Bob` will match `Bob Abraham` but not `Bobs`.
 
-    * Tag
+    * **`TAG`**
 
       * Contacts containing tags which match at least one of the tag keywords provided will be considered to have fulfilled the contact tag search criteria.
 
@@ -1445,7 +1445,7 @@ Examples:
 
 #### Marking contacts as important: `importantcontact` (Michael)
 
-Marks a task as `Important`.
+Marks a contact as `Important`.
 
 Format: `importantcontact` `INDEX`
 
@@ -1453,13 +1453,13 @@ Format: `importantcontact` `INDEX`
 
 * `INDEX` must be a **positive integer**.
 
-* _**Tips :**_ You remove important mark from contact by using either the `undo` or `resetcontact` command.
+* _**Tips :**_ You can remove the important mark from a contact by using either the `undo` or `resetcontact` command.
 
 Examples:
 
 * `importantcontact 1` marks the first contact in the list as `Important`.
 
-* `importantcontact 2` mark the second contact in the list as `Important`.
+* `importantcontact 2` marks the second contact in the list as `Important`.
 
 
 #### Resetting contacts: `resetcontact` (Michael)
@@ -1476,7 +1476,7 @@ Examples:
 
 * `resetcontact 1` marks the first contact in the list as `Not Important`.
 
-* `resetcontact 2` mark the second contact in the list as `Not Important`.
+* `resetcontact 2` marks the second contact in the list as `Not Important`.
 
 
 #### Clearing the contact list: `clearcontact` (Jonas Ng)
@@ -1496,7 +1496,7 @@ Format: `clearcontact`
 
 Example(s): 
 
-`clearcontact`
+* `clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
@@ -1506,15 +1506,19 @@ Expected Outcome: <br>
 
 #### Adding an Event to the Scheduler: `addevent`
 
-Creates and add a new Event with the specified information from the user input
+Creates and adds a new Event with the specified information from the user input
 
   Format: `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]`
 <p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
-   Examples:
-    * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.(Expected result shown in above image.)
-    * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.
-    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.
+
+  Examples:
+   * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called `C2100 Assignment 1` with the deadline of `10-9-2020 1200` and the tagging of `Important`.(Expected result shown in above image)
+    
+   * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called `CS2103T` into the Scheduler with the date `12-12-2020`.
+    
+   * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called `CS2103T` into the Scheduler with the date `12-12-2020` and the tag of Important.
+    
+   * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.
 
 #### Deleting an Event from the Scheduler: `deleteevent`
 
@@ -1522,22 +1526,27 @@ You can delete an existing event from the list by specifying the index.
 
   Format: `deleteevent index`
 
-   Example:
-    * `deleteevent 1` deletes the event of index 1 from the EventList.
+  Example:
+   * `deleteevent 1` deletes the first event from the EventList.
 
 #### Editing an Event from the Scheduler: `editevent`
 
 You can select an existing event from the list and modify the information such
-as event name and the event date.
+as the event name and the event date.
 
   Format: `editevent index [n/new name] [d/new date]`<br>
+  
   **Note:** All fields are optional but at least 1 of them must be present.
 <p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
    Examples:
-    * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant. (Expected result shown in above image.)
-    * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.
-    * `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.
-    * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.
+   
+   * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the first event with the new name of `CS2103T`, new date and time of `2-4-2020 1200` and the new tag of `NotImportant`. (Expected result shown in above image)
+   
+   * `editevent 1 n/CS2100` edits the first event with the new name of `CS2103T`.
+   
+   * `editevent 1 d/3-3-2020 1300` edits the first event with the new date time of `3-3-2020 1300`. 
+   
+   * `editevent 1 t/NotImportant` edits the first event with the new tag of `NotImportant`.
 
 #### Finding an Event from the Scheduler: `findevent`
 
@@ -1547,8 +1556,10 @@ You can search for a particular event based on the name and date. This will retu
   **Note:** All fields are optional but at least 1 of them must be present.
 
    Examples:
-    * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.
-    * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.
+   
+   * `findevent n/CS2103T` finds all events that have `CS2103T` in their event name.
+    
+   * `findevent d/1-1-2020 1200` finds all event that have the date and time of `1-1-2020 12:00`.
 
 #### List events: `listevent`
 
@@ -1557,15 +1568,15 @@ Allows you to view all events.
 Format: `listevent`
 
  Examples:
- * `listevent` Views the event list on the display.
+ * `listevent` views the event list on the display.
 
 ### General Features
 
 #### Undo previous user command: `undo`(David)
 
-Undoes the previous user command
+Undoes the previous user command.
 
-* You can undo any command that has changed any stored details
+* You can undo any command that has changed any stored details.
 
  Format: `undo`
  
@@ -1574,7 +1585,7 @@ Undoes the previous user command
 
 #### Redo previous user command: `redo`(David)
 
-Redoes the previously undone user command
+Redoes the previously undone user command.
 
  Format: `redo`
  
@@ -1583,7 +1594,7 @@ Redoes the previously undone user command
 
 #### Exiting the application: `exit`(David)
 
-Exits CAP5Buddy
+Exits CAP5Buddy.
 
 Format: `exit`
 
@@ -1592,26 +1603,26 @@ Format: `exit`
 
 #### Getting help : `help`(Team)
 
-Opens the help window
+Opens the help window.
 
 Format: `help`
 
   Example:
   * `help`
   
-## FAQ
+## FAQ (Joshua)
 
 **Q**: How do you add a module into the program?<br>
-**A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
+**A**: Run the program and wait for the terminal to start up. Next, type in : `addmodule n/CS2103T` to add a module called CS2103T.
 
 **Q**: How do you view the zoom links of a particular module?<br>
-**A**: When the program has started running, enter the following in the terminal : “viewmodule 1” to view the zoom link for the first module in the displayed list.
+**A**: When the program has started running, enter the following in the terminal : `viewmodule 1` to view the zoom link for the first module in the displayed list.
 
-**Q**: How do you edit a module's information?
+**Q**: How do you edit a module's information?<br>
 **A**: When the program is running, you can enter the edit command and enter whichever field you want to modify but at least
 1 field must be present.
 
-**Q**: How do I save all the module related information I have entered?
+**Q**: How do I save all the module related information I have entered?<br>
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
@@ -1622,52 +1633,49 @@ Action | Format, Examples
 **Add Module** | `addmodule n/MODULE_NAME`<br> e.g. `addmodule n/CS2103T`
 **Add Completed Module** | `addcmodule n/MODULE_NAME mc/MODULAR_CREDITS gp/GRADE_POINT [t/TAG]...`<br> e.g. `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1`
 **View Module** | `viewmodule INDEX`<br> e.g. `viewmodule 2`
-**Delete Module** | `deletemodule INDEX`<br> e.g. `deletemodule 3`
-**Edit Module** | `editmodule INDEX n/NEW_NAME [mc/MODULAR_CREDITS] [gp/GRADE_POINT] [t/TAG]...`<br> e.g. `editmodule 2 n/CS2103T gp/4.5`
-**Clear Module List** | `clearmodule`<br> e.g. `clearmodule`
-**Add Zoom to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
-**Add Assignment** | `addassignment n/MODULE_NAME a/ASSIGNMENT_NAME %/ASSIGNMENT_PERCENTAGE r/ASSIGNMENT_RESULT` <br> e.g. `addassignment n/CS2100 a/Quiz 1 %/5.0 r/80`
-**Edit Assignment** | `editassignment INDEX n/MODULE_NAME [a/ASSIGNMENT_NAME] [%/ASSIGNMENT_PERCENTAGE] [r/ASSIGNMENT_RESULT]` <br> e.g. `editassignment 1 n/CS2100 a/Quiz 3 %/20.0`
-**Delete Assignment** | `deleteassignment INDEX n/MODULE_NAME` <br> e.g. `deleteassignment 1 n/CS2100`
-**Add Grade** | `addgrade n/MODULE_NAME g/GRADE` <br> e.g. `addgrade n/CS2100 g/90`
-**Archive** | `archivemodule INDEX `<br> e.g. `archivemodule 3`
-**Un-archive** | `unarchivemodule INDEX `<br> e.g. `unarchivemodule 3`
 **Archive Module** | `archivemodule INDEX `<br> e.g. `archivemodule 3`
 **Un-archive Module** | `unarchivemodule INDEX `<br> e.g. `unarchivemodule 3`
-**View Archived Module List** | `viewarchive `<br> e.g. `viewarchive`
-**View Un-archived Module List** | `listmodule `<br> e.g. `list`
-**Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
-**Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
-
-## Command Summary for Contact List (Jonas Ng)
-
-Action | Format, Examples
--------|-------------------------
-**Add Contact** | `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...` <br> e.g. `addcontact n/john e/john@gmail.com te/@johndoe t/friend`
-**Edit Contact** | `editcontact INDEX [n/NAME] [e/EMAIL] [te/TELEGRAM] [t/TAG]...` <br> e.g. `editcontact 1 n/amy te/@amytele`
-**Find Contact** | `findcontact [n/NAME_KEYWORDS] [t/TAG_KEYWORDS]` <br> e.g. `findcontact n/john`
-**Delete Contact** | `deletcontact INDEX` <br> e.g. `deletecontact`
-**List Contacts** | `listcontact`
-**Sort Contacts** | `sortcontact`
-**Mark Contact as Important** | `importantcontact INDEX` <br> e.g. `importantcontact 1`
-**Mark Contact as unimportant** | `resetcontact INDEX` <br> `resetcontact 1`
-**Clear Contact**  | `clearcontact`
-
+**View Archived Module List** | `viewarchive `
+**View Un-archived Module List** | `listmodule `
+**Locating Modules** | `findmodule [MODULE_NAME_KEYWORDS]...` <br> e.g. `findmodule cs2100 cs2030`
+**Add Zoom to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
+**Delete Module** | `deletemodule INDEX`<br> e.g. `deletemodule 3`
+**Edit Module** | `editmodule INDEX n/NEW_NAME [mc/MODULAR_CREDITS] [gp/GRADE_POINT] [t/TAG]...`<br> e.g. `editmodule 2 n/CS2103T gp/4.5`
+**Clear Module List** | `clearmodule`
+**Add Assignment** | `addassignment n/MODULE_NAME a/ASSIGNMENT_NAME %/ASSIGNMENT_PERCENTAGE r/ASSIGNMENT_RESULT` <br> e.g. `addassignment n/CS2100 a/Quiz 1 %/5 r/80`
+**Edit Assignment** | `editassignment INDEX n/MODULE_NAME [a/ASSIGNMENT_NAME] [%/ASSIGNMENT_PERCENTAGE] [r/ASSIGNMENT_RESULT]` <br> e.g. `editassignment 1 n/CS2100 a/Quiz 3 %/20`
+**Delete Assignment** | `deleteassignment INDEX n/MODULE_NAME` <br> e.g. `deleteassignment 1 n/CS2100`
+**Add Grade** | `addgrade n/MODULE_NAME g/GRADE` <br> e.g. `addgrade n/CS2100 g/90`
+**Calculate CAP** | `calculatecap`
+**Calculate Target CAP details** | `targetcap TARGET_CAP` <br> e.g. `targetcap 4.5`
 
 ## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
 **Add Task** | `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
+**Delete Task** | `deletetask INDEX`
 **Edit Task** | `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 **Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]`
-**Delete Task** | `deletetask INDEX`
-**List Tasks** | `listtask`
-**Sort Tasks** | `sorttask [r] CRITERION`
-**Label Task as Completed** | `completetask INDEX`
+**Marking a Task as Completed** | `completetask INDEX`
 **Label Task as Not Completed** | `resettask INDEX`
+**Sort Tasks** | `sorttask [r] CRITERION`
+**List Tasks** | `listtask`
 **Clear Tasks** | `cleartask`
 
+## Command Summary for Contact List (Jonas Ng)
+
+Action | Format, Examples
+-------|-------------------------
+**Add Contact** | `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...` <br> e.g. `addcontact n/john e/john@gmail.com te/@johndoe t/friend`
+**Find Contact** | `findcontact [n/NAME_KEYWORDS] [t/TAG_KEYWORDS]` <br> e.g. `findcontact n/john`
+**List Contacts** | `listcontact`
+**Edit Contact** | `editcontact INDEX [n/NAME] [e/EMAIL] [te/TELEGRAM] [t/TAG]...` <br> e.g. `editcontact 1 n/amy te/@amytele`
+**Delete Contact** | `deletecontact INDEX` <br> e.g. `deletecontact`
+**Sort Contacts** | `sortcontact [r]` <br> e.g. `sortcontact r`
+**Mark Contact as Important** | `importantcontact INDEX` <br> e.g. `importantcontact 1`
+**Mark Contact as unimportant** | `resetcontact INDEX` <br> e.g. `resetcontact 1`
+**Clear Contact**  | `clearcontact`
 
 ## Command summary for Scheduler
 
@@ -1677,13 +1685,13 @@ Action | Format, Examples
 **Delete Event** | `deleteevent index` <br> e.g. `deleteevent 1`
 **Edit Event** | `editevent index [n/EVENT_NAME] [d/DATE_TIME] [t/TAG]` <br> e.g. `editevent 1 n/CS2100 d/2-1-2020 t/Done`
 **Find Event** | `findevent [n/EVENT_NAME] [d/DATE_TIME]` <br> e.g. `findevent n/CS2103T`
-**List Event** | `listevet` <br> e.g. `listevent`
+**List Event** | `listevent`
 
 ## Command summary for general features(David)
 
 Action | Format, Examples
 --------|------------------
-**Undo** | `undo` <br> e.g. `undo`
-**Redo** | `redo` <br> e.g. `redo`
-**Exit** | `exit` <br> e.g. `exit`
-**Help** | `help` <br> e.g. `help`
+**Undo** | `undo`
+**Redo** | `redo`
+**Exit** | `exit`
+**Help** | `help`
