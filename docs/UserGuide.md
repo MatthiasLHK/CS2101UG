@@ -706,7 +706,7 @@ Below are the explanations for each of the information shown above:
   
   * Task name should contain **30 characters or fewer**.
   
-  * **:bulb: Tips :**<br>
+  **:bulb: Tips :**<br>
   
   You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
   This way, you can read through the list much faster.
@@ -728,7 +728,7 @@ Below are the explanations for each of the information shown above:
   
   * Each `TAG` can only consist of **one word**.
   
-  * **:bulb: Tips :**<br>
+  **:bulb: Tips :**<br>
   
   You can set the `TAG` to represent the module that is related to a task.
 
@@ -751,12 +751,12 @@ Below are the explanations for each of the information shown above:
     * `NORMAL` (★★★)
     * `LOW` (★★) 
 
-  * **:bulb: Tips :**<br>
+  **:bulb: Tips :**<br>
   
   Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
   based on `PRIORITY`!
 
-  * **:information_source: Coming soon!**<br>
+  **:information_source: Coming soon!**<br>
   In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
 
   * Below are examples for the input:
@@ -774,7 +774,7 @@ Below are the explanations for each of the information shown above:
   
   * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
-  * **:bulb: Tips :**<br>
+  **:bulb: Tips :**<br>
   
   You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
   a target deadline that is earlier than the real deadline. It's all up to you.
@@ -801,7 +801,7 @@ Below are the explanations for each of the information shown above:
 
   * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
   
-  * **:warning: Warning:**<br>
+  **:warning: Warning:**<br>
   
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
@@ -890,13 +890,13 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * `TASK_NAME` should not be longer than **30 characters**.
 
-* **:information_source: Delete an information from a task:**
+**:information_source: Delete an information from a task:**
 
   * You can delete an information from a task by specifying the prefix with an empty description.
   
   * Only optional information can be deleted.
 
-* **:warning: Warning:**<br>
+**:warning: Warning:**<br>
 
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
   use the `undo` command. So, don't worry!
@@ -1010,7 +1010,7 @@ Format: `completetask INDEX`
 
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-* **:bulb: Tips:**<br>
+**:bulb: Tips:**<br>
 
   You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
 
@@ -1058,7 +1058,7 @@ Format: `sorttask [r] CRITERION`
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
 
-* **:bulb: Tips:**<br>
+**:bulb: Tips:**<br>
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
@@ -1079,7 +1079,7 @@ This command allows you to list all the tasks on the list, and also resets the o
 
 Format: `listtask`
 
-* **:bulb: Tips:**<br> 
+**:bulb: Tips:**<br> 
 
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
@@ -1098,7 +1098,7 @@ This command allows you to clear all tasks in the Todo List.
 
 Format: `cleartask`
 
-* **:warning: Warning:**<br>
+**:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy.
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
