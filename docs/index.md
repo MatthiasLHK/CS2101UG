@@ -5,9 +5,8 @@ title: User Guide
 
 ## Introduction (All)
 
-Do you even find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
+Do you find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
-
 
 CAP5Buddy is a desktop application that helps NUS SoC students to keep track of their module details efficiently.
 It helps you to centralize key module details, contacts and information while following your study progress. It is optimized for use via a Command Line Interface (CLI), while still having the 
@@ -47,7 +46,7 @@ For a quick summary of all available commands, you may scroll to the end of this
 You can click this button to open up the User Guide help window.
 
 #### Additional information Display Panel (Matthias Li Huankang)
-This panel displays all the additional information of each item when a view Command is called.
+This panel displays all the additional information of each item when a `view` Command is called.
 
 #### Calendar (Matthias Li Huankang)
 This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
@@ -203,7 +202,7 @@ Format: `archivemodule INDEX`
  * The index **must be a positive integer** 1, 2, 3...
 
  Example(s):
- * `archivemodule 1` Archives the first module in the displayed list.
+ * `archivemodule 1` archives the first module in the displayed list.
  
 Expected Outcome: 
  
@@ -226,10 +225,10 @@ Format: `unarchivemodule INDEX`
  * The index **must be a positive integer** 1, 2, 3...
 
  Example(s):
- * `unarchivemodule 1` Un-Archives the first module in the displayed archived module list.
+ * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
 
-#### View-archived modules: `viewarchive` (David)
+#### View archived modules: `viewarchive` (David)
 
 Allows you to view the archived module list on the display.
 
@@ -238,7 +237,7 @@ Format: `viewarchive`
  * Executing this command will remove the current un-archived module list from display if you are currently viewing it. You can use the `list` command to display the un-archived module list(See next section).
 
  Example(s):
- * `viewarchive` Views the archived module list on the display.
+ * `viewarchive` views the archived module list on the display.
 
 #### View un-archived modules: `listmodule` (David)
 
@@ -249,7 +248,7 @@ Format: `listmodule`
  * Executing this command will remove the current archived module list from display if you are currently viewing it. You can use the `viewarchive` command to display the archived module list(See previous section).
 
  Example(s):
- * `listmodule` Views the un-archived module list on the display.
+ * `listmodule` views the un-archived module list on the display.
 
 
 #### Locating modules: `findmodule` (David)
@@ -450,7 +449,7 @@ Deletes a zoom link for a specific lesson from an existing module.
 
   Example(s):
   
-  `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
+  * `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
 
   <div markdown="block" class="alert alert-info">
         
@@ -465,7 +464,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   Other helpful example(s):
   
-  `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
+  * `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
 
 
 
@@ -548,7 +547,7 @@ assignments will contain the following fields:
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example:
+  Example(s):
   * `addassignment n/CS2100 a/Quiz 1 %/5 r/80` adds an assignment called `Quiz 1` to the module `CS2100`. `Quiz 1`
   carries `5`% of the final grade and the result for this assignment is `80`.
 
@@ -579,7 +578,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  Examples:
+  Example(s):
    * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at the first position of the module `CS2100` with a new
    assignment name, `Quiz 1`.
 
@@ -603,7 +602,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  Example:
+  Example(s):
    * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
 
   **:information_source: Note:** <br> 
@@ -620,7 +619,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The `MODULE_NAME` must match exactly with an existing module in the module list.
 
-  Example:
+  Example(s):
    * `addgrade n/CS2100 g/85` adds a grade of `85` to the module `CS2100`.
    
    Expected Outcome: 
@@ -825,7 +824,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
-   * **`Status`**
+   * **`STATUS`**
    
      * Your search status should be one of the following: `completed`, `incomplete` (case-insensitive).
      
@@ -848,7 +847,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  Example(s):
  
- `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
+ * `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
  
  Expected Outcome:
  
@@ -1020,7 +1019,7 @@ Format: `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...`
 
 Example(s): 
 
-`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
+* `addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
  
 Expected Outcome:
 
@@ -1028,7 +1027,7 @@ Expected Outcome:
 
 Other helpful example(s):
 
-`addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
+* `addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
 
 
 #### Locating contacts: `findcontact` (Jonas Ng)
@@ -1157,7 +1156,7 @@ Format: `deletecontact INDEX`
 
 Example(s): 
 
-`deletecontact 2` deletes the second contact in the displayed contact list.
+* `deletecontact 2` deletes the second contact in the displayed contact list.
 
 Expected Outcome: 
 
@@ -1238,7 +1237,7 @@ Format: `clearcontact`
 
 Example(s): 
 
-`clearcontact`
+* `clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
