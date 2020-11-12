@@ -3,7 +3,7 @@ layout: page
 title: User Guide
 ---
 
-## Introduction (All)
+## Introduction
 
 Do you find yourself struggling to manage all the different kinds of module information that you have to track? Are there too 
 many modules, contacts, tasks and events to remember? Well, do not worry, CAP5Buddy is here to help.
@@ -13,18 +13,15 @@ It helps you to centralize key module details, contacts and information while fo
 benefits of a Graphical User Interface (GUI). If you can type fast, CAP5Buddy can help you manage your module 
 details and information more efficiently than traditional GUI apps.
 
-### About this user guide (David)
-This user guide will teach you how to use CAP5Buddy and its features to their maximum potential. This user guide contains
-information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below. 
-For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.
 
-<div style="page-break-after: always;"></div>
+
 * Table of Contents
 {:toc}
 
 
 --------------------------------------------------------------------------------------------------------------------
-## Quick start (Matthias Li Huankang)
+
+## Quick start
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
@@ -33,67 +30,41 @@ For a quick summary of all available commands, you may scroll to the end of this
 1. Copy the file to the folder you want to use as the _home folder_ for the CAP5Buddy application.
 
 1. Double-click the file to start the app. The GUI similar to the one below should appear in a few seconds. <br>
-<p align="center"><img src="images/Ui.png" border="2px solid black"></p>
+![GUI](images/ui.png)
 
 --------------------------------------------------------------------------------------------------------------------
-## Navigating the GUI (Matthias Li Huankang)
-<p align="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
-<p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
+## Navigating the GUI
 
-### Key Components (Matthias Li Huankang)
+![GUI](images/OverallGUISnapShotWithLabels.png)
 
-#### Help Window (Matthias Li Huankang)
-<p align="center"><img src="images/Help.png" border="2px solid black"></p>
-<p align="center"> Help Window </p>
+### Key Components
 
-You can click this button to open up the User Guide help window. It will pop open a new window with the link to
-the User Guide Website.
+#### Help Window
+You can click this button to open up the User Guide help window.
 
-#### Command Box (Matthias Li Huankang)
-<p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
-<p align="center"> Command Box </p>
+#### Additional Information Display Panel
+This panel displays all the additional information of each item when a `view` Command is called.
 
+#### Calendar
+This is where you can view your calendar, it is as accurate as a built-in calendar and it also displays
+those days that have an existing event with a color coded box.
+
+#### Command Box
 Here is where you enter your command input to be executed by the application.
 
-#### Results Display Panel (Matthias Li Huankang)
-<p align="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
-<p align="center"> Result Display Panel </p>
-
+#### Results Display Panel
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
-or error message.
+and error messages.
 
-#### List Tabs Panel (Matthias Li Huankang)
-<p align="center"><img src="images/TabsBar.png" border="2px solid black"></p>
-<p align="center"> List Tabs Panel </p>
+#### Main Item Display Panel
+Here is where all of the items that are added into the application can be found. It shows all the items as individual cell boxes.
 
+#### List Tabs Panel
 From here, you can choose between the different windows to view.
 
-#### Main Item Display Panel (Matthias Li Huankang)
-<p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Main Item Display Panel </p>
 
-Here is where all items that are added into the application can be found.
-It shows all the items as individual cell boxes with some of the basic information on the item being shown.
-
-#### Additional Information Display Panel (Matthias Li Huankang)
-<p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Additional Information Display Panel </p>
-
-As the Main Item Display Panel only show the basic information for the items being tracked.
-This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
-
-#### Calendar (Matthias Li Huankang)
-<p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
-<p align="center"> Calendar </p>
-
-This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
-that it can easily be identified. From the Calendar figure above, the Calendar also have two buttons that allows the user to
-cycle between the months. All events that are tracked in the Scheduler's eventlist will be reflected in the calendar.
-
-<div style="page-break-after: always;"></div>
-
-## Features (Jonas Ng)
+## Features
 
 Some common symbols that can be found in the user guide and their meanings:
 
@@ -129,13 +100,61 @@ Some common symbols that can be found in the user guide and their meanings:
 
 </div>
 
-<div style="page-break-after: always;"></div>
 
 ### Module Tracker Features
 
-#### Adding a new module: `addmodule` (David, Joshua, Matthias Li Huankang)
+The modules mentioned below represent a module that you would be taking as an NUS School of Computing student, such as CS2103T or CS2101.
 
-Creates and adds a new module to be stored in the system.
+The section below provides some useful details about the module tracker features.
+
+####Module command parameters (Joshua)
+
+A module tracker feature can use one or more of the following parameters:
+
+* **`MODULE_NAME`**: (Joshua)
+
+   * Represents the module code of the module.
+  
+   * Must match the module's module code exactly (i.e. capitalised and follows the same formatting).
+  
+   * Examples: `CS2103T`, `CS2100`
+  
+   * All modules must have a module name.
+  
+
+* **`MODULE_CREDITS`**: (Joshua)
+
+   * Represents the number of modular credits this module is worth.
+  
+   * Modular credits should be given as a valid number and follow the typical module's number of modular credits(e.g. 4.0, 8.0).
+       
+   * All modules start with 4.0 modular credits on creation but the value can be edited.
+   
+* **`GRADE`**: (Joshua)
+
+  * Represents the current overall grade achieved for the module.
+  
+  * Grades are updated automatically by the assignments (See [below](#what-is-an-assignment---assignment-joshua)).
+     
+* **`GRADE_POINT`**: (Joshua)
+
+   * Represents the grade point achieved after completion of the module.
+   
+   * Grade point should be converted to a number (e.g A- should be converted to 4.5, B to 3.5).
+
+* **`TAG`**: (Joshua)
+
+  * Represents a tag that can be used to describe a module.
+  
+  * Tag names should be alphanumeric and should not be blank or contain whitespaces.
+  
+  * Examples: `Coremodule`, `Completed`
+  
+  * Tag is not a compulsory field of a module.
+   
+#### Adding a new module: `addmodule`(David, Joshua)
+
+Creates and add a new module to be stored in the system.
 
   Format: `addmodule n/MODULE_NAME [t/TAG]...` 
 
@@ -143,24 +162,20 @@ Creates and adds a new module to be stored in the system.
 
   * The module code you input must be **capitalised**, eg. `cs2103t` will be rejected while `CS2103T` is correct.
 
-   Example(s):
-   * `addmodule n/CS2103T` creates and adds the module CS2103T.
+   Example :
+   * `addmodule n/CS2103T` creates and adds the module `CS2103T`.
    
-<div style="page-break-after: always;"></div>
-
 Expected Outcome: 
   
-<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
-  
-  _New module `CS2103T` has been added_
+<p aligin="center"><img src="images/addmodule.png" border="2px solid black"></p>
   
   Other helpful example(s):
 
-   * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
+   * `addmodule n/CS2103T t/Coremodule` creates and adds the module `CS2103T` with the tag `CoreModule`.
 
-#### Adding a new completed module: `addcmodule` (David)
+#### Adding a new completed module: `addcmodule`(David)
 
-Creates and add a new completed module to be stored in the system.
+Creates and adds a new, completed module to be stored in the system.
 
   Format: `addcmodule n/NAME mc/MODULAR_CREDITS gp/GRADE_POINT [t/TAG]...`
 
@@ -170,31 +185,19 @@ Creates and add a new completed module to be stored in the system.
    
    * Completed modules added this way will be used for CAP calculation purposes.
 
-   Example(s):
-   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
-      and 5 grade points with a `completed` tag.
+   Examples:
+   * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named `CS2103T` with `4` modular credits
+      and `5` grade points with a `completed` tag.
+   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named `CS2101` with `2` modular credits
+      and `4.5` grade points with the tags `completed` and `year1`.
 
-<div style="page-break-after: always;"></div>
-   
-Expected Outcome: 
-    
-<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
-    
-_New module `CS2103T` tagged as completed has been added_
-
-   Other helpful example(s):
-
-   * `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1` creates and adds the module named CS2101 with 2 modular credits
-      and 4.5 grade points with the tags `completed` and `year1`.
-
-
-#### Viewing a module: `viewmodule` (David, Joshua)
+#### Viewing a module: `viewmodule`(David, Joshua)
 
 Displays a snapshot of a module stored in the system.
 
- Format: `viewmodule INDEX`
+ Format: `viewmodule` `INDEX`
     
-  * The module viewed will be at the `INDEX` position of the current displayed list.
+  * The module viewed will be the module at the `INDEX` position of the current displayed list.
 
   * The index refers to the index number of the module shown on the displayed module list.
 
@@ -204,22 +207,20 @@ Displays a snapshot of a module stored in the system.
   
   * Note that the displayed snapshot is not updated when the module being displayed is changed.
 
-  Example(s):
+  Example:
    * `viewmodule 1` views the first module in the displayed list.
    
 Expected Outcome: 
 
-<p align="center"><img src="images/viewmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 
-_Module details for `CS2105` is being displayed_
-
-#### Archiving a module: `archivemodule` (David)
+#### Archiving a module: `archivemodule`(David)
 
 Archives a module in the module list and moves it into archived storage.
 
-Format: `archivemodule INDEX`
+Format: `archivemodule` `INDEX`
 
- * The module archived will be at the `INDEX` position of the currently displayed un-archived list.
+ * The module archived will be at the `INDEX` position of the currently displayed un-archived module list.
 
  * The index refers to the index number of the module shown on the displayed un-archived module list.
  
@@ -227,22 +228,20 @@ Format: `archivemodule INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Example(s):
+ Example:
  * `archivemodule 1` archives the first module in the displayed list.
  
 Expected Outcome: 
  
-<p align="center"><img src="images/archivemodule.png" border="2px solid black"></p>
-
-_`CS2105` has been shifted into the archived module list_
-
-#### Un-archiving a module: `unarchivemodule` (David)
+<p aligin="center"><img src="images/archivemodule.png" border="2px solid black"></p>
   
-Un-archives a module in the module list and moves it back into current module list storage.
+#### Un-archiving a module: `unarchivemodule`(David)
 
-Format: `unarchivemodule INDEX`
+Un-Archives a module in the archived module list and moves it back into the current module list storage.
 
- * The module un-archived will be at the `INDEX` position of the currently displayed archived list.
+Format: `unarchivemodule` `INDEX`
+
+ * The module un-archived will be at the `INDEX` position of the currently displayed archived module list.
 
  * The index refers to the index number of the module shown on the displayed archived module list.
  
@@ -250,11 +249,10 @@ Format: `unarchivemodule INDEX`
 
  * The index **must be a positive integer** 1, 2, 3...
 
- Example(s):
+ Example:
  * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
-
-#### View archived modules: `viewarchive` (David)
+#### View-archived modules: `viewarchive`(David)
 
 Allows you to view the archived module list on the display.
 
@@ -262,26 +260,25 @@ Format: `viewarchive`
 
  * Executing this command will remove the current un-archived module list from display if you are currently viewing it. You can use the `list` command to display the un-archived module list(See next section).
 
- Example(s):
+ Example:
  * `viewarchive` views the archived module list on the display.
 
-#### View un-archived modules: `listmodule` (David)
+#### View un-archived modules: `listmodule`(David)
 
-Allows you to view the un-archived module list on the display.
+Allows you to view the un-archived module list in the display.
 
 Format: `listmodule`
 
  * Executing this command will remove the current archived module list from display if you are currently viewing it. You can use the `viewarchive` command to display the archived module list(See previous section).
 
- Example(s):
+ Example:
  * `listmodule` views the un-archived module list on the display.
 
-
-#### Locating modules: `findmodule` (David)
+#### Locating modules: `findmodule`(David)
 
  Finds all modules that fulfil your provided module name search criteria.
 
- Format: `findmodule [MODULE_NAME_KEYWORDS]...`
+ Format: `findmodule [MODULE_NAME_KEYWORDS...]`
 
   * The search is case-insensitive, e.g. `cs2030` will match `CS2030`.
 
@@ -296,25 +293,25 @@ Format: `listmodule`
     
   * Search Parameters:
 
-    * `NAME`
+    * Name
 
       * Module with a name matching at least one of the name keywords provided will be considered to have fulfilled the module name search criteria.
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
 
-  Example(s):
+  Example:
 
    * `findmodule cs2030` returns the module(if any) with the module name `CS2030`.
 
    Expected Outcome: 
    
-<p align="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/findmodule.png" border="2px solid black"></p>
 
-_Only `CS2030` is displayed_
+Only `CS2030` is displayed
        
   Other helpful example(s):
-
+   
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
    
 
@@ -353,7 +350,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
     
     * The zoom link path should only contain alphanumeric characters and these special characters: `?=/`, and should not be blank.
     
-    * Example(s): `https://nus-sg.zoom.us/j/babcyg?pwd=`.
+    * Example: `https://nus-sg.zoom.us/j/babcyg?pwd=`.
 
 * **`LESSON_NAME`**:
 
@@ -361,7 +358,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
   
   * Lesson name should only contain alphanumeric characters, spaces and the hyphen character, and it should not be blank.
 
-  * Example(s): `Lecture-weds`.
+  * Example: `Lecture-weds`.
 
 
 #### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
@@ -404,7 +401,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   
   Other helpful example(s):
   
-  * `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
+  `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
    in the displayed module list for the lesson `lecture on weds`.
 
 
@@ -421,9 +418,6 @@ Edits a zoom link of a specific lesson in a module.
    * The index **must be a positive integer** 1, 2, 3...
    
    * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
    
    <div markdown="block" class="alert alert-info">
 
@@ -475,7 +469,7 @@ Deletes a zoom link for a specific lesson from an existing module.
 
   Example(s):
   
-  * `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the 1st module in the displayed module list.
+  * `deletezoom 1 n/lecture-weds` deletes the zoom link of the lesson `lecture-weds` from the first module in the displayed module list.
 
   <div markdown="block" class="alert alert-info">
         
@@ -490,11 +484,10 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   Other helpful example(s):
   
-  * `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
+  `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
+  
 
-
-
-#### Deleting a module: `deletemodule` (David, Joshua)
+#### Deleting a module: `deletemodule`(David, Joshua)
 
 Deletes a module in the displayed module list.
 
@@ -504,10 +497,10 @@ Deletes a module in the displayed module list.
 
    * The index refers to the index number of the module shown on the displayed module list.
 
-  Example(s):
+  Example:
   * `deletemodule 1` deletes the module at position `1`
 
-#### Editing a module : `editmodule` (David, Joshua, Michael)
+#### Editing a module : `editmodule`(David, Joshua, Michael)
 
 Edits an existing module in the displayed module list with new details.
 
@@ -521,18 +514,15 @@ Edits an existing module in the displayed module list with new details.
 
   * You can add `[TAG]`s to a module through this command,eg. `Tutorial`.
    
-  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it.
+  * You can remove all the module’s tags by typing `t/` without specifying any tags after it.
 
- Example(s):
+ Examples:
   * `editmodule 1 n/CS2030` edits the `MODULE_NAME` for a module at index `1` to `CS2030`.
 
   * `editmodule 3 mc/8 gp/4.5` edits the `MODULAR_CREDITS` and `GRADE_POINT` for the module at index `3` to `8.0`
   modular credits and the grade points to `4.5`.
 
- To be implemented:
-  * We are working on adding the functionality to edit the zoom links for the module for each lesson.
-
-#### Clearing the module list: `clearmodule` (David)
+#### Clearing the module list: `clearmodule`(David)
 
 Clears all un-archived modules.
 
@@ -552,16 +542,17 @@ assignments will contain the following fields:
 * **`ASSIGNMENT_PERCENTAGE`**
 
   * Represents the percentage the assignment carries for the final grade, eg. if `Quiz 1` is worth `15`% of the final
-  grade, the `ASSIGNMENT_PERCENTAGE` should be `15`%.
+  grade, the `ASSIGNMENT_PERCENTAGE` should be `15.0`%.
 
-  * Can only be a value from `0 - 100`
+  * Can only be a value from `0.00 - 100`
 
 * **`ASSIGNMENT_RESULT`**
 
   * Represents your results attained for the assignment, eg. if a score of `75/100` is achieved for
   `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `75` should be input.
 
-#### Adding assignment to a module: `addassignment` (Joshua)
+
+##### Adding assignment to a module: `addassignment` (Joshua)
 
   Adds an assignment to an existing module.
 
@@ -569,20 +560,15 @@ assignments will contain the following fields:
 
   * Adds an assignment `ASSIGNMENT_NAME` to a module `MODULE_NAME` that is currently in the displayed un-archived module list.
   
-  * All fields are compulsory.
-  
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
-  Example(s):
+  Example:
   * `addassignment n/CS2100 a/Quiz 1 %/5 r/80` adds an assignment called `Quiz 1` to the module `CS2100`. `Quiz 1`
   carries `5`% of the final grade and the result for this assignment is `80`.
 
   Expected Outcome: 
   
- <p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
-
-
-_An assignment called `Quiz 1` has been added to `CS2100`. The assignment carries `5`% of the final grade and the result for this assignment is 80/100_
+ <p aligin="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
 
   <div markdown="block" class="alert alert-info">
         
@@ -591,7 +577,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
         
   </div>
 
-#### Editing an assignment in a module: `editassignment` (Joshua)
+##### Editing an assignment in a module: `editassignment` (Joshua)
 
   Edits an assignment at the specified position in the specified module.
 
@@ -604,7 +590,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  Example(s):
+  Examples:
    * `editassignment 1 n/CS2100 a/Quiz 1` edits the assignment at the first position of the module `CS2100` with a new
    assignment name, `Quiz 1`.
 
@@ -618,7 +604,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
         
   </div>
     
-#### Deleting an assignment in a module: `deleteassignment` (Joshua)
+##### Deleting an assignment in a module: `deleteassignment` (Joshua)
 
   Deletes an assignment at the specified position in the specified module.
 
@@ -628,7 +614,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The index **must be a positive integer** 1, 2, 3...
 
-  Example(s):
+  Example:
    * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
 
   **:information_source: Note:** <br> 
@@ -637,7 +623,7 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
   </div>
   
     
-#### Adding a grade to a module: `addgrade` (Joshua)
+##### Adding a grade to a module: `addgrade` (Joshua)
 
   Adds a grade to the specified module, overwriting the existing grade.
 
@@ -645,46 +631,32 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
 
   * The `MODULE_NAME` must match exactly with an existing module in the module list.
 
-  Example(s):
+  Example:
    * `addgrade n/CS2100 g/85` adds a grade of `85` to the module `CS2100`.
    
    Expected Outcome: 
      
-<p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 
-_Grade for CS2100 has been updated_
+#### Calculating Cumulative Average Point(CAP): `calculatecap`(David)
 
-#### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
-
-Calculates your CAP based on completed modules.
+Calculates your CAP based on completed modules
 
  Format: `calculatecap`
 
-  Example(s):
+  Examples:
   * `calculatecap` calculate the user's cap.
 
-Expected Outcome: 
-     
-<p align="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
+#### Calculating target CAP details: `targetcap`(David)
 
-_CAP has been calculated_
+Calculates helpful CAP details based on the target CAP you input
 
-#### Calculating target CAP details: `targetcap` (David)
+ Format: `targetcap tc/TARGET_CAP`
 
-Calculates helpful CAP details based on the target CAP you input.
+  * The target cap refers to the desired CAP input by you
 
- Format: `targetcap TARGET_CAP`
-
-  * The target cap refers to the desired CAP input by you.
-
-  Example(s):
-  * `targetcap 4.5` Calculates CAP achievement required for planned modules in order to achieve target CAP.
-
-Expected Outcome: 
-     
-<p align="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
-
-_Target CAP details has been calculated_
+  Example:
+  * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
 
 <br/>
 
@@ -722,7 +694,7 @@ Now that you understand the GUI, let's take a look how you can store your future
 
 <br/>
 
-#### What is a Task ? (Michael)
+#### What is a Task ? : `Task` (Michael)
 
 A task contains some information that can be useful when you are trying to track all the things that you need to do.
 
@@ -1020,7 +992,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Search Parameters:
 
-   * **`NAME`**
+   * **`Name`**
 
      * You are allowed to provide multiple name keywords.
 
@@ -1030,7 +1002,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Only full words will be matched, e.g. `lab` will match `lab assignment` but not `labs`.
 
-   * **`DATE`**
+   * **`Date`**
 
      * Your search date should be of the format: `YYYY-MM-DD`.
 
@@ -1038,16 +1010,16 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
-   * **`PRIORITY`**
+   * **`Priority`**
 
-     * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
+     * Your search priority should be one of the following: `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
 
-     * You should only provide one search priority, i.e. `p/highest low` is not allowed.
+     * You should only provide one search priority, i.e. `p/high low` is not allowed.
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
-   * **`STATUS`**
+   * **`Status`**
    
      * Your search status should be one of the following: `completed`, `incomplete` (case-insensitive).
      
@@ -1055,7 +1027,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
      
      * Tasks with their status matching the search status exactly are considered to have fulfilled the task status search criteria.
 
-   * **`TAG`**
+   * **`Tag`**
 
      * You are allowed to provide multiple tag keywords.
      
@@ -1070,14 +1042,13 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  Example(s):
  
- * `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
+ `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
  
  Expected Outcome:
  
  ![FindTask](images/Task/FindTaskUG.PNG)
  
-
- Other helpful example(s):
+ Other helpful examples:
 
   * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority.
 
@@ -1246,7 +1217,7 @@ A contact list feature can use one or more of the following parameters:
   
    * Can only contain alphanumeric characters and spaces, and should not be blank.
   
-   * Example(s): `John`, `Amy`.
+   * Examples: `John`, `Amy`.
   
    * All contacts must have a name.
   
@@ -1266,7 +1237,7 @@ A contact list feature can use one or more of the following parameters:
         * Start and end with alphanumeric characters.
         * Consist of alphanumeric characters, a period or a hyphen for the characters in between, if any.
 
-   * Example(s): `johndoe@gmail.com`.
+   * Example: `johndoe@gmail.com`.
 
    * All contacts must have an email address.
 
@@ -1281,7 +1252,7 @@ A contact list feature can use one or more of the following parameters:
     2. At least 5 characters long, not including the `@` symbol.
     3. Contains only alphanumeric characters or underscore.
     
-  * Example(s): `@john_doe`, `@johndoe`.
+  * Examples: `@john_doe`, `@johndoe`.
   
   * Telegram is a not a compulsory field of a contact.
 
@@ -1292,7 +1263,7 @@ A contact list feature can use one or more of the following parameters:
   
   * Tags names should be alphanumeric and should not be blank or contain whitespaces.
   
-  * Example(s): `friend`, `TA`.
+  * Examples: `friend`, `TA`.
   
   * Tag is not a compulsory field of a contact.
 
@@ -1309,7 +1280,7 @@ Format: `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...`
 
 Example(s): 
 
-* `addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
+`addcontact n/Amy e/Amy@gmail.com te/@Amytele t/friend` adds a new contact with the name `Amy`, email `Amy@gmail.com`, telegram `@Amytele` and a tag `friend`.
  
 Expected Outcome:
 
@@ -1317,7 +1288,7 @@ Expected Outcome:
 
 Other helpful example(s):
 
-* `addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
+`addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
 
 
 #### Locating contacts: `findcontact` (Jonas Ng)
@@ -1339,13 +1310,13 @@ Other helpful example(s):
 
   * Search Parameters:
 
-    * **`NAME`**
+    * Name
 
       * Contacts with their name matching at least one of the name keywords provided will be considered to have fulfilled the contact name search criteria.
 
       * Only full words will be matched, e.g. `Bob` will match `Bob Abraham` but not `Bobs`.
 
-    * **`TAG`**
+    * Tag
 
       * Contacts containing tags which match at least one of the tag keywords provided will be considered to have fulfilled the contact tag search criteria.
 
@@ -1358,7 +1329,7 @@ Other helpful example(s):
 
   Example(s): 
   
-  * `findcontact n/amy` finds all contacts with the word `amy` in their name.
+  `findcontact n/amy` finds all contacts with the word `amy` in their name.
   
   Expected Outcome: 
   
@@ -1419,7 +1390,7 @@ Other helpful example(s):
 
  Example(s): 
  
- * `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`.
+ `editcontact 2 n/amy lee e/amy-lee@gmail.com t/classmate` edits the second contact in the displayed contact list with the name `amy lee`, email `amy-lee@gmail.com` and tag `classmate`.
  
  Expected Outcome: 
  
@@ -1428,9 +1399,11 @@ Other helpful example(s):
 
  Other helpful example(s):
  
- * `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
+ `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
 
- * `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+
+ `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+ 
 
 #### Deleting a contact: `deletecontact` (Jonas Ng)
 
@@ -1446,7 +1419,7 @@ Format: `deletecontact INDEX`
 
 Example(s): 
 
-* `deletecontact 2` deletes the second contact in the displayed contact list.
+`deletecontact 2` deletes the second contact in the displayed contact list.
 
 Expected Outcome: 
 
@@ -1455,7 +1428,8 @@ Expected Outcome:
 
 Other helpful example(s):
 
-* `deletecontact 5` deletes the fifth contact in the displayed contact list.
+`deletecontact 5` deletes the fifth contact in the displayed contact list.
+
 
 #### Sorting contacts: `sortcontact`
 
@@ -1468,6 +1442,7 @@ will sort the contact list from the name with the lowest lexicographic value to 
 `sortcontact r` will have the opposite ordering.
 
 * `r` is **optional**.
+
 
 <div markdown="block" class="alert alert-info">
 
@@ -1551,7 +1526,7 @@ Format: `clearcontact`
 
 Example(s): 
 
-* `clearcontact`
+`clearcontact`
 
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
@@ -1559,143 +1534,102 @@ Expected Outcome: <br>
 
 ### Scheduler Features
 
-#### Scheduler Command Parameters (Matthias Li Huankang)
+#### Adding an Event to the Scheduler: `addevent`
 
-* **Event name**<br>
-Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
-throw an invalid naming error.
-
-* **Event time**<br>
-The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
-follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
-be thrown.
-
-* **Tags**<br>
-For the naming of Tags, there cannot be any spacing in the name of the Tag.
-
-#### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
-
-Creates and add a new Event with the specified information from the user input.
+Creates and add a new Event with the specified information from the user input
 
   Format: `addevent n/EVENT_NAME d/DATE_TIME [t/TAG]`
-  
-Example(s):<br>
- * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.<br>
+<p aligin="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+   Examples:
+    * `addevent n/CS2100 Assignment 1 d/10-9-2020 1200 t/Important` adds an Event called C2100 Assignment 1 with the deadline of 10-9-2020 1200 and the tagging of Important.(Expected result shown in above image.)
+    * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.
+    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.
+    * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.
 
-Expected outcome:<br>
-<p align="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
-
-Other helpful example(s):<br>
- * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
- 
- * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.<br>
- 
- * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.<br>
-
-#### Deleting an Event from the Scheduler: `deleteevent` (Matthias Li Huankang)
+#### Deleting an Event from the Scheduler: `deleteevent`
 
 You can delete an existing event from the list by specifying the index.
 
   Format: `deleteevent index`
 
-   Example(s):<br>
-* `deleteevent 1` deletes the event of index 1 from the EventList.
+   Example:
+    * `deleteevent 1` deletes the event of index 1 from the EventList.
 
-Expected outcome:<br>
-<p align="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
-
-#### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
+#### Editing an Event from the Scheduler: `editevent`
 
 You can select an existing event from the list and modify the information such
 as event name and the event date.
 
   Format: `editevent index [n/new name] [d/new date]`<br>
   **Note:** All fields are optional but at least 1 of them must be present.
+<p aligin="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+   Examples:
+    * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant. (Expected result shown in above image.)
+    * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.
+    * `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.
+    * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.
 
-Example(s):<br>
-* `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
-
-Expected outcome:<br>
-
-<p align="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
-
-Other helpful example(s):<br>
-* `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
-
-* `editevent 1 d/3-3-2020 1300` edits the event of index 1 with the new date time of 3-3-2020 1300.<br>
-
-* `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.<br>
-
-#### Finding an Event from the Scheduler: `findevent` (Matthias Li Huankang)
+#### Finding an Event from the Scheduler: `findevent`
 
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
 
-  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
-  **Note:** All fields are optional but at least 1 of them must be present.<br>
-Example(s):<br>
-* `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
+  Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`
+  **Note:** All fields are optional but at least 1 of them must be present.
 
-Expected outcome:<br>
-<p align="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
+   Examples:
+    * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.
+    * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.
 
-Other helpful example(s):<br>
-* `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
+#### List events: `listevent`
 
-* `findevent n/ CS2103T d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
+Allows you to view all events.
 
-#### List events: `listevent` (Matthias Li Huankang)
+Format: `listevent`
 
-Allows you to view all events. <br>
-
-  Format: `listevent`<br>
-
-   Example(s):<br>
-* `listevent` Views the event list on the display.<br>
-
-Expected outcome:<br>
-<p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
+ Examples:
+ * `listevent` Views the event list on the display.
 
 ### General Features
 
-#### Undo previous user command: `undo` (David)
+#### Undo previous user command: `undo`(David)
 
-Undoes the previous user command.
+Undoes the previous user command
 
 * You can undo any command that has changed any stored details
 
  Format: `undo`
  
-  Example(s):
+  Example:
   * `undo`
 
-#### Redo previous user command: `redo` (David)
+#### Redo previous user command: `redo`(David)
 
-Redoes the previously undone user command.
+Redoes the previously undone user command
 
  Format: `redo`
  
-  Example(s):
+  Example:
   * `redo`
 
-#### Exiting the application: `exit` (David)
+#### Exiting the application: `exit`(David)
 
-Exits CAP5Buddy.
+Exits CAP5Buddy
 
 Format: `exit`
 
-  Example(s):
+  Example:
   * `exit`
 
-#### Getting help : `help` (David)
+#### Getting help : `help`(Team)
 
-Opens the help window.
+Opens the help window
 
 Format: `help`
 
-  Example(s):
+  Example:
   * `help`
   
-## FAQ (Matthias Li Huankang)
+## FAQ
 
 **Q**: How do you add a module into the program?<br>
 **A**: Run the program and wait for the terminal to start up. Next, type in : “addmodule n/CS2103T” to add a module called CS2103T.
@@ -1703,53 +1637,54 @@ Format: `help`
 **Q**: How do you view the zoom links of a particular module?<br>
 **A**: When the program has started running, enter the following in the terminal : “viewmodule 1” to view the zoom link for the first module in the displayed list.
 
-**Q**: How do you edit a module's information?<br>
+**Q**: How do you edit a module's information?
 **A**: When the program is running, you can enter the edit command and enter whichever field you want to modify but at least
 1 field must be present.
 
-**Q**: How do I save all the module related information I have entered?<br>
+**Q**: How do I save all the module related information I have entered?
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
-## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
+## Command Summary for Module Tracker(David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
 --------|------------------
 **Add Module** | `addmodule n/MODULE_NAME`<br> e.g. `addmodule n/CS2103T`
 **Add Completed Module** | `addcmodule n/MODULE_NAME mc/MODULAR_CREDITS gp/GRADE_POINT [t/TAG]...`<br> e.g. `addcmodule n/CS2101 mc/2.0 gp/4.5 t/year1`
 **View Module** | `viewmodule INDEX`<br> e.g. `viewmodule 2`
-**Archive Module** | `archivemodule INDEX `<br> e.g. `archivemodule 3`
-**Un-archive Module** | `unarchivemodule INDEX `<br> e.g. `unarchivemodule 3`
-**View Archived Module List** | `viewarchive `
-**View Un-archived Module List** | `listmodule `
-**Locating Modules** | `findmodule [MODULE_NAME_KEYWORDS]...` <br> e.g. `findmodule cs2100 cs2030`
-**Add Zoom to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
 **Delete Module** | `deletemodule INDEX`<br> e.g. `deletemodule 3`
 **Edit Module** | `editmodule INDEX n/NEW_NAME [mc/MODULAR_CREDITS] [gp/GRADE_POINT] [t/TAG]...`<br> e.g. `editmodule 2 n/CS2103T gp/4.5`
-**Clear Module List** | `clearmodule`
-**Add Assignment** | `addassignment n/MODULE_NAME a/ASSIGNMENT_NAME %/ASSIGNMENT_PERCENTAGE r/ASSIGNMENT_RESULT` <br> e.g. `addassignment n/CS2100 a/Quiz 1 %/5 r/80`
-**Edit Assignment** | `editassignment INDEX n/MODULE_NAME [a/ASSIGNMENT_NAME] [%/ASSIGNMENT_PERCENTAGE] [r/ASSIGNMENT_RESULT]` <br> e.g. `editassignment 1 n/CS2100 a/Quiz 3 %/20`
+**Clear Module List** | `clearmodule`<br> e.g. `clearmodule`
+**Add Zoom to module** | `addzoom INDEX n/LESSON_NAME z/ZOOM_LINK` <br> e.g. `addzoom 1 n/lecture z/https://nus-sg.zoom.us/j/uascya367yfy`
+**Add Assignment** | `addassignment n/MODULE_NAME a/ASSIGNMENT_NAME %/ASSIGNMENT_PERCENTAGE r/ASSIGNMENT_RESULT` <br> e.g. `addassignment n/CS2100 a/Quiz 1 %/5.0 r/80`
+**Edit Assignment** | `editassignment INDEX n/MODULE_NAME [a/ASSIGNMENT_NAME] [%/ASSIGNMENT_PERCENTAGE] [r/ASSIGNMENT_RESULT]` <br> e.g. `editassignment 1 n/CS2100 a/Quiz 3 %/20.0`
 **Delete Assignment** | `deleteassignment INDEX n/MODULE_NAME` <br> e.g. `deleteassignment 1 n/CS2100`
 **Add Grade** | `addgrade n/MODULE_NAME g/GRADE` <br> e.g. `addgrade n/CS2100 g/90`
-**Calculate CAP** | `calculatecap`
-**Calculate Target CAP details** | `targetcap TARGET_CAP` <br> e.g. `targetcap 4.5`
+**Archive** | `archivemodule INDEX `<br> e.g. `archivemodule 3`
+**Un-archive** | `unarchivemodule INDEX `<br> e.g. `unarchivemodule 3`
+**Archive Module** | `archivemodule INDEX `<br> e.g. `archivemodule 3`
+**Un-archive Module** | `unarchivemodule INDEX `<br> e.g. `unarchivemodule 3`
+**View Archived Module List** | `viewarchive `<br> e.g. `viewarchive`
+**View Un-archived Module List** | `listmodule `<br> e.g. `list`
+**Calculate CAP** | `calculatecap` <br> e.g. `calculatecap`
+**Calculate Target CAP details** | `targetcap tc/TARGET_CAP` <br> e.g. `targetcap 4.5`
 
 ## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
 -------|-------------------------
 **Add Contact** | `addcontact n/NAME e/EMAIL [te/TELEGRAM] [t/TAG]...` <br> e.g. `addcontact n/john e/john@gmail.com te/@johndoe t/friend`
-**Find Contact** | `findcontact [n/NAME_KEYWORDS] [t/TAG_KEYWORDS]` <br> e.g. `findcontact n/john`
-**List Contacts** | `listcontact`
 **Edit Contact** | `editcontact INDEX [n/NAME] [e/EMAIL] [te/TELEGRAM] [t/TAG]...` <br> e.g. `editcontact 1 n/amy te/@amytele`
-**Delete Contact** | `deletecontact INDEX` <br> e.g. `deletecontact`
-**Sort Contacts** | `sortcontact [r]` <br> e.g. `sortcontact r`
+**Find Contact** | `findcontact [n/NAME_KEYWORDS] [t/TAG_KEYWORDS]` <br> e.g. `findcontact n/john`
+**Delete Contact** | `deletcontact INDEX` <br> e.g. `deletecontact`
+**List Contacts** | `listcontact`
+**Sort Contacts** | `sortcontact`
 **Mark Contact as Important** | `importantcontact INDEX` <br> e.g. `importantcontact 1`
-**Mark Contact as unimportant** | `resetcontact INDEX` <br> e.g. `resetcontact 1`
+**Mark Contact as unimportant** | `resetcontact INDEX` <br> `resetcontact 1`
 **Clear Contact**  | `clearcontact`
 
 
-## Command summary for Todo List
+## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
@@ -1764,7 +1699,7 @@ Action | Format, Examples
 **Clear Tasks** | `cleartask`
 
 
-## Command summary for Scheduler (Matthias Li Huankang)
+## Command summary for Scheduler
 
 Action | Format, Examples
 -------|-------------------------
@@ -1772,13 +1707,13 @@ Action | Format, Examples
 **Delete Event** | `deleteevent index` <br> e.g. `deleteevent 1`
 **Edit Event** | `editevent index [n/EVENT_NAME] [d/DATE_TIME] [t/TAG]` <br> e.g. `editevent 1 n/CS2100 d/2-1-2020 t/Done`
 **Find Event** | `findevent [n/EVENT_NAME] [d/DATE_TIME]` <br> e.g. `findevent n/CS2103T`
-**List Event** | `listevent`
+**List Event** | `listevet` <br> e.g. `listevent`
 
-## Command summary for general features (David)
+## Command summary for general features(David)
 
 Action | Format, Examples
 --------|------------------
-**Undo** | `undo`
-**Redo** | `redo`
-**Exit** | `exit`
-**Help** | `help`
+**Undo** | `undo` <br> e.g. `undo`
+**Redo** | `redo` <br> e.g. `redo`
+**Exit** | `exit` <br> e.g. `exit`
+**Help** | `help` <br> e.g. `help`
