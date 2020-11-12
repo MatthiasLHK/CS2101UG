@@ -706,10 +706,14 @@ Below are the explanations for each of the information shown above:
   
   * Task name should contain **30 characters or fewer**.
   
+   <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
   This way, you can read through the list much faster.
+
+  </div>
 
   * Below are examples for the input:
   
@@ -728,9 +732,13 @@ Below are the explanations for each of the information shown above:
   
   * Each `TAG` can only consist of **one word**.
   
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can set the `TAG` to represent the module that is related to a task.
+
+  </div>
 
   * Below are examples for the input:
   
@@ -751,10 +759,14 @@ Below are the explanations for each of the information shown above:
     * `NORMAL` (★★★)
     * `LOW` (★★) 
 
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
   based on `PRIORITY`!
+
+  </div>
 
   **:information_source: Coming soon!**<br>
   In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
@@ -774,10 +786,14 @@ Below are the explanations for each of the information shown above:
   
   * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
+  <div markdown="block" class="alert alert-info">
+  
   **:bulb: Tips :**<br>
   
   You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
   a target deadline that is earlier than the real deadline. It's all up to you.
+
+  </div>
 
   * Below are examples for the input:
 
@@ -801,11 +817,17 @@ Below are the explanations for each of the information shown above:
 
   * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
   
+  <div markdown="block" class="alert alert-info">
+  
   **:warning: Warning:**<br>
   
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
 
+  <p aligin="center"><img src="images/TodoList/UG/taskOverdue.png"></p>
+
+  </div>
+  
   * Below are examples for the input:
   
     Input | Display Format
@@ -819,9 +841,9 @@ The following information is not an input type but it is referenced from other i
 
 * **`REMAINING DAYS & PROGRESS BAR`**
 
-  * Remaining days tells you how many more days left until the deadline of a task.
+  * **Remaining days** tells you how many more days left until the deadline of a task.
   
-  * Progress bar tells you the percentage of days that have passed since the day you created the task. In this case, 
+  * **Progress bar** tells you the percentage of days that have passed since the day you created the task. In this case, 
   the blue area will increase from day to day.
 
 We have covered the basic feature of Todo List. Next, we will discuss how to use each commands that the Todo List offers.
@@ -896,10 +918,14 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
   
   * Only optional information can be deleted.
 
+<div markdown="block" class="alert alert-info">
+
 **:warning: Warning:**<br>
 
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
   use the `undo` command. So, don't worry!
+
+</div>
 
 Example(s):
 
@@ -1010,9 +1036,13 @@ Format: `completetask INDEX`
 
 * Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br>
 
   You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
+
+</div>
 
 Example(s):
 
@@ -1058,12 +1088,16 @@ Format: `sorttask [r] CRITERION`
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br>
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
     * You can input `DATE` as `deadline`, `d` (not case-sensitive).
   * Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
+
+</div>
 
 Example(s):
 
@@ -1079,10 +1113,14 @@ This command allows you to list all the tasks on the list, and also resets the o
 
 Format: `listtask`
 
+<div markdown="block" class="alert alert-info">
+
 **:bulb: Tips:**<br> 
 
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
+
+</div>
 
 Example(s):
 
@@ -1098,11 +1136,15 @@ This command allows you to clear all tasks in the Todo List.
 
 Format: `cleartask`
 
+<div markdown="block" class="alert alert-info">
+
 **:warning: Warning:**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy.
   * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
+
+</div>
 
 Example(s) :
 
