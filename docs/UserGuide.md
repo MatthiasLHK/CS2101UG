@@ -658,66 +658,180 @@ Calculates helpful CAP details based on the target CAP you input
   Example:
   * `targetcap tc/4.5` calculates CAP achievement required for planned modules in order to achieve target CAP.
 
-### Todo List Features
+### Todo List Features (Michael)
 
-The GUI for TodoList is shown below
-<p aligin="center"><img src="images/TodoList/todo1.png" border="2px solid black"></p>
+Todo List allows you to store all of your tasks that you need to accomplish. Before you start learning how to use the commands
+for Todo List, it is a good idea to understand the basic features first.
 
-Todo List can store all of your tasks that you need to complete. Before you start learning how to use the commands
-for Todo List, you should first understand the details of a task.
+To access the Todo List, you can click the **Tasks** button to change the tab as shown in the picture below.
 
-#### What is a Task ? : `Task`
+<p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png" border="2px solid black"></p>
 
-A task contains 5 type of information that can be useful when you are tying to track all the things that you need to do.
-Below are the explanations for each information that you can add to a task.
+The GUI for Todo List will look like this:
+
+<p aligin="center"><img src="images/TodoList/UG/todolistGUI.png" border="2px solid black"></p>
+
+There are 3 big main feature that you can use, which are:
+
+* **Todo List**
+  * A **list** that shows all of your tasks.
+  
+  <p aligin="center"><img src="images/TodoList/UG/todoList.png" border="2px solid black"></p>
+  
+* **Completion Pie**
+  * A **completion chart** that represents the ratio between completed and not completed tasks.
+  
+  <p aligin="center"><img src="images/TodoList/UG/completionPie.png" border="2px solid black"></p>
+  
+* **Future Bar**
+  * A **bar chart** that shows your workload in the next 7 days.
+  
+  <p aligin="center"><img src="images/TodoList/UG/futureBar.png" border="2px solid black"></p>
+
+Now that you understand the GUI, let's take a look how you can store your future tasks!
+
+#### What is a Task ? : `Task` (Michael)
+
+A task contains some information that can be useful when you are trying to track all the things that you need to do.
+
+Below is a picture of how each task will look like in the Todo List and what information can be stored:
+
+<p aligin="center"><img src="images/TodoList/UG/taskEntry.png" border="2px solid black"></p>
+
+Below are the explanations for each of the information shown above:
 
 * **`TASK_NAME`**
 
-  * Represents the name of the task which can be a short description.
+  * Represents the name of a task which can be a short description.
+  
+  * Task name should contain **30 characters or fewer**.
+  
+  * **:bulb: Tips :**<br>
+  You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
+  This way, you can read through the list much faster.
 
-  * Can only consist of 30 characters.
-
-  * _**Tips :**_ You can set the `TASK_NAME` to be short and clear, for instance, you can name the task as "Finish Lab09".
-    this way, you can read through the list much faster.
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "Finish Lab02" | `Finish Lab02`
+    "Submit reflection" | `Submit reflection`
+    " &nbsp; Finalize UG" | `Finalize UG`<br>(Preceding whitespaces are ignored)
+    "Finalize lab report week 10 for CS2100" | _**Invalid Input**_<br>(Cannot be longer than 30 character)
 
 * **`TAG`**
 
-  * Represents a single-word (tag) that can help describe the type of the task.
+  * Represents a tag that can help describe the type of a task.
+
+  * You can add multiple `TAG`s to each task.
+  
+  * Each `TAG` can only consist of **one word**.
+  
+  * **:bulb: Tips :**<br>
+  You can set the `TAG` to represent the module that is related to a task.
+
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "CS2101" | `CS2101`
+    "Assignment" | `Assignment`
+    "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
 
 * **`PRIORITY`**
 
-  * Represents how important the task is.
+  * Represents how important a task is.
+  
+  * More stars implies that the task is more important.
 
-  * You can choose 4 **pre-defined** priority level, which are,
-    * `HIGHEST`
-    * `HIGH`
-    * `NORMAL`
-    * `LOW`
+  * You can choose 3 **pre-defined** priority level, which are,
+    * `HIGH` (★★★★)
+    * `NORMAL` (★★★)
+    * `LOW` (★★)
+
+  * **:bulb: Tips :**<br>
+  Setting a `PRIORITY` for each task can be very handy because later on you will see that you can sort the list
+  based on `PRIORITY`!
+
+  * **:information: Coming soon!**<br>
+  In the next version of CAP5Buddy, you will be able to add `HIGHEST` (★★★★★) and `LOWEST` (★) priority!
+
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "high" | `HIGH`(★★★★)
+    "High" | `HIGH`(★★★★)
+    "HIGH" | `HIGH`(★★★★)
+    "hi" | _**Invalid Input**_<br>(Input should match the priority name)
 
 * **`DATE`**
 
-  * You can use `DATE` based on your need, for instance, you can set the `DATE as the deadline of a task or
-    a target deadline that is earlier than the real deadline. It's all up to you.
+  * Represents the date or deadline of a task.
+  
+  * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
 
+  * **:bulb: Tips :**<br>
+  You can use `DATE` based on your need, for instance, you can set the `DATE` as the deadline of a task or
+  a target deadline that is earlier than the real deadline. It's all up to you.
+
+  * Below are examples for the input:
+
+    Input | Display Format
+    --------|------------------
+    "2020-10-10" | `2020-10-10`
+    "2019-10-05" | `2019-10-05`
+    "2020-10-3" | _**Invalid Input**_<br>(Day with a single number should have a preceding `0` i.e. `03`)
+    "2020-oct-03" | _**Invalid Input**_<br>(All values should be in numbers)
+    "2020-13-10" | _**Invalid Input**_<br>(Incorrect value for month)
+    "05-10-2018" | _**Invalid Input**_<br>(Incorrect order)
+    "2020-13" | _**Invalid Input**_<br>(Missing value for day)
+    
 * **`STATUS`**
 
-  * Represents the progress status of a task.
+  * Represents the status of a task.
 
-  * Only have two value which are `Completed` or `Note Completed`.
+  * In normal condition, `STATUS` only has two value which are `COMPLETED` or `NOT COMPLETED`.
+  
+  * `COMPLETED` will be displayed with a green label, while `NOT COMPLETED` will be displayed with an orange label.
 
-  * When you create a new task, it will have a status of `Not Completed` by default.
+  * When you create a new task, it will have a `STATUS` of `NOT COMPLETED` by default.
+  
+  * **:warning: Warning:**
+  Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
+  complete it by the given deadline.
 
-#### Adding a task: `addtask`
+  * Below are examples for the input:
+  
+    Input | Display Format
+    --------|------------------
+    "COMPLETED" | `COMPLETED`
+    "Completed" | `COMPLETED`
+    "INCOMPLETE" | `NOT COMPLETED`
+    "Incomplete" | `NOT COMPLETED`
 
-Adds a task to the list.
+The following information is not an input type but it is referenced from other information that you have given:
 
-Format: `addtask` `n/TASK_NAME` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
+* **`REMAINING DAYS & PROGRESS BAR`**
 
-* All fields except `TASK_NAME` are **optional**.
+  * Remaining days tells you how many more days left until the deadline of a task.
+  
+  * Progress bar tells you the percentage of days that have passed since the day you created the task. In this case, 
+  the blue area will increase from day to day.
 
-* The order of the input does not matter.
+We have covered the basic feature of Todo List. Next, we will discuss how to use each commands that the Todo List offers.
 
-* `TASK_NAME` should not be longer than **30 characters**.
+#### Adding a task: `addtask` (Michael)
+
+This command allows you to add a task to the Todo List.
+
+Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
+
+* All fields except `TASK_NAME` are **optional**. This means you can leave the details out if you feel it's not necessary.
+
+* You can input the information in any order.
+
+* Task name should contain 30 characters or fewer.
 
 * You can provide more than one `TAG` e.g. `t/LAB t/DAILY`.
 
@@ -725,60 +839,80 @@ Format: `addtask` `n/TASK_NAME` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
 
 * Input for `PRIORITY` is not case-sensitive e.g. `highest`, `Highest` work fine.
 
-* `Date` must be in the form of `YYYY-MM-DD` e.g. `2020-12-20`.
+* `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
 
 Examples:
 
-* `addtask n/read book t/DAILY t/HOBBY p/low d/2020-10-10` adds a task with the given input.
-
-* `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given input.
+* `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
 
 Expected output:
 
-<p aligin="center"><img src="images/TodoList/todo2.png" border="2px solid black"></p>
+<p aligin="center"><img src="images/TodoList/UG/addTask.png" border="2px solid black"></p>
 
-#### Deleting a task: `deletetask`
+#### Deleting a task: `deletetask` (Michael)
 
-Deletes a task from the list.
+This command allows you to delete a task from the Todo List. You can delete a task by specifying the index of the task
+in the TodoList.
 
-Format: `deletetask` `INDEX`
+Format: `deletetask INDEX`
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+* `INDEX` must be a **positive whole number** e.g. 1, 2, 10.
 
-* Index must be a **positive integer**.
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
 Examples:
 
-* `deletetask 1` deletes the first task in the list.
+* `deletetask 3` deletes the third task in the Todo List.
 
-* `deletetask 2` deletes the second task in the list.
+Expected output:
 
-#### Editing a task: `edittask`
+<p aligin="center"><img src="images/TodoList/UG/deleteTask.png" border="2px solid black"></p>
 
-Edits a task in the list.
+#### Editing a task: `edittask` (Michael)
 
-Format: `edittask` `INDEX` `[n/TASK_NAME]` `[t/TAG]...` `[p/PRIORITY]` `[d/DATE]`
+This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
+a task when you mistakenly input an incorrect information.
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
+Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
-* `INDEX` must be a **positive integer**.
+* You can get the `INDEX` from the current displayed Todo List.
 
-* The order of the input does not matter.
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-* At least one field must not be empty.
+* You can input the information in any order.
+
+* At least one field must be provided.
 
 * `TASK_NAME` should not be longer than **30 characters**.
 
-* Editing the `TAG` will overwrite all the current `TAG`s.
+* **:information_source: Delete an information from a task:**
+
+  * You can delete an information from a task by specifying the prefix with an empty description.
+  
+  * Only optional information can be deleted.
+
+* **:warning: Warning:**<br>
+  Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
+  use the `undo` command. So, don't worry!
 
 Examples:
 
-* `edittask 1 n/read chapter 5 p/HIGH` edits the first task name to `read chapter 5` and
-and the priority to `HIGH`.
+Below is an example of editing information of a task:
 
-* `edittask 2 n/read tutorial d/2020-11-04` edits the second task name to `read tutorial` and
-and the `DATE` to `2020-11-04`.
+* `edittask 1 n/read chapter 5 p/normal` edits the first `TASK_NAME` to `read chapter 5` and
+and the priority to `normal`.
 
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/editTask1.png" border="2px solid black"></p>
+
+In addition, below is an example of how you can delete information of a task:
+
+* `edittask 1 p/ d/` deletes the `PRIORITY` and the `DATE` of the first task.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/editTask2.png" border="2px solid black"></p>
 
 #### Locating tasks: `findtask` (Jonas Ng)
 
@@ -851,8 +985,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
  
  ![FindTask](images/Task/FindTaskUG.PNG)
  
-
- Other helpful example(s):
+ Other helpful examples:
 
   * `findtask d/2020-10-10 p/high` returns all tasks with the date `2020-10-10` **and** `high` priority.
 
@@ -861,81 +994,114 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
   * `findtask n/lab quiz t/difficult` returns all tasks with their name containing **either**
      the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
+#### Marking a task as completed: `completetask` (Michael)
 
+This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
 
-#### Marking a task as completed: `completetask`
+Format: `completetask INDEX`
 
-Labels a task as `Completed`.
+* You can get the `INDEX` from the current displayed Todo List.
 
-Format: `completetask` `INDEX`
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
 
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
-
-* `INDEX` must be a **positive integer**.
-
-* _**Tips :**_ You can change back the status to `Not Completed` by using either the `undo` or `resettask` command.
-
-Examples:
-
-* `completetask 1` labels the first task in the list as `Completed`.
-
-* `completetask 2` labels the second task in the list as `Completed`.
-
-#### Resetting a task: `resettask`
-
-Reset the status of a task back to `Not Completed`.
-
-Format: `resettask` `INDEX`
-
-* You can get the `INDEX` from the current displayed list under the `Tasks` tab.
-
-* `INDEX` must be a **positive integer**.
+* **:bulb: Tips:**<br>
+  You can always change back the status to `Not COMPLETED` by using either the `undo` or `resettask` command.
 
 Examples:
 
-* `resettask 1` reset the first task in the list.
+* `completetask 1` labels the first task in the list as `COMPLETED`.
 
-* `resettask 2` reset the second task in the list.
+Expected output:
 
-#### Sorting tasks: `sorttask`
+<p aligin="center"><img src="images/TodoList/UG/completeTask.png" border="2px solid black"></p>
 
-Sorts the list based on a criterion.
+#### Resetting a task: `resettask` (Michael)
 
-Format: `sorttask` `[r]` `CRITERION`
+This command allows you to reset the status of a task back to `NOT COMPLETED`. The task will then have the red `NOT COMPLETED` label.
 
-* `r` indicates if the sorted list should have reversed order, for example, if `sorttask priority` sorts
+Format: `resettask INDEX`
+
+* You can get the `INDEX` from the current displayed Todo List.
+
+* Index must be a **positive whole number** and does not exceed the number tasks in the Todo List.
+
+Examples:
+
+* `resettask 3` resets the third task in the list.
+
+<p aligin="center"><img src="images/TodoList/UG/resetTask.png" border="2px solid black"></p>
+
+#### Sorting tasks: `sorttask` (Michael)
+
+This command is one of the powerful commands in Todo List. It  allows you to sort the list based on a criterion. In addition,
+you will have 3 options when sorting the Todo List which can be very handy, especially to help you become more productive
+in managing your tasks.
+
+Format: `sorttask [r] CRITERION`
+
+* `r` indicates if the sorted list should have the reversed order, for example, if `sorttask priority` sorts
   the list from the highest priority to the lowest priority then `sorttask r priority` will sort the list
   from the lowest to the highest priority instead.
 
-* `r` is **optional**.
+* `r` is **optional**. You can use it everytime you need the opposite ordering.
 
 * `CRITERION` is **pre-defined**, you can choose `NAME`, `PRIORITY`, or `DATE`.
 
 * `CRITERION` is not case-sensitive e.g `priority, PRIORITY` work fine.
+* **:bulb: Tips:**<br>
+Each `CRITERION` has an abbreviated or synonym version that you can use:
+  * You can input `NAME` as `n` (not case-sensitive).
+  * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
+  * You can input `DATE` as `deadline`, `d` (not case-sensitive).
+Using these abbreviations, the process become less tedious, and you can sort the Todo List much faster. 
 
 Examples:
 
-* `sorttask date` sorts the task from the task with the closest date to the current date to.
+* `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
 
-* `sorttask r date` sorts the task from the task with the farthest date from the current date.
+Expected output:
 
-#### Listing all tasks: `listtask`
+<p aligin="center"><img src="images/TodoList/UG/sortTask.png" border="2px solid black"></p>
 
-List all the tasks on the list and resets ordering.
+#### Listing all tasks: `listtask` (Michael)
+
+This command allows you to list all the tasks on the list, and also resets the ordering at the same time.
 
 Format: `listtask`
 
-* _**Tips :**_ You can use `listtask` to go back to the original list after
+* **:bulb: Tips:**<br> 
+  You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
 
-#### Clearing the list: `cleartask`
+Examples:
 
-Clears all tasks in the list.
+* `listtask` resets the current displayed Todo List to the original list.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/listTask.png" border="2px solid black"></p>
+
+#### Clearing the list: `cleartask` (Michael)
+
+This command allows you to clear all tasks in the Todo List.
 
 Format: `cleartask`
 
-* _**Tips :**_ If you accidentally cleared the whole list, you can always use the `undo` command
-  to restore the list.
+* **:warning: Warning:**<br>
+  * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
+    in this current version of CAP5BUddy.
+  * If you accidentally cleared the whole list, you can always use the `undo` command to restore the Todo List. However,
+    you should always remember that the `undo` command is only able to undo a limited amount of commands.
+
+Examples :
+
+* `cleartask` deletes the whole TodoList.
+
+Expected output:
+
+<p aligin="center"><img src="images/TodoList/UG/clearTask.png" border="2px solid black"></p>
+
+Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
 
 ### Contact List Features (Jonas Ng)
@@ -1184,7 +1350,7 @@ Examples:
 
 * `sortcontact r` might produce a list of `{sasha, michael}`.
 
-#### Marking contacts as important: `importantcontact`  
+#### Marking contacts as important: `importantcontact` (Michael)
 
 Marks a task as `Important`.
 
@@ -1203,7 +1369,7 @@ Examples:
 * `importantcontact 2` mark the second contact in the list as `Important`.
 
 
-#### Resetting contacts: `resetcontact`
+#### Resetting contacts: `resetcontact` (Michael)
 
 Removes a contact's important mark and replaces it with `Not Important` (default).
 
@@ -1395,7 +1561,7 @@ Action | Format, Examples
 **Clear Contact**  | `clearcontact`
 
 
-## Command summary for Todo List
+## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
