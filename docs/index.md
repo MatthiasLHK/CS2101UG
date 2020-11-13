@@ -655,6 +655,7 @@ assignments will contain the following fields:
         
   </div>
   
+<div style="page-break-after: always;"></div>
     
 #### Adding a grade to a module: `addgrade` (Joshua)
 
@@ -671,6 +672,8 @@ assignments will contain the following fields:
      
 <p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
 <p align="center"> <em>Grade for CS2100 has been updated.</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
@@ -703,6 +706,8 @@ Expected Outcome:
 <p align="center"> <em>Target CAP details has been calculated.</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 ### Todo List Features (Michael)
 
