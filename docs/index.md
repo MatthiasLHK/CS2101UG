@@ -1895,7 +1895,6 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 
 --------------------------------------------------------------------------------------------------------------------
-
 ## Glossary (Matthias Li HuanKang)
 
 Term | Definition
