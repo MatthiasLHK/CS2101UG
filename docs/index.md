@@ -1168,7 +1168,7 @@ Format: `completetask INDEX`
 
 **:bulb: Tips :****<br>
 
-  You can always change back the status to `Not COMPLETED` by using either the [undo](#undo-previous-user-command-undodavid) or [resettask](#resetting-a-task-resettask-michael) command.
+  You can always change back the status to `NOT COMPLETED` by using either the [undo](#undo-previous-user-command-undo-david) or [resettask](#resetting-a-task-resettask-michael) command.
 
 </div>
 
@@ -1291,7 +1291,7 @@ Format: `cleartask`
 **:warning: Warning :**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
-  * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undodavid) or [redo](#redo-previous-user-command-redodavid) command to restore the Todo List. However,
+  * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undo-david) or [redo](#redo-previous-user-command-redo-david) command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
 </div>
@@ -1599,7 +1599,7 @@ Format: `importantcontact INDEX`
   
   **:bulb: Tips :**<br>
   
-  You can remove `Important` mark from a contact by using either the [undo](#undo-previous-user-command-undodavid) or [resetcontact](#resetting-contacts-resetcontact-michael) command.
+  You can remove `Important` mark from a contact by using either the [undo](#undo-previous-user-command-undo-david) or [resetcontact](#resetting-a-contact-resetcontact-michael) command.
 
   </div>
 
