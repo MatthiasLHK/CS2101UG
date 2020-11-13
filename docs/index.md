@@ -94,7 +94,7 @@ This panel is in-charge of displaying all the additional information of the item
 <div style="page-break-after: always;"></div>
 
 #### Calendar (Matthias Li Huankang)
-<p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
+<p align="center"><img src="images/Calendar.png" border="2px solid black" width="400"></p>
 <p align="center"> <em>Calendar</em> </p>
 
 This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
@@ -185,7 +185,7 @@ Creates and add a new completed module to be stored in the system.
    
 Expected Outcome: 
     
-<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black" width="400"></p>
+<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black" width="380"></p>
 <p align="center"> <em>New module CS2103T tagged as completed has been added</em></p>    
 
    Other helpful example(s):
