@@ -1099,6 +1099,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
+<div style="page-break-after: always;"></div>
+
    * **`PRIORITY`**
 
      * Your search priority should be one of the following: `high`, `normal`, `low` (case-insensitive).
@@ -1129,6 +1131,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Only tasks matching all search criteria provided will be returned.
 
+<div style="page-break-after: always;"></div>
+
  Example(s):
  
  * `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
@@ -1149,6 +1153,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
      the word `lab` or  `quiz` **and** has `difficult` as one of its tags.
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Marking a task as completed: `completetask` (Michael)
 
