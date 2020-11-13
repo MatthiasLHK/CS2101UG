@@ -1665,17 +1665,41 @@ Expected Outcome: <br>
 
 #### Scheduler Command Parameters (Matthias Li Huankang)
 
-* **Event name**<br>
-Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
+* `Event name`<br>
+  * Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
 throw an invalid naming error.
+  
+  <div markdown="block" class="alert alert-info">
+  
+  * Example(s):
+    * Valid: `CS2100 Assignment`
+    * Invalid: `CS2100 @Assignment`
+    
+    </div>
 
-* **Event time**<br>
-The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
+* `Event time`<br>
+  * The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
 follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
 be thrown.
 
-* **Tags**<br>
-For the naming of Tags, there cannot be any spacing in the name of the Tag.
+  <div markdown="block" class="alert alert-info">
+  
+  * Example(s):
+    * Valid: `1-2-2020 2359`
+    * Invalid: `32-2-2020 1200`, `2-13-2020 1200`, `2-3-2020 100`
+    
+    </div>
+
+* `Tags`<br>
+  * For the naming of Tags, there cannot be any spacing in the name of the Tag.
+  
+    <div markdown="block" class="alert alert-info">
+    
+  * Example(s):
+    * Valid: `NotImportant`
+    * Invalid: `Not Important`
+    
+    </div>
 
 #### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
@@ -1721,6 +1745,14 @@ as event name and the event date.
 Example(s):<br>
 * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  After editing the selected Event, you will be able to immediately see the changes made to the
+  selected event.
+  
+  </div>
+  
 Expected outcome:<br>
 
 <p align="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
@@ -1742,6 +1774,14 @@ You can search for a particular event based on the name and date. This will retu
 Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  After searching for the required events, to go back to the normal list view, you
+  will need to call listevent command as explained in the next command.
+  
+  </div>
+  
 Expected outcome:<br>
 <p align="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
 <p align="center"> <em>Only events with the keywords are filtered and shown in the list, in this case, there is no event.</em></p>
