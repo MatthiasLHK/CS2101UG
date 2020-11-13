@@ -865,6 +865,8 @@ Below are the explanations for each of the information shown above:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 * **`DATE`**
 
   * Represents the date or deadline of a task.
@@ -894,6 +896,8 @@ Below are the explanations for each of the information shown above:
     
     <br/>
     
+      <div style="page-break-after: always;"></div>
+      
 * **`STATUS`**
 
   * Represents the status of a task.
@@ -927,6 +931,8 @@ Below are the explanations for each of the information shown above:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 The following information is not an input type but it is referenced from other information that you have given:
 
 * **`REMAINING DAYS & PROGRESS BAR`**
