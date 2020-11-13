@@ -1635,6 +1635,8 @@ Expected Outcome:
 <p aligin="center"><img src="images/contact/ResetContactUG.png"></p>
 <p align="center"> <em>Example outcome from resetting a contact</em></p>
 
+<div style="page-break-after: always;"></div>
+
 #### Clearing the contact list: `clearcontact` (Jonas Ng)
 
 Clears all contacts in the contact list.
@@ -1657,6 +1659,7 @@ Example(s):
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
 
+<div style="page-break-after: always;"></div>
 
 ### Scheduler Features
 
