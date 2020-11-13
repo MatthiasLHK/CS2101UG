@@ -309,6 +309,7 @@ Format: `listmodule`
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
+<div style="page-break-after: always;"></div>
 
   Example(s):
 
@@ -322,7 +323,8 @@ Format: `listmodule`
   Other helpful example(s):
 
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
-   
+
+<div style="page-break-after: always;"></div>
 
 #### Zoom link management feature (Jonas Ng)
 
