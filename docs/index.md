@@ -470,6 +470,7 @@ Edits a zoom link of a specific lesson in a module.
    `editzoom 2 n/tutorial z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `tutorial`
     in the second module to be `https://nus-sg.zoom.us/editedZoom`.
 
+<div style="page-break-after: always;"></div>
 
 #### Deleting a zoom link for a specific lesson from a module: `deletezoom` (Jonas Ng)
 
@@ -504,7 +505,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   * `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
 
-
+<div style="page-break-after: always;"></div>
 
 #### Deleting a module: `deletemodule` (David, Joshua)
 
