@@ -16,7 +16,7 @@ details and information more efficiently than traditional GUI apps.
 ### About this user guide (David)
 This user guide will teach you how to use CAP5Buddy and its features to their maximum potential. This user guide contains
 information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below. 
-For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.
+**For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.**
 
 <div style="page-break-after: always;"></div>
 * Table of Contents
@@ -24,6 +24,11 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 
 --------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
@@ -39,6 +44,16 @@ For a quick summary of all available commands, you may scroll to the end of this
 <p align="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
 
 
 
