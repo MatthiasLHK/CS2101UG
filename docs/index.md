@@ -650,10 +650,11 @@ assignments will contain the following fields:
   Example(s):
    * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
 
+<div markdown="block" class="alert alert-info">
   **:information_source: Note:** <br> 
      To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module where the assignment was deleted from.
         
-  </div>
+</div>
   
 <div style="page-break-after: always;"></div>
     
@@ -688,6 +689,8 @@ Expected Outcome:
      
 <p align="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
 <p align="center"> <em>CAP has been calculated.</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Calculating target CAP details: `targetcap` (David)
 
