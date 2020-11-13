@@ -1351,6 +1351,7 @@ A contact list feature can use one or more of the following parameters:
 
    * All contacts must have an email address.
 
+<div style="page-break-after: always;"></div>
 
 * **`TELEGRAM`**:
 
@@ -1377,7 +1378,7 @@ A contact list feature can use one or more of the following parameters:
   
   * Tag is not a compulsory field of a contact.
 
-
+<div style="page-break-after: always;"></div>
 
 #### Adding a contact: `addcontact` (Jonas Ng)
 
@@ -1400,6 +1401,7 @@ Other helpful example(s):
 
 * `addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
 
+<div style="page-break-after: always;"></div>
 
 #### Locating contacts: `findcontact` (Jonas Ng)
 
