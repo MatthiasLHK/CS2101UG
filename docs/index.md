@@ -597,7 +597,7 @@ assignments will contain the following fields:
   Expected Outcome: 
   
 <p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
-<p align="center"> <em>An assignment called Quiz 1 has been added to CS2100. The assignment carries 5% of the final grade and the result for this assignment is 80/100.</em></p>
+<p align="center"> <em>(Additional Information Display Panel) An assignment called Quiz 1 has been added to CS2100. The assignment carries 5% of the final grade and the result for this assignment is 80/100.</em></p>
 
   <div markdown="block" class="alert alert-info">
         
@@ -672,7 +672,7 @@ assignments will contain the following fields:
    Expected Outcome: 
      
 <p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
-<p align="center"> <em>Grade for CS2100 has been updated.</em></p>
+<p align="center"> <em>(Additional Information Display Panel) Grade for CS2100 has been updated.</em></p>
 
 <div style="page-break-after: always;"></div>
 
@@ -1893,6 +1893,7 @@ Format: `help`
 
 **Q**: How do I save all the module related information I have entered?<br>
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
+
 --------------------------------------------------------------------------------------------------------------------
 
 <div style="page-break-after: always;"></div>
