@@ -309,6 +309,7 @@ Format: `listmodule`
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
+<div style="page-break-after: always;"></div>
 
   Example(s):
 
