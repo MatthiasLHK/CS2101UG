@@ -1847,6 +1847,8 @@ Format: `exit`
   Example(s):
   * `exit`
 
+<div style="page-break-after: always;"></div>
+
 #### Getting help : `help` (David)
 
 Opens the help window.
