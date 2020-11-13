@@ -1899,7 +1899,7 @@ Format: `help`
 
 <div style="page-break-after: always;"></div>
 
-## Glossary
+## Glossary (Matthias Li HuanKang)
 Term | Definition
 ----- | ---------------
 GUI | **Graphical User Interface** 
