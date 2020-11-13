@@ -44,11 +44,12 @@ information regarding all features of CAP5Buddy. To navigate the user guide quic
 <p align="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-<div style="page-break-after: always;"></div>
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ## Navigating the GUI (Matthias Li Huankang)
 <p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
