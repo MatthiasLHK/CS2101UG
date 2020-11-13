@@ -1779,7 +1779,28 @@ Other helpful example(s):<br>
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
 
   Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
-  **Note:** All fields are optional but at least 1 of them must be present.<br>
+  
+  <div markdown="block" class="alert alert-info">
+    
+  **:information_source: Note:**<br> 
+  * All fields are optional but at least 1 of them must be present.<br>
+  * The search parameters for name and tag are case insensitive.<br>
+    
+  </div>
+  
+  Search Parameters:
+  
+   * **`Name`** <br>
+      * Events that has names matching with at least one of the keywords will be filtered and dispalyed in the list.<br>
+      * Only full words will be matched. e.g. `CS2100` will match with `CS2100 Assignment` and not with `CS2100S`.<br>
+
+   * **`Date`**<br>
+      * Only events that has the exact same date and time will be filtered out.<br>
+
+   * **`Tag`**<br>
+      * Events that has at least one of the matching tags will be filtered out.<br>
+      * Only full words will be filtered out. e.g. `Important` will only match with `Important` and not `NotImportant`.<br>
+    
 Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
@@ -1846,6 +1867,8 @@ Format: `exit`
 
   Example(s):
   * `exit`
+
+<div style="page-break-after: always;"></div>
 
 #### Getting help : `help` (David)
 
