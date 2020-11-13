@@ -541,7 +541,7 @@ Format: `clearmodule`
 * _**Tips :**_ If you accidentally cleared the whole module list, you can always use the `undo` command
   to restore the module list.
 
-#### What is an Assignment ? : `Assignment` (Joshua)
+#### What is an Assignment? (Joshua)
 Each assignment is stored under a module and represents the results for the graded assignments for that module. Your
 assignments will contain the following fields:
 
