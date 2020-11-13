@@ -787,7 +787,7 @@ Below are the explanations for each of the information shown above:
   
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "Finish Lab02" | `Finish Lab02`
     "Submit reflection" | `Submit reflection`
@@ -814,7 +814,7 @@ Below are the explanations for each of the information shown above:
 
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "CS2101" | `CS2101`
     "Assignment" | `Assignment`
@@ -856,7 +856,7 @@ Below are the explanations for each of the information shown above:
   
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
     "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
@@ -871,7 +871,7 @@ Below are the explanations for each of the information shown above:
 
   * Represents the date or deadline of a task.
   
-  * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
+  * `DATE` should be in the format **YYYY-MM-DD** e.g. 2020-11-05.
 
   <div markdown="block" class="alert alert-info">
   
@@ -884,7 +884,7 @@ Below are the explanations for each of the information shown above:
 
   * Below are examples for the input:
 
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "2020-10-10" | `2020-10-10`
     "2019-10-05" | `2019-10-05`
@@ -922,7 +922,7 @@ Below are the explanations for each of the information shown above:
   
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "COMPLETED" | `COMPLETED`
     "Completed" | `COMPLETED`
@@ -956,7 +956,7 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can input the information in any order.
 
-* Task name should contain 30 characters or fewer.
+* Task name should contain **30 characters or fewer**.
 
 * You can provide more than one `TAG` e.g. `t/LAB t/DAILY`.
 
@@ -964,7 +964,7 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * Input for `PRIORITY` is not case-sensitive e.g. `high` or `High` works fine.
 
-* `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
+* `DATE` must be in the form of **YYYY-MM-DD** e.g. `2020-12-05`.
 
   <div style="page-break-after: always;"></div>
   
@@ -986,9 +986,7 @@ in the TodoList.
 
 Format: `deletetask INDEX`
 
-* `INDEX` must be a **positive whole number** e.g. 1, 2, 10.
-
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
@@ -1012,7 +1010,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 * You can input the information in any order.
 
@@ -1158,13 +1156,13 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
 #### Marking a task as completed: `completetask` (Michael)
 
-This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
+This command allows you to mark a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
 
 Format: `completetask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 <div markdown="block" class="alert alert-info">
 
@@ -1195,7 +1193,7 @@ Format: `resettask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
@@ -1587,7 +1585,7 @@ Expected Outcome:
 
 <div style="page-break-after: always;"></div>
 
-#### Marking contacts as important: `importantcontact` (Michael)
+#### Marking a contact as important: `importantcontact` (Michael)
 
 Marks a task as `Important`.
 
@@ -1616,7 +1614,7 @@ Expected Outcome:
 
 <div style="page-break-after: always;"></div>
 
-#### Resetting contacts: `resetcontact` (Michael)
+#### Resetting a contact: `resetcontact` (Michael)
 
 Removes a contact's `Important` mark.
 
