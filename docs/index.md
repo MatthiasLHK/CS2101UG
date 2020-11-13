@@ -722,6 +722,8 @@ To access the Todo List, you can click the **Tasks** button to change the tab as
 <p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png"></p>
 <p align="center"> <em>Main GUI</em></p>
 
+<div style="page-break-after: always;"></div>
+
 The GUI for Todo List will look like this:
 
 <p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
@@ -734,6 +736,8 @@ In total, there are 3 main components, Todo List as the main feature, and the ot
   
   <p aligin="center"><img src="images/TodoList/UG/todoList.png"></p>
   <p align="center"> <em>Todo List</em></p>
+  
+  <div style="page-break-after: always;"></div>
   
 * **Completion Pie**
   * A **completion chart** that represents the ratio between completed and not completed tasks.
@@ -750,6 +754,8 @@ In total, there are 3 main components, Todo List as the main feature, and the ot
 Now that you understand the GUI, let's take a look how you can store your future tasks!
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### What is a Task ? (Michael)
 
