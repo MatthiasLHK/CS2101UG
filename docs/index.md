@@ -1873,6 +1873,8 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
@@ -1896,6 +1898,8 @@ Action | Format, Examples
 **Calculate CAP** | `calculatecap`
 **Calculate Target CAP details** | `targetcap TARGET_CAP` <br> e.g. `targetcap 4.5`
 
+<div style="page-break-after: always;"></div>
+
 ## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
@@ -1910,6 +1914,7 @@ Action | Format, Examples
 **Mark Contact as unimportant** | `resetcontact INDEX` <br> e.g. `resetcontact 1`
 **Clear Contact**  | `clearcontact`
 
+<div style="page-break-after: always;"></div>
 
 ## Command summary for Todo List (Michael)
 
@@ -1925,6 +1930,7 @@ Action | Format, Examples
 **Reset Task Status** | `resettask INDEX` <br> e.g. `resettask 3`
 **Clear Tasks** | `cleartask`
 
+<div style="page-break-after: always;"></div>
 
 ## Command summary for Scheduler (Matthias Li Huankang)
 
