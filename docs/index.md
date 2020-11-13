@@ -1801,6 +1801,8 @@ You can search for a particular event based on the name and date. This will retu
       * Events that has at least one of the matching tags will be filtered out.<br>
       * Only full words will be filtered out. e.g. `Important` will only match with `Important` and not `NotImportant`.<br>
     
+<div style="page-break-after: always;"></div>
+    
 Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
