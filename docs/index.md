@@ -1001,6 +1001,8 @@ Expected Outcome:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Editing a task: `edittask` (Michael)
 
 This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
@@ -1037,6 +1039,8 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 </div>
 
+  <div style="page-break-after: always;"></div>
+  
 Example(s):
 
 Below is an example of editing information of a task:
@@ -1060,6 +1064,8 @@ Expected Outcome:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Locating tasks: `findtask` (Jonas Ng)
 
 Finds all tasks that fulfil all the provided search criteria.
