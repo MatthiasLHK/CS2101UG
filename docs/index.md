@@ -1185,6 +1185,8 @@ Expected Outcome:
 
 <br/>
 
+<div style="page-break-after: always;"></div>
+
 #### Resetting a task: `resettask` (Michael)
 
 This command allows you to reset the status of a task back to `NOT COMPLETED`. The task will then have the red `NOT COMPLETED` label.
@@ -1205,6 +1207,8 @@ Expected Outcome:
 <p align="center"> <em>Example outcome from resetting a task</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Sorting tasks: `sorttask` (Michael)
 
@@ -1245,6 +1249,8 @@ Expected Outcome:
 <p align="center"> <em>Example outcome from sorting the Todo List</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Listing all tasks: `listtask` (Michael)
 
