@@ -1814,7 +1814,6 @@ Allows you to view all events. <br>
 Expected outcome:<br>
 <p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
 <p align="center"> <em>All events are shown in the list again.</em></p>
-
 <div style="page-break-after: always;"></div>
 
 ### General Features
