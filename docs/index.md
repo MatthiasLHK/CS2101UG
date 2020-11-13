@@ -1503,6 +1503,7 @@ Other helpful example(s):
 
  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`.
 
+<div style="page-break-after: always;"></div>
 
  Example(s): 
  
@@ -1518,6 +1519,8 @@ Other helpful example(s):
  * `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
 
  * `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+
+<div style="page-break-after: always;"></div>
 
 #### Deleting a contact: `deletecontact` (Jonas Ng)
 
@@ -1543,6 +1546,8 @@ Expected Outcome:
 Other helpful example(s):
 
 * `deletecontact 5` deletes the fifth contact in the displayed contact list.
+
+<div style="page-break-after: always;"></div>
 
 #### Sorting contacts: `sortcontact` (Michael)
 
