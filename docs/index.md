@@ -1439,6 +1439,8 @@ Other helpful example(s):
 
   * Only contacts matching all search criteria provided will be returned.
 
+<div style="page-break-after: always;"></div>
+
   Example(s): 
   
   * `findcontact n/amy` finds all contacts with the word `amy` in their name.
@@ -1455,6 +1457,7 @@ Other helpful example(s):
 
    * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags.
 
+<div style="page-break-after: always;"></div>
 
 #### Listing all contacts: `listcontact` (Jonas Ng)
 
@@ -1479,6 +1482,7 @@ Other helpful example(s):
  
  ![ListContact](images/contact/ListContactUG.PNG)
 
+<div style="page-break-after: always;"></div>
 
 #### Editing a contact: `editcontact` (Jonas Ng)
 
