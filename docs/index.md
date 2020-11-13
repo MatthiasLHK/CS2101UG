@@ -158,7 +158,7 @@ Creates and adds a new module to be stored in the system.
 
 Expected Outcome: 
   
-<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black" width="400"></p>
 <p align="center"> <em>New module CS2103T has been added</em></p>
   
   Other helpful example(s):
