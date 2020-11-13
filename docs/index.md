@@ -1671,6 +1671,7 @@ throw an invalid naming error.
   
   <div markdown="block" class="alert alert-info">
   
+  **:information_source: Note:**<br> 
   * Example(s):
     * Valid: `CS2100 Assignment`
     * Invalid: `CS2100 @Assignment`
@@ -1684,6 +1685,7 @@ be thrown.
 
   <div markdown="block" class="alert alert-info">
   
+  **:information_source: Note:**<br> 
   * Example(s):
     * Valid: `1-2-2020 2359`
     * Invalid: `32-2-2020 1200`, `2-13-2020 1200`, `2-3-2020 100`
@@ -1695,6 +1697,7 @@ be thrown.
   
     <div markdown="block" class="alert alert-info">
     
+    **:information_source: Note:**<br> 
   * Example(s):
     * Valid: `NotImportant`
     * Invalid: `Not Important`
