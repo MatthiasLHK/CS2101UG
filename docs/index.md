@@ -606,6 +606,8 @@ assignments will contain the following fields:
         
   </div>
 
+<div style="page-break-after: always;"></div>
+
 #### Editing an assignment in a module: `editassignment` (Joshua)
 
   Edits an assignment at the specified position in the specified module.
@@ -632,6 +634,8 @@ assignments will contain the following fields:
      To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module with the edited assignment.
         
   </div>
+
+<div style="page-break-after: always;"></div>
     
 #### Deleting an assignment in a module: `deleteassignment` (Joshua)
 
