@@ -774,6 +774,8 @@ Below are the explanations for each of the information shown above:
   
   * Task name should contain **30 characters or fewer**.
   
+  <div style="page-break-after: always;"></div>
+  
    <div markdown="block" class="alert alert-info">
   
   **:bulb: Tips :**<br>
@@ -819,6 +821,8 @@ Below are the explanations for each of the information shown above:
     "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 * **`PRIORITY`**
 
