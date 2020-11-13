@@ -165,6 +165,8 @@ Expected Outcome:
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
 
+<div style="page-break-after: always;"></div>
+
 #### Adding a new completed module: `addcmodule` (David)
 
 Creates and add a new completed module to be stored in the system.
