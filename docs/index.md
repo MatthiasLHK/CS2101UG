@@ -545,6 +545,8 @@ Edits an existing module in the displayed module list with new details.
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
 
+<div style="page-break-after: always;"></div>
+
 #### Clearing the module list: `clearmodule` (David)
 
 Clears all un-archived modules.
@@ -573,6 +575,8 @@ assignments will contain the following fields:
 
   * Represents your results attained for the assignment, eg. if a score of `75/100` is achieved for
   `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `75` should be input.
+
+<div style="page-break-after: always;"></div>
 
 #### Adding assignment to a module: `addassignment` (Joshua)
 
