@@ -182,12 +182,10 @@ Creates and add a new completed module to be stored in the system.
    Example(s):
    * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
       and 5 grade points with a `completed` tag.
-
-<div style="page-break-after: always;"></div>
    
 Expected Outcome: 
     
-<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
+<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black" width="400"></p>
 <p align="center"> <em>New module CS2103T tagged as completed has been added</em></p>    
 
    Other helpful example(s):
