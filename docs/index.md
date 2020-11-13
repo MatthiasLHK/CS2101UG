@@ -576,8 +576,6 @@ assignments will contain the following fields:
   * Represents your results attained for the assignment, eg. if a score of `75/100` is achieved for
   `Oral Presentation 2`, an `ASSIGNMENT_RESULT` of `75` should be input.
 
-<div style="page-break-after: always;"></div>
-
 #### Adding assignment to a module: `addassignment` (Joshua)
 
   Adds an assignment to an existing module.
@@ -589,6 +587,8 @@ assignments will contain the following fields:
   * All fields are compulsory.
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
+
+<div style="page-break-after: always;"></div>
 
   Example(s):
   * `addassignment n/CS2100 a/Quiz 1 %/5 r/80` adds an assignment called `Quiz 1` to the module `CS2100`. `Quiz 1`
