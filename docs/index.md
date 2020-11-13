@@ -1665,7 +1665,7 @@ Expected Outcome: <br>
 
 #### Scheduler Command Parameters (Matthias Li Huankang)
 
-* `Event name`<br>
+* **`Event name`**<br>
   * Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
 throw an invalid naming error.
   
@@ -1678,7 +1678,7 @@ throw an invalid naming error.
     
   </div>
 
-* `Event time`<br>
+* **`Event time`**<br>
   * The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
 follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
 be thrown.
@@ -1691,7 +1691,7 @@ be thrown.
     * Invalid: `32-2-2020 1200`, `2-13-2020 1200`, `2-3-2020 100`
   </div>
   
-* `Tags`<br>
+* **`Tags`**<br>
   * For the naming of Tags, there cannot be any spacing in the name of the Tag.
   
   <div markdown="block" class="alert alert-info">
