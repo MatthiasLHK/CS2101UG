@@ -91,8 +91,6 @@ It shows all the items as individual cell boxes with some of the basic informati
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
-<div style="page-break-after: always;"></div>
-
 #### Calendar (Matthias Li Huankang)
 <p align="center"><img src="images/Calendar.png" border="2px solid black" width="400"></p>
 <p align="center"> <em>Calendar</em> </p>
@@ -218,6 +216,8 @@ Expected Outcome:
 <p align="center"><img src="images/viewmodule.png" border="2px solid black"></p>
 <p align="center"> <em>Module details for CS2105 is being displayed</em></p>
 
+<div style="page-break-after: always;"></div>
+
 #### Archiving a module: `archivemodule` (David)
 
 Archives a module in the module list and moves it into archived storage.
@@ -239,6 +239,8 @@ Expected Outcome:
  
 <p align="center"><img src="images/archivemodule.png" border="2px solid black"></p>
 <p align="center"> <em>CS2105 has been shifted into the archived module list</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Un-archiving a module: `unarchivemodule` (David)
   
