@@ -1702,6 +1702,8 @@ be thrown.
       * Invalid: `Not Important`
   </div>     
 
+<div style="page-break-after: always;"></div>
+
 #### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
 Creates and add a new Event with the specified information from the user input.
@@ -1722,6 +1724,8 @@ Other helpful example(s):<br>
  
  * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.<br>
 
+<div style="page-break-after: always;"></div>
+
 #### Deleting an Event from the Scheduler: `deleteevent` (Matthias Li Huankang)
 
 You can delete an existing event from the list by specifying the index.
@@ -1734,6 +1738,8 @@ You can delete an existing event from the list by specifying the index.
 Expected outcome:<br>
 <p align="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
 <p align="center"> <em>The first event has been deleted from the list.</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
@@ -1766,6 +1772,8 @@ Other helpful example(s):<br>
 
 * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.<br>
 
+<div style="page-break-after: always;"></div>
+
 #### Finding an Event from the Scheduler: `findevent` (Matthias Li Huankang)
 
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
@@ -1792,6 +1800,8 @@ Other helpful example(s):<br>
 
 * `findevent n/ CS2103T d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
 
+<div style="page-break-after: always;"></div>
+
 #### List events: `listevent` (Matthias Li Huankang)
 
 Allows you to view all events. <br>
@@ -1804,6 +1814,8 @@ Allows you to view all events. <br>
 Expected outcome:<br>
 <p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
 <p align="center"> <em>All events are shown in the list again.</em></p>
+
+<div style="page-break-after: always;"></div>
 
 ### General Features
 
