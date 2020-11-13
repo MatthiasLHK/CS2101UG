@@ -1896,8 +1896,6 @@ Format: `help`
 
 --------------------------------------------------------------------------------------------------------------------
 
-<div style="page-break-after: always;"></div>
-
 ## Glossary (Matthias Li HuanKang)
 Term | Definition <br>
 ----- | --------------- <br>
