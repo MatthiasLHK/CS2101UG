@@ -1896,6 +1896,8 @@ Format: `help`
 **Q**: How do I save all the module related information I have entered?<br>
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Glossary (Matthias Li HuanKang)
 
 Term | Definition
@@ -1904,9 +1906,6 @@ Term | Definition
 **CAP** | Cumulative Average Point
 **OS** | Operating System
 **CLI** | Command Line Interface
-
-
-<div style="page-break-after: always;"></div>
 
 ## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
