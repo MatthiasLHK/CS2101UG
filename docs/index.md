@@ -259,8 +259,6 @@ Format: `unarchivemodule INDEX`
  Example(s):
  * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
-<div style="page-break-after: always;"></div>
-
 #### View archived modules: `viewarchive` (David)
 
 Allows you to view the archived module list on the display.
@@ -271,6 +269,8 @@ Format: `viewarchive`
 
  Example(s):
  * `viewarchive` views the archived module list on the display.
+
+<div style="page-break-after: always;"></div>
 
 #### View un-archived modules: `listmodule` (David)
 
@@ -309,7 +309,6 @@ Format: `listmodule`
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
-<div style="page-break-after: always;"></div>
 
   Example(s):
 
