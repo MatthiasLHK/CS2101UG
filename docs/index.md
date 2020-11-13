@@ -52,6 +52,8 @@ information regarding all features of CAP5Buddy. To navigate the user guide quic
 You can click this button to open up the User Guide help window. It will pop open a new window with the link to
 the User Guide Website.
 
+<div style="page-break-after: always;"></div>
+
 #### Command Box (Matthias Li Huankang)
 <p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
 <p align="center"> <em>Command Box</em> </p>
@@ -71,12 +73,16 @@ or error message.
 
 From here, you can choose between the different windows to view.
 
+<div style="page-break-after: always;"></div>
+
 #### Main Item Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
 <p align="center"> <em>Main Item Display Panel</em></p>
 
 Here is where all items that are added into the application can be found.
 It shows all the items as individual cell boxes with some of the basic information on the item being shown.
+
+<div style="page-break-after: always;"></div>
 
 #### Additional Information Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
