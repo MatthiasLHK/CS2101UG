@@ -1899,12 +1899,12 @@ Format: `help`
 <div style="page-break-after: always;"></div>
 
 ## Glossary (Matthias Li HuanKang)
-Term | Definition
------ | ---------------
-GUI | **Graphical User Interface** 
-CAP | **Cumulative Average Point**
-OS | **Operating System**
-CLI | **Command Line Interface**
+Term | Definition <br>
+----- | --------------- <br>
+GUI | **Graphical User Interface** <br>
+CAP | **Cumulative Average Point** <br>
+OS | **Operating System** <br>
+CLI | **Command Line Interface** <br>
 
 
 <div style="page-break-after: always;"></div>
