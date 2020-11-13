@@ -1897,12 +1897,13 @@ Format: `help`
 --------------------------------------------------------------------------------------------------------------------
 
 ## Glossary (Matthias Li HuanKang)
-Term | Definition <br>
------ | --------------- <br>
-GUI | **Graphical User Interface** <br>
-CAP | **Cumulative Average Point** <br>
-OS | **Operating System** <br>
-CLI | **Command Line Interface** <br>
+
+Term | Definition
+----- | --------------- 
+**GUI** | Graphical User Interface
+**CAP** | Cumulative Average Point
+**OS** | Operating System
+**CLI** | Command Line Interface
 
 
 <div style="page-break-after: always;"></div>
