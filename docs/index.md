@@ -966,6 +966,8 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
 
+  <div style="page-break-after: always;"></div>
+  
 Example(s):
 
 * `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
@@ -975,6 +977,8 @@ Expected Outcome:
 <p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
 <p align="center"> <em>Example outcome from adding a task</em></p>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Deleting a task: `deletetask` (Michael)
 
 This command allows you to delete a task from the Todo List. You can delete a task by specifying the index of the task
