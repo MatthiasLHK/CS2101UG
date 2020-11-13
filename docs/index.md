@@ -323,7 +323,8 @@ Format: `listmodule`
   Other helpful example(s):
 
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
-   
+
+<div style="page-break-after: always;"></div>
 
 #### Zoom link management feature (Jonas Ng)
 
