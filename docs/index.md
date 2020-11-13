@@ -16,7 +16,7 @@ details and information more efficiently than traditional GUI apps.
 ### About this user guide (David)
 This user guide will teach you how to use CAP5Buddy and its features to their maximum potential. This user guide contains
 information regarding all features of CAP5Buddy. To navigate the user guide quickly, you can use the hyperlinks displayed in the table of contents below. 
-For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.
+**For a quick summary of all available commands, you may scroll to the end of this user guide or use the hyperlinks in the table of contents.**
 
 <div style="page-break-after: always;"></div>
 * Table of Contents
@@ -24,6 +24,8 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 
 --------------------------------------------------------------------------------------------------------------------
+<div style="page-break-after: always;"></div>
+
 ## Quick start (Matthias Li Huankang)
 
 1. Ensure you have Java `11` or above installed in your Computer.
@@ -36,56 +38,62 @@ For a quick summary of all available commands, you may scroll to the end of this
 <p align="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
-## Navigating the GUI (Matthias Li Huankang)
-<p align="center"><img src="images/OverallGUISnapShotWithLabels.png" border="2px solid black"></p>
-<p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
+<div style="page-break-after: always;"></div>
 
+## Navigating the GUI (Matthias Li Huankang)
+<p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
 ### Key Components (Matthias Li Huankang)
 
 #### Help Window (Matthias Li Huankang)
 <p align="center"><img src="images/Help.png" border="2px solid black"></p>
-<p align="center"> Help Window </p>
+<p align="center"> <em>Help Window</em> </p>
 
 You can click this button to open up the User Guide help window. It will pop open a new window with the link to
 the User Guide Website.
 
+<div style="page-break-after: always;"></div>
+
 #### Command Box (Matthias Li Huankang)
 <p align="center"><img src="images/CommandBox.png" border="2px solid black"></p>
-<p align="center"> Command Box </p>
+<p align="center"> <em>Command Box</em> </p>
 
 Here is where you enter your command input to be executed by the application.
 
 #### Results Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ResultWindow.png" border="2px solid black"></p>
-<p align="center"> Result Display Panel </p>
+<p align="center"> <em>Result Display Panel</em> </p>
 
 This panel will display the status of the command, whether it passes or fails, and displays some basic information
 or error message.
 
 #### List Tabs Panel (Matthias Li Huankang)
 <p align="center"><img src="images/TabsBar.png" border="2px solid black"></p>
-<p align="center"> List Tabs Panel </p>
+<p align="center"> <em>List Tabs Panel</em> </p>
 
 From here, you can choose between the different windows to view.
 
+<div style="page-break-after: always;"></div>
+
 #### Main Item Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/ItemDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Main Item Display Panel </p>
+<p align="center"> <em>Main Item Display Panel</em></p>
 
 Here is where all items that are added into the application can be found.
 It shows all the items as individual cell boxes with some of the basic information on the item being shown.
 
+<div style="page-break-after: always;"></div>
+
 #### Additional Information Display Panel (Matthias Li Huankang)
 <p align="center"><img src="images/AdditionalDisplayWindow.png" border="2px solid black"></p>
-<p align="center"> Additional Information Display Panel </p>
+<p align="center"> <em>Additional Information Display Panel</em> </p>
 
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
 #### Calendar (Matthias Li Huankang)
-<p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
-<p align="center"> Calendar </p>
+<p align="center"><img src="images/Calendar.png" border="2px solid black" width="400"></p>
+<p align="center"> <em>Calendar</em> </p>
 
 This is where you can see the monthly view of the calendar. The days which have events will be marked in red, so
 that it can easily be identified. From the Calendar figure above, the Calendar also have two buttons that allows the user to
@@ -113,7 +121,7 @@ Some common symbols that can be found in the user guide and their meanings:
   e.g. in `addtask n/NAME`, `NAME` is a parameter which can be used as `addtask n/Week 11 quiz`.
 
 * Items in square brackets are optional. Items without square brackets are compulsory fields. <br>
-  e.g. `addtask n/NAME [p/PRIORITY]` can be used as `addtask n/Week 11 quiz p/highest` or as `addtask n/Week 11 quiz`
+  e.g. `addtask n/NAME [p/PRIORITY]` can be used as `addtask n/Week 11 quiz p/high` or as `addtask n/Week 11 quiz`
 
 * Items with `...` after them can be used multiple times, including zero times. <br>
   e.g. `[t/TAG]...` can be used as `   ` (i.e. 0 times), `t/easy`, `t/friend t/important` etc.
@@ -145,18 +153,17 @@ Creates and adds a new module to be stored in the system.
 
    Example(s):
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
-   
-<div style="page-break-after: always;"></div>
 
 Expected Outcome: 
   
-<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black"></p>
-  
-  _New module `CS2103T` has been added_
+<p align="center"><img src="images/ModuleTracker/addmodule.png" border="2px solid black" width="400"></p>
+<p align="center"> <em>New module CS2103T has been added</em></p>
   
   Other helpful example(s):
 
    * `addmodule n/CS2103T t/Coremodule` creates and adds the module CS2103T with the tag _CoreModule_.
+
+<div style="page-break-after: always;"></div>
 
 #### Adding a new completed module: `addcmodule` (David)
 
@@ -173,14 +180,11 @@ Creates and add a new completed module to be stored in the system.
    Example(s):
    * `addcmodule n/CS2103T mc/4.0 gp/5.0` creates and adds the module named CS2103T with 4 modular credits
       and 5 grade points with a `completed` tag.
-
-<div style="page-break-after: always;"></div>
    
 Expected Outcome: 
     
-<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black"></p>
-    
-_New module `CS2103T` tagged as completed has been added_
+<p align="center"><img src="images/ModuleTracker/Addcmodule.png" border="2px solid black" width="380"></p>
+<p align="center"> <em>New module CS2103T tagged as completed has been added</em></p>    
 
    Other helpful example(s):
 
@@ -210,8 +214,9 @@ Displays a snapshot of a module stored in the system.
 Expected Outcome: 
 
 <p align="center"><img src="images/viewmodule.png" border="2px solid black"></p>
+<p align="center"> <em>Module details for CS2105 is being displayed</em></p>
 
-_Module details for `CS2105` is being displayed_
+<div style="page-break-after: always;"></div>
 
 #### Archiving a module: `archivemodule` (David)
 
@@ -233,8 +238,9 @@ Format: `archivemodule INDEX`
 Expected Outcome: 
  
 <p align="center"><img src="images/archivemodule.png" border="2px solid black"></p>
+<p align="center"> <em>CS2105 has been shifted into the archived module list</em></p>
 
-_`CS2105` has been shifted into the archived module list_
+<div style="page-break-after: always;"></div>
 
 #### Un-archiving a module: `unarchivemodule` (David)
   
@@ -253,7 +259,6 @@ Format: `unarchivemodule INDEX`
  Example(s):
  * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
-
 #### View archived modules: `viewarchive` (David)
 
 Allows you to view the archived module list on the display.
@@ -264,6 +269,8 @@ Format: `viewarchive`
 
  Example(s):
  * `viewarchive` views the archived module list on the display.
+
+<div style="page-break-after: always;"></div>
 
 #### View un-archived modules: `listmodule` (David)
 
@@ -302,6 +309,7 @@ Format: `listmodule`
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
+<div style="page-break-after: always;"></div>
 
   Example(s):
 
@@ -310,13 +318,13 @@ Format: `listmodule`
    Expected Outcome: 
    
 <p align="center"><img src="images/ModuleTracker/findmodule.png" border="2px solid black"></p>
-
-_Only `CS2030` is displayed_
+<p align="center"> <em>Only CS2030 is displayed</em></p>
        
   Other helpful example(s):
 
    * `findmodule cs2030 cs2100` returns the modules(if any) with the module names `CS2030` or `CS2100`.
-   
+
+<div style="page-break-after: always;"></div>
 
 #### Zoom link management feature (Jonas Ng)
 
@@ -340,6 +348,8 @@ Each lesson in a module will only be allowed to have one zoom link,
 i.e. you will not be allowed to add multiple zoom links to the same lesson.                         
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 #### Zoom link command parameters (Jonas Ng)
 
@@ -386,6 +396,8 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
    
    * `LESSON_NAME` refers to the name of the module lesson which the added zoom link belongs to.
 
+<div style="page-break-after: always;"></div>
+
   Example(s):
   
   * `addzoom 1 n/lecture-weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
@@ -407,6 +419,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   * `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
    in the displayed module list for the lesson `lecture on weds`.
 
+<div style="page-break-after: always;"></div>
 
 #### Editing a zoom link of a specific lesson in a module: `editzoom` (Jonas Ng)
 
@@ -420,10 +433,7 @@ Edits a zoom link of a specific lesson in a module.
 
    * The index **must be a positive integer** 1, 2, 3...
    
-   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.
-
-   * `LESSON_NAME` refers to the name of the module lesson which contains the zoom link to be edited.
-   
+   * `LESSON_NAME` refers to the name of the lesson which the target zoom link to be edited belongs to.   
    
    <div markdown="block" class="alert alert-info">
 
@@ -436,6 +446,8 @@ Edits a zoom link of a specific lesson in a module.
      2. Add the same zoom link with the edited lesson name.
 
    </div>
+
+<div style="page-break-after: always;"></div>
 
    Example(s):
    
@@ -458,6 +470,7 @@ Edits a zoom link of a specific lesson in a module.
    `editzoom 2 n/tutorial z/https://nus-sg.zoom.us/editedZoom` edits the zoom link of the lesson `tutorial`
     in the second module to be `https://nus-sg.zoom.us/editedZoom`.
 
+<div style="page-break-after: always;"></div>
 
 #### Deleting a zoom link for a specific lesson from a module: `deletezoom` (Jonas Ng)
 
@@ -492,7 +505,7 @@ Deletes a zoom link for a specific lesson from an existing module.
   
   * `deletezoom 2 n/tutorial G17` deletes the zoom link of the lesson `tutorial G17` from the 2nd module in the displayed module list.
 
-
+<div style="page-break-after: always;"></div>
 
 #### Deleting a module: `deletemodule` (David, Joshua)
 
@@ -531,6 +544,8 @@ Edits an existing module in the displayed module list with new details.
 
  To be implemented:
   * We are working on adding the functionality to edit the zoom links for the module for each lesson.
+
+<div style="page-break-after: always;"></div>
 
 #### Clearing the module list: `clearmodule` (David)
 
@@ -573,16 +588,16 @@ assignments will contain the following fields:
   
   * The changes for your assignment would only be seen through using the `viewmodule` command.
 
+<div style="page-break-after: always;"></div>
+
   Example(s):
   * `addassignment n/CS2100 a/Quiz 1 %/5 r/80` adds an assignment called `Quiz 1` to the module `CS2100`. `Quiz 1`
   carries `5`% of the final grade and the result for this assignment is `80`.
 
   Expected Outcome: 
   
- <p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
-
-
-_An assignment called `Quiz 1` has been added to `CS2100`. The assignment carries `5`% of the final grade and the result for this assignment is 80/100_
+<p align="center"><img src="images/GradeTracker/AddAssignment.png" border="2px solid black"></p>
+<p align="center"> <em>An assignment called Quiz 1 has been added to CS2100. The assignment carries 5% of the final grade and the result for this assignment is 80/100.</em></p>
 
   <div markdown="block" class="alert alert-info">
         
@@ -590,6 +605,8 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
      To view the changes made, you have to use the `viewmodule INDEX` command after the `addassignment` command, where `INDEX` refers to the index of the module with the added.
         
   </div>
+
+<div style="page-break-after: always;"></div>
 
 #### Editing an assignment in a module: `editassignment` (Joshua)
 
@@ -617,6 +634,8 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
      To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module with the edited assignment.
         
   </div>
+
+<div style="page-break-after: always;"></div>
     
 #### Deleting an assignment in a module: `deleteassignment` (Joshua)
 
@@ -631,11 +650,13 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
   Example(s):
    * `deleteassignment 1 n/CS2100` deletes the assignment at the first position of the module `CS2100`.
 
+<div markdown="block" class="alert alert-info">
   **:information_source: Note:** <br> 
      To view the changes made, you have to use the `viewmodule INDEX` command after the `editassignment` command, where `INDEX` refers to the index of the module where the assignment was deleted from.
         
-  </div>
+</div>
   
+<div style="page-break-after: always;"></div>
     
 #### Adding a grade to a module: `addgrade` (Joshua)
 
@@ -651,8 +672,9 @@ _An assignment called `Quiz 1` has been added to `CS2100`. The assignment carrie
    Expected Outcome: 
      
 <p align="center"><img src="images/GradeTracker/AddGrade.png" border="2px solid black"></p>
+<p align="center"> <em>Grade for CS2100 has been updated.</em></p>
 
-_Grade for CS2100 has been updated_
+<div style="page-break-after: always;"></div>
 
 #### Calculating Cumulative Average Point(CAP): `calculatecap` (David)
 
@@ -666,8 +688,9 @@ Calculates your CAP based on completed modules.
 Expected Outcome: 
      
 <p align="center"><img src="images/ModuleTracker/calculatecap.png" border="2px solid black"></p>
+<p align="center"> <em>CAP has been calculated.</em></p>
 
-_CAP has been calculated_
+<div style="page-break-after: always;"></div>
 
 #### Calculating target CAP details: `targetcap` (David)
 
@@ -683,10 +706,11 @@ Calculates helpful CAP details based on the target CAP you input.
 Expected Outcome: 
      
 <p align="center"><img src="images/ModuleTracker/targetcap.png" border="2px solid black"></p>
-
-_Target CAP details has been calculated_
+<p align="center"> <em>Target CAP details has been calculated.</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 ### Todo List Features (Michael)
 
@@ -696,31 +720,42 @@ for Todo List, it is a good idea to understand the basic features first.
 To access the Todo List, you can click the **Tasks** button to change the tab as shown in the picture below.
 
 <p aligin="center"><img src="images/TodoList/UG/tasksNavigate.png"></p>
+<p align="center"> <em>Main GUI</em></p>
+
+<div style="page-break-after: always;"></div>
 
 The GUI for Todo List will look like this:
 
 <p aligin="center"><img src="images/TodoList/UG/todolistGUI.png"></p>
+<p align="center"> <em>Todo List GUI</em></p>
 
-There are 3 big main feature that you can use, which are:
+In total, there are 3 main components, Todo List as the main feature, and the other two are additional features to enhance the user experience:
 
 * **Todo List**
   * A **list** that shows all of your tasks.
   
   <p aligin="center"><img src="images/TodoList/UG/todoList.png"></p>
+  <p align="center"> <em>Todo List</em></p>
+  
+  <div style="page-break-after: always;"></div>
   
 * **Completion Pie**
   * A **completion chart** that represents the ratio between completed and not completed tasks.
   
   <p aligin="center"><img src="images/TodoList/UG/completionPie.png"></p>
+  <p align="center"> <em>Completion Pie (color may change dynamically)</em></p>
   
 * **Future Bar**
   * A **bar chart** that shows your workload in the next 7 days.
   
   <p aligin="center"><img src="images/TodoList/UG/futureBar.png"></p>
+<p align="center"> <em>Future Bar</em></p>
 
 Now that you understand the GUI, let's take a look how you can store your future tasks!
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### What is a Task ? (Michael)
 
@@ -729,6 +764,7 @@ A task contains some information that can be useful when you are trying to track
 Below is a picture of how each task will look like in the Todo List and what information can be stored:
 
 <p aligin="center"><img src="images/TodoList/UG/taskEntry.png"></p>
+<p align="center"> <em>Example of an entry (task) in Todo List</em></p>
 
 Below are the explanations for each of the information shown above:
 
@@ -747,9 +783,11 @@ Below are the explanations for each of the information shown above:
 
   </div>
 
+  <div style="page-break-after: always;"></div>
+  
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "Finish Lab02" | `Finish Lab02`
     "Submit reflection" | `Submit reflection`
@@ -776,13 +814,15 @@ Below are the explanations for each of the information shown above:
 
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "CS2101" | `CS2101`
     "Assignment" | `Assignment`
     "Review Lecture" | _**Invalid Input**_<br>(Cannot contain more than 1 word)
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 * **`PRIORITY`**
 
@@ -816,7 +856,7 @@ Below are the explanations for each of the information shown above:
   
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "high" | <span style="color = yellow;">★★★★</span> (`HIGH`)
     "Normal" | <span style="color = yellow;">★★★</span> (`NORMAL`)
@@ -825,11 +865,13 @@ Below are the explanations for each of the information shown above:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 * **`DATE`**
 
   * Represents the date or deadline of a task.
   
-  * `DATE` should be in the format YYYY-MM-DD e.g. 2020-11-05.
+  * `DATE` should be in the format **YYYY-MM-DD** e.g. 2020-11-05.
 
   <div markdown="block" class="alert alert-info">
   
@@ -842,7 +884,7 @@ Below are the explanations for each of the information shown above:
 
   * Below are examples for the input:
 
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "2020-10-10" | `2020-10-10`
     "2019-10-05" | `2019-10-05`
@@ -854,6 +896,8 @@ Below are the explanations for each of the information shown above:
     
     <br/>
     
+      <div style="page-break-after: always;"></div>
+      
 * **`STATUS`**
 
   * Represents the status of a task.
@@ -866,18 +910,19 @@ Below are the explanations for each of the information shown above:
   
   <div markdown="block" class="alert alert-info">
   
-  **:warning: Warning:**<br>
+  **:warning: Warning :**<br>
   
   Your task will have the status `OVERDUE` and the progress bar will loop infinitely if you don't 
   complete it by the given deadline.
 
   <p aligin="center"><img src="images/TodoList/UG/taskOverdue.png"></p>
+  <p align="center"> <em>Example of an overdue task</em></p>
 
   </div>
   
   * Below are examples for the input:
   
-    Input | Display Format
+    Input | Output in GUI
     --------|------------------
     "COMPLETED" | `COMPLETED`
     "Completed" | `COMPLETED`
@@ -886,6 +931,8 @@ Below are the explanations for each of the information shown above:
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 The following information is not an input type but it is referenced from other information that you have given:
 
 * **`REMAINING DAYS & PROGRESS BAR`**
@@ -909,16 +956,18 @@ Format: `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can input the information in any order.
 
-* Task name should contain 30 characters or fewer.
+* Task name should contain **30 characters or fewer**.
 
 * You can provide more than one `TAG` e.g. `t/LAB t/DAILY`.
 
 * You can choose 3 level of `PRIORITY` i.e. `HIGH`, `NORMAL`, `LOW`.
 
-* Input for `PRIORITY` is not case-sensitive e.g. `highest`, `Highest` work fine.
+* Input for `PRIORITY` is not case-sensitive e.g. `high` or `High` works fine.
 
-* `DATE` must be in the form of `YYYY-MM-DD` e.g. `2020-12-05`.
+* `DATE` must be in the form of **YYYY-MM-DD** e.g. `2020-12-05`.
 
+  <div style="page-break-after: always;"></div>
+  
 Example(s):
 
 * `addtask n/finish assignemnt t/SCHOOL d/2020-12-10` adds a task with the given information.
@@ -926,7 +975,10 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/addTask.png"></p>
+<p align="center"> <em>Example outcome from adding a task</em></p>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Deleting a task: `deletetask` (Michael)
 
 This command allows you to delete a task from the Todo List. You can delete a task by specifying the index of the task
@@ -934,9 +986,7 @@ in the TodoList.
 
 Format: `deletetask INDEX`
 
-* `INDEX` must be a **positive whole number** e.g. 1, 2, 10.
-
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
@@ -945,9 +995,12 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/deleteTask.png"></p>
+<p align="center"> <em>Example outcome from deleting a task</em></p>
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Editing a task: `edittask` (Michael)
 
 This command allows you to edit the information stored in a task. With this command you don't need to delete and re-add
@@ -957,7 +1010,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 * You can input the information in any order.
 
@@ -967,7 +1020,7 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 <div markdown="block" class="alert alert-info">
 
-**:information_source: Delete an information from a task:**
+**:information_source: How to delete an information from a task :**
 
   * You can delete an information from a task by specifying the prefix with an empty description.
   
@@ -977,13 +1030,15 @@ Format: `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
 
 <div markdown="block" class="alert alert-info">
 
-**:warning: Warning:**<br>
+**:warning: Warning :**<br>
 
   Editing the `TAG` will overwrite all the current `TAG`s. If you accidentally overwrite the whole tags, you can always
   use the [undo](#undo-previous-user-command-undodavid) command. So, don't worry!
 
 </div>
 
+  <div style="page-break-after: always;"></div>
+  
 Example(s):
 
 Below is an example of editing information of a task:
@@ -994,6 +1049,7 @@ and the priority to `normal`.
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/editTask1.png"></p>
+<p align="center"> <em>Example outcome from editing a task</em></p>
 
 In addition, below is an example of how you can delete information of a task:
 
@@ -1002,9 +1058,12 @@ In addition, below is an example of how you can delete information of a task:
 Expected Outcome:
 
 <img src="images/TodoList/UG/editTask2.png">
+<p align="center"> <em>Example outcome from deleting an information from a task</em></p>
 
 <br/>
 
+  <div style="page-break-after: always;"></div>
+  
 #### Locating tasks: `findtask` (Jonas Ng)
 
 Finds all tasks that fulfil all the provided search criteria.
@@ -1038,12 +1097,14 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
      * Tasks with their date matching the search date exactly are considered to have fulfilled the task date search criteria.
 
+<div style="page-break-after: always;"></div>
+
    * **`PRIORITY`**
 
-     * Your search priority should be one of the following: `highest`, `high`, `normal`, `low` (case-insensitive).
+     * Your search priority should be one of the following: `high`, `normal`, `low` (case-insensitive).
        No other search priority will be allowed.
 
-     * You should only provide one search priority, i.e. `p/highest low` is not allowed.
+     * You should only provide one search priority, i.e. `p/high low` is not allowed.
 
      * Tasks with their priority matching the search priority exactly are considered to have fulfilled the task priority search criteria.
    
@@ -1068,6 +1129,8 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
  * Only tasks matching all search criteria provided will be returned.
 
+<div style="page-break-after: always;"></div>
+
  Example(s):
  
  * `findtask n/lab p/high` finds all tasks with their name containing the word 'lab' **and** has the priority `high`'.
@@ -1075,6 +1138,7 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
  Expected Outcome:
  
  ![FindTask](images/Task/FindTaskUG.PNG)
+ <p align="center"> <em>Example outcome from finding a task</em></p>
  
 
  Other helpful example(s):
@@ -1088,21 +1152,23 @@ Format: `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYW
 
 <br/>
 
+<div style="page-break-after: always;"></div>
+
 #### Marking a task as completed: `completetask` (Michael)
 
-This command allows you to label a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
+This command allows you to mark a task as `COMPLETED`. The task will then have the green `COMPLETED` label.
 
 Format: `completetask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br>
+**:bulb: Tips :****<br>
 
-  You can always change back the status to `Not COMPLETED` by using either the [undo](#undo-previous-user-command-undodavid) or [resettask](#resetting-a-task-resettask-michael) command.
+  You can always change back the status to `NOT COMPLETED` by using either the [undo](#undo-previous-user-command-undo-david) or [resettask](#resetting-a-task-resettask-michael) command.
 
 </div>
 
@@ -1113,8 +1179,11 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/completeTask.png"></p>
+<p align="center"> <em>Example outcome from labelling a task as completed</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Resetting a task: `resettask` (Michael)
 
@@ -1124,7 +1193,7 @@ Format: `resettask INDEX`
 
 * You can get the `INDEX` from the current displayed Todo List.
 
-* Index must be a **positive whole number** and does not exceed the number of task in the Todo List.
+* `INDEX` must be a **positive whole number** and does not exceed the number of task in the Todo List.
 
 Example(s):
 
@@ -1133,8 +1202,11 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/resetTask.png"></p>
+<p align="center"> <em>Example outcome from resetting a task</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Sorting tasks: `sorttask` (Michael)
 
@@ -1156,7 +1228,7 @@ Format: `sorttask [r] CRITERION`
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br>
+**:bulb: Tips :**<br>
   * Each `CRITERION` has an abbreviated or synonym version that you can use:
     * You can input `NAME` as `n` (not case-sensitive).
     * You can input `PRIORITY` as `prior` or `p` (not case-sensitive).
@@ -1165,6 +1237,8 @@ Format: `sorttask [r] CRITERION`
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Example(s):
 
 * `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
@@ -1172,8 +1246,11 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/sortTask.png"></p>
+<p align="center"> <em>Example outcome from sorting the Todo List</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Listing all tasks: `listtask` (Michael)
 
@@ -1183,7 +1260,7 @@ Format: `listtask`
 
 <div markdown="block" class="alert alert-info">
 
-**:bulb: Tips:**<br> 
+**:bulb: Tips :**<br> 
 
   You can use `listtask` to go back to the original list after
   performing a `findtask` or `sorttask` command.
@@ -1197,8 +1274,11 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/TodoList/UG/listTask.png"></p>
+<p align="center"> <em>Example outcome from listing all tasks</em></p>
 
 <br/>
+
+<div style="page-break-after: always;"></div>
 
 #### Clearing the list: `cleartask` (Michael)
 
@@ -1208,10 +1288,10 @@ Format: `cleartask`
 
 <div markdown="block" class="alert alert-info">
 
-**:warning: Warning:**<br>
+**:warning: Warning :**<br>
   * We recommend you to do a backup before proceeding to clear the whole Todo List as there is no auto-backup feature
     in this current version of CAP5BUddy in case you changed your mind and it's not viable anymore to use the `undo` command.
-  * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undodavid) or [redo](#redo-previous-user-command-redodavid) command to restore the Todo List. However,
+  * If you accidentally cleared the whole list, you can always use the [undo](#undo-previous-user-command-undo-david) or [redo](#redo-previous-user-command-redo-david) command to restore the Todo List. However,
     you should always remember that the `undo` command is only able to undo a limited amount of commands.
 
 </div>
@@ -1222,13 +1302,12 @@ Example(s) :
 
 Expected Outcome:
 
-<p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
+<p align="center"><img src="images/TodoList/UG/clearTask.png" width="450"></p>
+<p align="center"> <em>Example outcome from clearing the Todo List</em></p>
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
 
-<br/>
-<br/>
-<br/>
+<div style="page-break-after: always;"></div>
 
 ### Contact List Features (Jonas Ng)
 
@@ -1270,6 +1349,7 @@ A contact list feature can use one or more of the following parameters:
 
    * All contacts must have an email address.
 
+<div style="page-break-after: always;"></div>
 
 * **`TELEGRAM`**:
 
@@ -1296,7 +1376,7 @@ A contact list feature can use one or more of the following parameters:
   
   * Tag is not a compulsory field of a contact.
 
-
+<div style="page-break-after: always;"></div>
 
 #### Adding a contact: `addcontact` (Jonas Ng)
 
@@ -1319,6 +1399,7 @@ Other helpful example(s):
 
 * `addcontact n/John e/John@gmail.com t/coworker` adds a new contact with the name `John`, email `John@gmail.com` and a tag `coworker`.
 
+<div style="page-break-after: always;"></div>
 
 #### Locating contacts: `findcontact` (Jonas Ng)
 
@@ -1356,6 +1437,8 @@ Other helpful example(s):
 
   * Only contacts matching all search criteria provided will be returned.
 
+<div style="page-break-after: always;"></div>
+
   Example(s): 
   
   * `findcontact n/amy` finds all contacts with the word `amy` in their name.
@@ -1372,6 +1455,7 @@ Other helpful example(s):
 
    * `findcontact n/john t/friend` returns all contacts with the word `john` in its name **and** has `friend` as one of its tags.
 
+<div style="page-break-after: always;"></div>
 
 #### Listing all contacts: `listcontact` (Jonas Ng)
 
@@ -1396,6 +1480,7 @@ Other helpful example(s):
  
  ![ListContact](images/contact/ListContactUG.PNG)
 
+<div style="page-break-after: always;"></div>
 
 #### Editing a contact: `editcontact` (Jonas Ng)
 
@@ -1416,6 +1501,7 @@ Other helpful example(s):
 
  * You can remove all the contact’s tags by typing `t/` without specifying any tags after it, i.e. `editcontact 1 t/`.
 
+<div style="page-break-after: always;"></div>
 
  Example(s): 
  
@@ -1431,6 +1517,8 @@ Other helpful example(s):
  * `editcontact 2 t/` edits the second contact in the displayed contact list by removing all tags of that contact.
 
  * `editcontact 2 n/john te/` edits the second contact in the displayed contact list with the name `john` and removes the telegram detail of that contact.
+
+<div style="page-break-after: always;"></div>
 
 #### Deleting a contact: `deletecontact` (Jonas Ng)
 
@@ -1457,7 +1545,9 @@ Other helpful example(s):
 
 * `deletecontact 5` deletes the fifth contact in the displayed contact list.
 
-#### Sorting contacts: `sortcontact`
+<div style="page-break-after: always;"></div>
+
+#### Sorting contacts: `sortcontact` (Michael)
 
 Sorts the list based on the name of the contact using lexicographic ordering.
 
@@ -1482,6 +1572,8 @@ will sort the contact list from the name with the lowest lexicographic value to 
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Examples:
 
 * `sortcontact r` will sort the contact list based on name.
@@ -1489,8 +1581,11 @@ Examples:
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/SortContactUG.png"></p>
+<p align="center"> <em>Example outcome from sorting the contact list</em></p>
 
-#### Marking contacts as important: `importantcontact` (Michael)
+<div style="page-break-after: always;"></div>
+
+#### Marking a contact as important: `importantcontact` (Michael)
 
 Marks a task as `Important`.
 
@@ -1504,7 +1599,7 @@ Format: `importantcontact INDEX`
   
   **:bulb: Tips :**<br>
   
-  You can remove `Important` mark from a contact by using either the [undo](#undo-previous-user-command-undodavid) or [resetcontact](#resetting-contacts-resetcontact-michael) command.
+  You can remove `Important` mark from a contact by using either the [undo](#undo-previous-user-command-undo-david) or [resetcontact](#resetting-a-contact-resetcontact-michael) command.
 
   </div>
 
@@ -1515,8 +1610,11 @@ Example(s):
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/ImportantContactUG.png"></p>
+<p align="center"> <em>Example outcome from marking a contact as important</em></p>
 
-#### Resetting contacts: `resetcontact` (Michael)
+<div style="page-break-after: always;"></div>
+
+#### Resetting a contact: `resetcontact` (Michael)
 
 Removes a contact's `Important` mark.
 
@@ -1533,6 +1631,9 @@ Examples:
 Expected Outcome:
 
 <p aligin="center"><img src="images/contact/ResetContactUG.png"></p>
+<p align="center"> <em>Example outcome from resetting a contact</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Clearing the contact list: `clearcontact` (Jonas Ng)
 
@@ -1542,7 +1643,7 @@ Format: `clearcontact`
 
 <div markdown="block" class="alert alert-info">
 
- **:bulb:**<br>
+ **:bulb: Tips :**<br>
 
  If you accidentally cleared the whole contact list, you can always use the `undo` command
  to restore the list.
@@ -1556,22 +1657,50 @@ Example(s):
 Expected Outcome: <br>
 ![ClearContact](images/contact/ClearContactUG.PNG)
 
+<div style="page-break-after: always;"></div>
 
 ### Scheduler Features
 
 #### Scheduler Command Parameters (Matthias Li Huankang)
 
-* **Event name**<br>
-Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
+* **`Event name`**<br>
+  * Only alphanumeric are allowed to be in the naming of the event. Special characters are not allowed and will
 throw an invalid naming error.
+  
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  * Example(s):
+    * Valid: `CS2100 Assignment`
+    * Invalid: `CS2100 @Assignment`
+    
+  </div>
 
-* **Event time**<br>
-The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
+* **`Event time`**<br>
+  * The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
 follows, day-Month-year 24hour time. Any date time that does not follow this format will cause an invalid date time error to
 be thrown.
 
-* **Tags**<br>
-For the naming of Tags, there cannot be any spacing in the name of the Tag.
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  * Example(s):
+    * Valid: `1-2-2020 2359`
+    * Invalid: `32-2-2020 1200`, `2-13-2020 1200`, `2-3-2020 100`
+  </div>
+  
+* **`Tags`**<br>
+  * For the naming of Tags, there cannot be any spacing in the name of the Tag.
+  
+  <div markdown="block" class="alert alert-info">
+    
+    **:information_source: Note:**<br> 
+    * Example(s):
+      * Valid: `NotImportant`
+      * Invalid: `Not Important`
+  </div>     
+
+<div style="page-break-after: always;"></div>
 
 #### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
@@ -1584,6 +1713,7 @@ Example(s):<br>
 
 Expected outcome:<br>
 <p align="center"><img src="images/AddEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>An Event called CS2100 Assignment has been added with the deadline of 10 Aug 2020 12:00 and the tag of Important.</em></p>
 
 Other helpful example(s):<br>
  * `addevent n/CS2103T exams d/12-12-2020 1200` adds an Event called CS2103T into the Scheduler with the date 12-12-2020.<br>
@@ -1591,6 +1721,8 @@ Other helpful example(s):<br>
  * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important.<br>
  
  * `addevent n/CS2103T exams d/12-12-2020 1200 t/Important t/Urgent` adds an Event called CS2103T into the Scheduler with the date 12-12-2020 and the tag of Important and Urgent.<br>
+
+<div style="page-break-after: always;"></div>
 
 #### Deleting an Event from the Scheduler: `deleteevent` (Matthias Li Huankang)
 
@@ -1603,6 +1735,9 @@ You can delete an existing event from the list by specifying the index.
 
 Expected outcome:<br>
 <p align="center"><img src="images/DeleteEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>The first event has been deleted from the list.</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Editing an Event from the Scheduler: `editevent` (Matthias Li Huankang)
 
@@ -1615,9 +1750,18 @@ as event name and the event date.
 Example(s):<br>
 * `editevent 1 n/CS2103T assignment d/2-4-2020 1200 t/NotImportant` edits the event of index 1 with the new name of CS2103T, new date and time of 2-4-2020 1200 and the new tag of NotImportant.<br>
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  After editing the selected Event, you will be able to immediately see the changes made to the
+  selected event.
+  
+  </div>
+  
 Expected outcome:<br>
 
 <p align="center"><img src="images/EditEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>The first event has been updated with the new inputs from the user.</em></p>
 
 Other helpful example(s):<br>
 * `editevent 1 n/CS2100` edits the event of index 1 with the new name of CS2103T.<br>
@@ -1626,22 +1770,58 @@ Other helpful example(s):<br>
 
 * `editevent 1 t/NotImportant` edits the event of index 1 with the new tag of Not Important.<br>
 
+<div style="page-break-after: always;"></div>
+
 #### Finding an Event from the Scheduler: `findevent` (Matthias Li Huankang)
 
 You can search for a particular event based on the name and date. This will return you a list of all events that have these keywords.
 
   Format: `findevent [n/EVENT_NAME] [d/DATE_TIME]`<br>
-  **Note:** All fields are optional but at least 1 of them must be present.<br>
+  
+  <div markdown="block" class="alert alert-info">
+    
+  **:information_source: Note:**<br> 
+  * All fields are optional but at least 1 of them must be present.<br>
+  * The search parameters for name and tag are case insensitive.<br>
+    
+  </div>
+  
+  Search Parameters:
+  
+   * **`Name`** <br>
+      * Events that has names matching with at least one of the keywords will be filtered and dispalyed in the list.<br>
+      * Only full words will be matched. e.g. `CS2100` will match with `CS2100 Assignment` and not with `CS2100S`.<br>
+
+   * **`Date`**<br>
+      * Only events that has the exact same date and time will be filtered out.<br>
+
+   * **`Tag`**<br>
+      * Events that has at least one of the matching tags will be filtered out.<br>
+      * Only full words will be filtered out. e.g. `Important` will only match with `Important` and not `NotImportant`.<br>
+    
+<div style="page-break-after: always;"></div>
+    
 Example(s):<br>
 * `findevent n/CS2103T` finds all events that have **CS2103T** in their event name.<br>
 
+  <div markdown="block" class="alert alert-info">
+  
+  **:information_source: Note:**<br> 
+  After searching for the required events, to go back to the normal list view, you
+  will need to call listevent command as explained in the next command.
+  
+  </div>
+  
 Expected outcome:<br>
 <p align="center"><img src="images/FindEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>Only events with the keywords are filtered and shown in the list, in this case, there is no event.</em></p>
 
 Other helpful example(s):<br>
 * `findevent d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
 
 * `findevent n/ CS2103T d/1-1-2020 1200` finds all event that have the date and time of **1 Jan 2020 12:00**.<br>
+
+<div style="page-break-after: always;"></div>
 
 #### List events: `listevent` (Matthias Li Huankang)
 
@@ -1654,6 +1834,8 @@ Allows you to view all events. <br>
 
 Expected outcome:<br>
 <p align="center"><img src="images/ListEventExample.png" border="2px solid black"></p>
+<p align="center"> <em>All events are shown in the list again.</em></p>
+<div style="page-break-after: always;"></div>
 
 ### General Features
 
@@ -1686,6 +1868,8 @@ Format: `exit`
   Example(s):
   * `exit`
 
+<div style="page-break-after: always;"></div>
+
 #### Getting help : `help` (David)
 
 Opens the help window.
@@ -1711,6 +1895,8 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 --------------------------------------------------------------------------------------------------------------------
 
+<div style="page-break-after: always;"></div>
+
 ## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
 Action | Format, Examples
@@ -1734,6 +1920,8 @@ Action | Format, Examples
 **Calculate CAP** | `calculatecap`
 **Calculate Target CAP details** | `targetcap TARGET_CAP` <br> e.g. `targetcap 4.5`
 
+<div style="page-break-after: always;"></div>
+
 ## Command Summary for Contact List (Jonas Ng)
 
 Action | Format, Examples
@@ -1748,21 +1936,23 @@ Action | Format, Examples
 **Mark Contact as unimportant** | `resetcontact INDEX` <br> e.g. `resetcontact 1`
 **Clear Contact**  | `clearcontact`
 
+<div style="page-break-after: always;"></div>
 
-## Command summary for Todo List
+## Command summary for Todo List (Michael)
 
 Action | Format, Examples
 --------|------------------
-**Add Task** | `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]`
-**Edit Task** | `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]`
-**Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]`
-**Delete Task** | `deletetask INDEX`
+**Add Task** | `addtask n/TASK_NAME [t/TAG]... [p/PRIORITY] [d/DATE]` <br> e.g. `addtask n/finish assignment t/CS2105 p/high d/2020-11-10` 
+**Delete Task** | `deletetask INDEX` <br> e.g. `deletetask 1`
+**Edit Task** | `edittask INDEX [n/TASK_NAME] [t/TAG]... [p/PRIORITY] [d/DATE]` <br> e.g. `edittask 1 n/read chapter 6 t/MA1521  p/high d/2020-03-10`
+**Sort Tasks** | `sorttask [r] CRITERION` <br> e.g. `sorttask r priority`
+**Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]` <br> e.g. `findtask n/lab d/2020-10-10 p/high s/incomplete t/CS2100`
 **List Tasks** | `listtask`
-**Sort Tasks** | `sorttask [r] CRITERION`
-**Label Task as Completed** | `completetask INDEX`
-**Label Task as Not Completed** | `resettask INDEX`
+**Mark Task as Completed** | `completetask INDEX` <br> e.g. `completetask 2`
+**Reset Task Status** | `resettask INDEX` <br> e.g. `resettask 3`
 **Clear Tasks** | `cleartask`
 
+<div style="page-break-after: always;"></div>
 
 ## Command summary for Scheduler (Matthias Li Huankang)
 
