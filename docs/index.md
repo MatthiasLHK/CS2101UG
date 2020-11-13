@@ -155,8 +155,6 @@ Creates and adds a new module to be stored in the system.
 
    Example(s):
    * `addmodule n/CS2103T` creates and adds the module CS2103T.
-   
-<div style="page-break-after: always;"></div>
 
 Expected Outcome: 
   
