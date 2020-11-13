@@ -259,6 +259,7 @@ Format: `unarchivemodule INDEX`
  Example(s):
  * `unarchivemodule 1` un-archives the first module in the displayed archived module list.
 
+<div style="page-break-after: always;"></div>
 
 #### View archived modules: `viewarchive` (David)
 
@@ -308,6 +309,7 @@ Format: `listmodule`
 
       * Module name must match your search criteria exactly for module to be displayed, e.g. `cs2030` will match `CS2030` but not `CS20301`.
       
+<div style="page-break-after: always;"></div>
 
   Example(s):
 
@@ -346,6 +348,8 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 #### Zoom link command parameters (Jonas Ng)
 
 * **`ZOOM_LINK`**:
@@ -368,6 +372,7 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
   * Example(s): `Lecture-weds`.
 
+<div style="page-break-after: always;"></div>
 
 #### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
 
@@ -412,6 +417,7 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
   * `addzoom 1 n/lecture on weds z/https://nus-sg.zoom.us/j/auya7164hg` adds a zoom link `https://nus-sg.zoom.us/j/auya7164hg` to the first module
    in the displayed module list for the lesson `lecture on weds`.
 
+<div style="page-break-after: always;"></div>
 
 #### Editing a zoom link of a specific lesson in a module: `editzoom` (Jonas Ng)
 
