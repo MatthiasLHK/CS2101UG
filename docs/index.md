@@ -373,7 +373,6 @@ i.e. you will not be allowed to add multiple zoom links to the same lesson.
 
   * Example(s): `Lecture-weds`.
 
-<div style="page-break-after: always;"></div>
 
 #### Adding a zoom link for a specific lesson to a module: `addzoom` (Jonas Ng)
 
@@ -396,6 +395,8 @@ e.g. `Mon-Lecture` and `Wed-Lecture`.
    * The index **must be a positive integer** 1, 2, 3...
    
    * `LESSON_NAME` refers to the name of the module lesson which the added zoom link belongs to.
+
+<div style="page-break-after: always;"></div>
 
   Example(s):
   
@@ -445,6 +446,8 @@ Edits a zoom link of a specific lesson in a module.
      2. Add the same zoom link with the edited lesson name.
 
    </div>
+
+<div style="page-break-after: always;"></div>
 
    Example(s):
    
