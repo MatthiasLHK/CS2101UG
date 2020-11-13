@@ -1304,7 +1304,7 @@ Example(s) :
 
 Expected Outcome:
 
-<p aligin="center"><img src="images/TodoList/UG/clearTask.png" width="400"></p>
+<p align="center"><img src="images/TodoList/UG/clearTask.png" width="430"></p>
 <p align="center"> <em>Example outcome from clearing the Todo List</em></p>
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
