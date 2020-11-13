@@ -774,8 +774,6 @@ Below are the explanations for each of the information shown above:
   
   * Task name should contain **30 characters or fewer**.
   
-  <div style="page-break-after: always;"></div>
-  
    <div markdown="block" class="alert alert-info">
   
   **:bulb: Tips :**<br>
@@ -785,6 +783,8 @@ Below are the explanations for each of the information shown above:
 
   </div>
 
+  <div style="page-break-after: always;"></div>
+  
   * Below are examples for the input:
   
     Input | Display Format
