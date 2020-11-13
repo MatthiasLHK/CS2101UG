@@ -24,6 +24,9 @@ For a quick summary of all available commands, you may scroll to the end of this
 
 
 --------------------------------------------------------------------------------------------------------------------
+
+
+
 ## Quick start (Matthias Li Huankang)
 
 1. Ensure you have Java `11` or above installed in your Computer.
@@ -36,6 +39,13 @@ For a quick summary of all available commands, you may scroll to the end of this
 <p align="center"><img src="images/Ui.png" border="2px solid black"></p>
 
 --------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 ## Navigating the GUI (Matthias Li Huankang)
 <p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
