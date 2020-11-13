@@ -1948,7 +1948,7 @@ Action | Format, Examples
 **Sort Tasks** | `sorttask [r] CRITERION` <br> e.g. `sorttask r priority`
 **Find Task** | `findtask [n/NAME_KEYWORDS] [d/DATE] [p/PRIORITY] [s/STATUS] [t/TAG_KEYWORDS]` <br> e.g. `findtask n/lab d/2020-10-10 p/high s/incomplete t/CS2100`
 **List Tasks** | `listtask`
-**Label Task as Completed** | `completetask INDEX` <br> e.g. `completetask 2`
+**Mark Task as Completed** | `completetask INDEX` <br> e.g. `completetask 2`
 **Reset Task Status** | `resettask INDEX` <br> e.g. `resettask 3`
 **Clear Tasks** | `cleartask`
 
