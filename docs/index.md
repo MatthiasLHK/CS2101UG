@@ -1676,7 +1676,7 @@ throw an invalid naming error.
     * Valid: `CS2100 Assignment`
     * Invalid: `CS2100 @Assignment`
     
-    </div>
+  </div>
 
 * `Event time`<br>
   * The format of the event date and time must strictly follow the given format. `d-M-uuu HHmm`. The format is as
@@ -1689,20 +1689,18 @@ be thrown.
   * Example(s):
     * Valid: `1-2-2020 2359`
     * Invalid: `32-2-2020 1200`, `2-13-2020 1200`, `2-3-2020 100`
-    
-    </div>
-
+  </div>
+  
 * `Tags`<br>
   * For the naming of Tags, there cannot be any spacing in the name of the Tag.
   
-    <div markdown="block" class="alert alert-info">
+  <div markdown="block" class="alert alert-info">
     
     **:information_source: Note:**<br> 
-  * Example(s):
-    * Valid: `NotImportant`
-    * Invalid: `Not Important`
-    
-    </div>
+    * Example(s):
+      * Valid: `NotImportant`
+      * Invalid: `Not Important`
+  </div>     
 
 #### Adding an Event to the Scheduler: `addevent` (Matthias Li Huankang)
 
