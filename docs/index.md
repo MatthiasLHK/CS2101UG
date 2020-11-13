@@ -1574,6 +1574,8 @@ will sort the contact list from the name with the lowest lexicographic value to 
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Examples:
 
 * `sortcontact r` will sort the contact list based on name.
@@ -1582,6 +1584,8 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/contact/SortContactUG.png"></p>
 <p align="center"> <em>Example outcome from sorting the contact list</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Marking contacts as important: `importantcontact` (Michael)
 
@@ -1609,6 +1613,8 @@ Expected Outcome:
 
 <p aligin="center"><img src="images/contact/ImportantContactUG.png"></p>
 <p align="center"> <em>Example outcome from marking a contact as important</em></p>
+
+<div style="page-break-after: always;"></div>
 
 #### Resetting contacts: `resetcontact` (Michael)
 
