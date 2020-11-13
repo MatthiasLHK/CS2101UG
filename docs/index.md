@@ -40,7 +40,7 @@ information regarding all features of CAP5Buddy. To navigate the user guide quic
 --------------------------------------------------------------------------------------------------------------------
 <div style="page-break-after: always;"></div>
 
-## Navigating the GUI (Matthias Li Huankang)
+## Navigating the Graphical User Interface (GUI) (Matthias Li Huankang)
 <p align="center"><img src="images/Ui_v2.png" border="2px solid black"></p>
 
 ### Key Components (Matthias Li Huankang)
@@ -1895,6 +1895,17 @@ Format: `help`
 **A**: All information and details entered will be automatically stored and can be accessed the next time you start the application.
 
 --------------------------------------------------------------------------------------------------------------------
+
+<div style="page-break-after: always;"></div>
+
+## Glossary (Matthias Li HuanKang)
+Term | Definition
+----- | ---------------
+GUI | **Graphical User Interface** 
+CAP | **Cumulative Average Point**
+OS | **Operating System**
+CLI | **Command Line Interface**
+
 
 <div style="page-break-after: always;"></div>
 
