@@ -1239,6 +1239,8 @@ Format: `sorttask [r] CRITERION`
 
 </div>
 
+<div style="page-break-after: always;"></div>
+
 Example(s):
 
 * `sorttask priority` sorts the Todo List from the task with the highest priority to the task with the lowest or no priority.
@@ -1278,6 +1280,8 @@ Expected Outcome:
 
 <br/>
 
+<div style="page-break-after: always;"></div>
+
 #### Clearing the list: `cleartask` (Michael)
 
 This command allows you to clear all tasks in the Todo List.
@@ -1300,7 +1304,7 @@ Example(s) :
 
 Expected Outcome:
 
-<p aligin="center"><img src="images/TodoList/UG/clearTask.png"></p>
+<p aligin="center"><img src="images/TodoList/UG/clearTask.png" width="400"></p>
 <p align="center"> <em>Example outcome from clearing the Todo List</em></p>
 
 Finally, we have covered all of the Todo List commands, and now you are ready to be a pro in task managing!
