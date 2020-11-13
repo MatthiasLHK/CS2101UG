@@ -91,6 +91,8 @@ It shows all the items as individual cell boxes with some of the basic informati
 As the Main Item Display Panel only show the basic information for the items being tracked.
 This panel is in-charge of displaying all the additional information of the item when a view Command is called on the item.
 
+<div style="page-break-after: always;"></div>
+
 #### Calendar (Matthias Li Huankang)
 <p align="center"><img src="images/Calendar.png" border="2px solid black"></p>
 <p align="center"> <em>Calendar</em> </p>
