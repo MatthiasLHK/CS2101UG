@@ -1902,10 +1902,10 @@ Format: `help`
 
 Term | Definition
 ----- | --------------- 
-**GUI** | Graphical User Interface
 **CAP** | Cumulative Average Point
-**OS** | Operating System
 **CLI** | Command Line Interface
+**GUI** | Graphical User Interface
+**OS** | Operating System
 
 ## Command Summary for Module Tracker (David,Jonas,Joshua,Matthias)
 
